@@ -1,0 +1,9 @@
+Input: lname=/Users/kahotisthammer/Projects/PacHerring/Data/new_vcf/MD2000/beagle/3pops_MD2000_pruned_BEAGLE.PL.gz nPop=3, fname=(null) qname=(null) outfiles=/Users/kahotisthammer/Projects/PacHerring/Data/ngsadmix/3pops_pruned_maf05_k3_run1
+Setup: seed=1688065247 nThreads=1 method=1
+Convergence: maxIter=2000 tol=0.000010 tolLike50=0.100000 dymBound=0
+Filters: misTol=0.050000 minMaf=0.050000 minLrt=0.000000 minInd=0
+Input file has dim: nsites=290134 nind=686
+Input file has dim (AFTER filtering): nsites=252619 nind=686
+	[ALL done] cpu-time used =  2830.29 sec
+	[ALL done] walltime used =  5826.00 sec
+best like=-49013160.044037 after 500 iterations

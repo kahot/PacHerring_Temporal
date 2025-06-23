@@ -1,0 +1,6 @@
+PCAngsd v1.11
+Time: 09/06/2023 10:30:51
+Directory: /home/ktist
+Options:
+	-beagle /home/ktist/ph/data/new_vcf/MD3000/beagle/3pops_MD2000_pruned_BEAGLE.PL.gz
+	-out /home/ktist/ph/data/angsd/PCAngsd/3pops_MD2000

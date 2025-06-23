@@ -1,0 +1,3 @@
+"Enrichment FDR","nGenes","Pathway Genes","Fold Enrichment","Pathway","URL","Genes"
+0.0477321518917204,3,8,34.9421206225681,"Midbrain-hindbrain boundary morphogenesis "," http://amigo.geneontology.org/amigo/term/GO:0021555"," myh10  wnt5b  fgf8a"
+0.044065516199262,34,1499,2.11346604610596,"Animal organ development "," http://amigo.geneontology.org/amigo/term/GO:0048513"," irx5a  zdhhc15b  fgf16  slc39a6  myct1a  akap12b  top2b  nup62l  pls3  clocka  cib2  atp1a2a  atg5  shox2  snx7  anln  POU3F4  magi2a  slc26a2  ep300b  smyd3  myh10  lhcgr  piezo1  slc25a38b  sox6  prickle1b  mgat5  wnk1b  adamts9  wnt5b  prickle2b  cnnm2a  fgf8a"

@@ -1,0 +1,78 @@
+N,High level GO category,Genes
+92,Biological regulation , zwilch  opn4a  thbs1b  skia  foxp2  pax8  tfec  CCNE2  MED13L  CDIN1  atxn1a  fermt1  meis2a  rptor  thrb  arhgdia  recql5  itgb1b  akap12b  napbb  nrp2b  EPC1  cxcr5  sbf2  arnt  mylipa  meox2b  nkx2.1  NKX2-8  pax9  CIART  chrna1  TEAD4  C3  phox2a  anapc15  cdkn1bb  pparaa  pax6b  si:dkey-191g9.5  si:ch211-106h11.3  txn2  ldb1a  myh9b  depdc7b  slc9a5  mef2ab  fhod1  adcy7  gfi1ab  nkd1  evi5b  rfx7a  prkd4  ADGRL3  hrasa  mast2  RHOV  pik3r3b  MAX  nxnl1  rbfox1  BPTF  NR2F1  fam172a  slf1  ccr6a  nkx2.5  dlg5b.1  si:ch211-263k4.2  si:dkeyp-23e4.3  smad6b  wtap  PLCB4  sulf2b  si:ch211-218g4.2  her6  rho  wnt5b  slc25a38a  junbb  mast1b  smarca4a  ROBO1  ldlra  mier1a  bloc1s2
+92,Cellular metabolic process , snapc5  map2k1  uckl1b  ptprga  skia  camk2g2  foxp2  ints8  pax8  tfec  ak5l  cox10  pkma  MED13L  atxn1a  meis2a  gmpr  ENDOV  gtf2h5  thrb  recql5  fut8b  trmt6  gphnb  gpcpd1  trib2  EPC1  setdb1b  arnt  meox2b  gal3st3  skp1  fntb  nkx2.1  NKX2-8  pax9  prpf3  atp5mc3b  TEAD4  phox2a  farsb  mrps35  yars2  pparaa  elp4  pax6b  chchd1  polr1c  ldb1a  mef2ab  plppr1  tent4b  adcy7  gfi1ab  rfx7a  hipk3b  PRPSAP1  ccs  prkd4  BRSK2  ldha  tsg101a  zgc:123278  mast2  SMURF2  MAX  tsta3  rbfox1  BPTF  prpf6  NR2F1  fam172a  slf1  mettl22  abat  nol11  nkx2.5  rars1  PPIF  smad6b  rpl4  polr3a  wtap  pak7  her6  qars1  slc25a38a  junbb  mast1b  smarca4a  USP24  mier1a
+90,Nitrogen compound metabolic process , snapc5  map2k1  uckl1b  ptprga  skia  camk2g2  foxp2  ints8  pax8  tfec  ak5l  cox10  pkma  MED13L  atxn1a  meis2a  gmpr  ENDOV  gtf2h5  thrb  recql5  fut8b  trmt6  gphnb  trib2  trim108  EPC1  setdb1b  arnt  meox2b  skp1  fntb  nkx2.1  NKX2-8  pax9  prpf3  atp5mc3b  TEAD4  phox2a  farsb  mrps35  yars2  pparaa  elp4  si:ch211-51a6.2  pax6b  chchd1  polr1c  ldb1a  mef2ab  tent4b  adcy7  gfi1ab  rfx7a  hipk3b  PRPSAP1  prkd4  BRSK2  tsg101a  zgc:123278  mast2  SMURF2  MAX  tsta3  rbfox1  BPTF  prpf6  NR2F1  fam172a  slf1  mettl22  abat  nol11  nkx2.5  rars1  PPIF  smad6b  rpl4  polr3a  wtap  pak7  her6  qars1  slc25a38a  junbb  mast1b  smarca4a  pcsk9  USP24  mier1a
+81,Regulation of biological process , zwilch  opn4a  thbs1b  skia  foxp2  pax8  tfec  CCNE2  MED13L  atxn1a  fermt1  meis2a  rptor  thrb  arhgdia  recql5  itgb1b  akap12b  nrp2b  EPC1  cxcr5  arnt  mylipa  meox2b  nkx2.1  NKX2-8  pax9  CIART  chrna1  TEAD4  C3  phox2a  anapc15  cdkn1bb  pparaa  pax6b  si:ch211-106h11.3  txn2  ldb1a  myh9b  depdc7b  mef2ab  fhod1  adcy7  gfi1ab  nkd1  rfx7a  prkd4  ADGRL3  hrasa  mast2  RHOV  pik3r3b  MAX  rbfox1  BPTF  NR2F1  fam172a  slf1  ccr6a  nkx2.5  dlg5b.1  si:ch211-263k4.2  si:dkeyp-23e4.3  smad6b  wtap  PLCB4  si:ch211-218g4.2  her6  rho  wnt5b  junbb  mast1b  smarca4a  ROBO1  mier1a  bloc1s2
+73,Regulation of cellular process , zwilch  opn4a  foxp2  pax8  tfec  CCNE2  MED13L  atxn1a  fermt1  meis2a  rptor  thrb  arhgdia  recql5  itgb1b  akap12b  nrp2b  EPC1  cxcr5  arnt  mylipa  meox2b  nkx2.1  NKX2-8  pax9  chrna1  TEAD4  phox2a  anapc15  cdkn1bb  pparaa  pax6b  si:ch211-106h11.3  txn2  ldb1a  depdc7b  mef2ab  fhod1  adcy7  gfi1ab  nkd1  rfx7a  prkd4  ADGRL3  hrasa  RHOV  pik3r3b  MAX  rbfox1  BPTF  NR2F1  fam172a  slf1  ccr6a  nkx2.5  dlg5b.1  si:dkeyp-23e4.3  smad6b  wtap  PLCB4  si:ch211-218g4.2  her6  rho  wnt5b  junbb  mast1b  smarca4a  ROBO1  mier1a  bloc1s2
+58,Multicellular organismal process , opn4a  thbs1b  synpo2la  skia  pax8  cmlc1  lman2la  CDIN1  meis2a  myct1a  akap12b  hcn4  nptnb  napbb  nrp2b  cxcr5  kif5ba  mylipa  fntb  nkx2.1  pax9  prpf3  CIART  chrna1  ush2a  utp4  phox2a  pax6b  polr1c  myh9b  plppr1  tgfbr3  gfi1ab  nkd1  smyd3  mast2  nxnl1  rbfox1  pcdh17  mettl22  nkx2.5  si:ch211-263k4.2  sgcd  znhit3  ctnna2  sulf2b  her6  nav3  rho  opa1  wnt5b  slc25a38a  junbb  smarca4a  ROBO1  pcsk9  bloc1s2
+53,Response to stimulus , zwilch  opn4a  thbs1b  foxp2  fermt1  ENDOV  rptor  gtf2h5  arhgdia  itgb1b  akap12b  nptnb  nrp2b  cxcr5  arnt  mylipa  cers2b  chrna1  ush2a  TEAD4  C3  anapc15  agxtb  si:ch211-106h11.3  depdc7b  adcy7  nkd1  prkd4  ADGRL3  ldha  hrasa  RHOV  pik3r3b  GPX2  slf1  pcdh17  aire  ccr6a  si:dkeyp-23e4.3  smad6b  PLCB4  si:ch211-218g4.2  her6  rho  wnt5b  mast1b  ROBO1  ldlra  bloc1s2
+52,Biosynthetic process , snapc5  skia  foxp2  pax8  tfec  cox10  MED13L  atxn1a  meis2a  gtf2h5  thrb  fut8b  gphnb  EPC1  arnt  meox2b  gal3st3  nkx2.1  NKX2-8  pax9  atp5mc3b  TEAD4  phox2a  farsb  mrps35  yars2  pparaa  pax6b  chchd1  polr1c  ldb1a  mef2ab  adcy7  gfi1ab  rfx7a  PRPSAP1  MAX  tsta3  BPTF  NR2F1  nkx2.5  rars1  smad6b  rpl4  polr3a  her6  qars1  slc25a38a  junbb  smarca4a  sdr42e2  mier1a
+49,Developmental process , thbs1b  synpo2la  skia  pax8  cmlc1  lman2la  CDIN1  meis2a  myct1a  akap12b  nptnb  nrp2b  cxcr5  kif5ba  mylipa  fntb  nkx2.1  pax9  prpf3  chrna1  ush2a  phox2a  pax6b  polr1c  myh9b  plppr1  tgfbr3  gfi1ab  nkd1  smyd3  rbfox1  pcdh17  mettl22  nkx2.5  si:ch211-263k4.2  sgcd  znhit3  ctnna2  her6  nav3  opa1  wnt5b  slc25a38a  junbb  smarca4a  ROBO1  espn  pcsk9  bloc1s2
+49,Anatomical structure development , thbs1b  synpo2la  skia  pax8  cmlc1  lman2la  CDIN1  meis2a  myct1a  akap12b  nptnb  nrp2b  cxcr5  kif5ba  mylipa  fntb  nkx2.1  pax9  prpf3  chrna1  ush2a  phox2a  pax6b  polr1c  myh9b  plppr1  tgfbr3  gfi1ab  nkd1  smyd3  rbfox1  pcdh17  mettl22  nkx2.5  si:ch211-263k4.2  sgcd  znhit3  ctnna2  her6  nav3  opa1  wnt5b  slc25a38a  junbb  smarca4a  ROBO1  espn  pcsk9  bloc1s2
+41,Cellular response to stimulus , zwilch  opn4a  fermt1  ENDOV  rptor  gtf2h5  arhgdia  itgb1b  akap12b  nrp2b  cxcr5  mylipa  cers2b  TEAD4  anapc15  agxtb  si:ch211-106h11.3  depdc7b  adcy7  nkd1  prkd4  ADGRL3  hrasa  RHOV  pik3r3b  slf1  ccr6a  si:dkeyp-23e4.3  smad6b  PLCB4  si:ch211-218g4.2  her6  rho  wnt5b  mast1b  ROBO1  ldlra  bloc1s2
+40,Signaling , zwilch  opn4a  skia  fermt1  rptor  arhgdia  itgb1b  akap12b  nrp2b  cxcr5  mylipa  chrna1  TEAD4  anapc15  si:ch211-106h11.3  depdc7b  adcy7  nkd1  prkd4  ADGRL3  hrasa  RHOV  pik3r3b  ccr6a  nkx2.5  si:ch211-263k4.2  dlgap2b  si:dkeyp-23e4.3  smad6b  PLCB4  si:ch211-218g4.2  her6  rho  wnt5b  mast1b  ROBO1  bloc1s2
+37,Regulation of metabolic process , foxp2  pax8  tfec  MED13L  atxn1a  meis2a  thrb  recql5  EPC1  arnt  meox2b  nkx2.1  NKX2-8  pax9  CIART  TEAD4  phox2a  pparaa  pax6b  ldb1a  mef2ab  gfi1ab  rfx7a  mast2  MAX  rbfox1  BPTF  NR2F1  fam172a  slf1  nkx2.5  smad6b  wtap  her6  junbb  smarca4a  mier1a
+31,Anatomical structure morphogenesis , thbs1b  skia  pax8  cmlc1  meis2a  akap12b  nptnb  nrp2b  kif5ba  mylipa  pax9  chrna1  ush2a  pax6b  polr1c  myh9b  tgfbr3  nkd1  smyd3  pcdh17  nkx2.5  si:ch211-263k4.2  sgcd  ctnna2  her6  nav3  opa1  wnt5b  smarca4a  ROBO1  espn
+27,Localization , gphnb  akap12b  hcn4  napbb  nrp2b  slc10a1  slc25a21  atp5mc3b  chrna1  gpr155b  ipo7  kcnq1.2  slc9a5  nkd1  cygb2  ccs  scamp4  tsg101a  zgc:123278  KPNA2  PITPNC1  bnip1a  wnt5b  slc25a38a  smarca4a  ldlra  zgc:171489
+23,Establishment of localization , hcn4  napbb  slc10a1  slc25a21  atp5mc3b  chrna1  gpr155b  ipo7  kcnq1.2  slc9a5  nkd1  cygb2  ccs  scamp4  tsg101a  zgc:123278  KPNA2  PITPNC1  bnip1a  wnt5b  slc25a38a  ldlra  zgc:171489
+22,Cellular component organization or biogenesis , cmlc1  gphnb  akap12b  nptnb  nrp2b  lnpk  chrna1  chtf8  anapc15  polr1c  myh9b  fhod1  cenpn  diaph3  pcdh17  nol11  ctnna2  pak7  opa1  mast1b  ROBO1  espn
+20,Cellular component organization , cmlc1  gphnb  akap12b  nptnb  nrp2b  lnpk  chrna1  chtf8  anapc15  myh9b  fhod1  cenpn  diaph3  pcdh17  ctnna2  pak7  opa1  mast1b  ROBO1  espn
+15,Immune system process , CDIN1  myct1a  C3  gfi1ab  aire  mettl22  ccr6a  si:ch211-263k4.2  wnt5b  slc25a38a  bloc1s2
+15,Response to chemical , foxp2  nptnb  nrp2b  arnt  cers2b  chrna1  agxtb  pcdh17  ccr6a  smad6b  ROBO1  ldlra
+12,Locomotion , akap12b  nptnb  nrp2b  chrna1  pcdh17  ccr6a  wnt5b  smarca4a  ROBO1
+12,Response to external stimulus , nptnb  nrp2b  chrna1  ush2a  pcdh17  ccr6a  rho  ROBO1  ldlra
+12,Macromolecule localization , gphnb  napbb  slc10a1  chrna1  ipo7  nkd1  scamp4  tsg101a  zgc:123278  KPNA2  PITPNC1  ldlra
+12,Regulation of biological quality , CDIN1  napbb  chrna1  txn2  myh9b  slc9a5  nxnl1  sulf2b  wnt5b  slc25a38a  ldlra
+11,System process , opn4a  skia  cmlc1  hcn4  ush2a  utp4  rbfox1  nkx2.5  si:ch211-263k4.2  sgcd  rho
+10,Positive regulation of biological process , akap12b  arnt  meox2b  C3  pax6b  mef2ab  slf1  wnt5b  bloc1s2
+10,Negative regulation of biological process , zwilch  thbs1b  atxn1a  recql5  akap12b  mylipa  anapc15  nkd1  wnt5b  bloc1s2
+10,Regulation of response to stimulus , akap12b  nrp2b  mylipa  C3  anapc15  nkd1  slf1  wnt5b  bloc1s2
+10,Anatomical structure formation involved in morphogenesis , thbs1b  pax8  cmlc1  nrp2b  tgfbr3  nkd1  nkx2.5  her6  wnt5b  smarca4a
+9,Taxis , nptnb  nrp2b  chrna1  pcdh17  ccr6a  ROBO1
+8,Growth , akap12b  chrna1  pcdh17  nkx2.5  si:ch211-263k4.2  wnt5b  junbb  smarca4a
+8,Immune system development , CDIN1  myct1a  gfi1ab  mettl22  si:ch211-263k4.2  wnt5b  slc25a38a  bloc1s2
+8,Regulation of signaling , akap12b  nrp2b  mylipa  anapc15  nkd1  nkx2.5  wnt5b  bloc1s2
+8,Developmental growth , akap12b  chrna1  pcdh17  nkx2.5  si:ch211-263k4.2  wnt5b  junbb  smarca4a
+8,Regulation of developmental process , thbs1b  cxcr5  chrna1  myh9b  nkx2.5  her6  wnt5b  bloc1s2
+8,Cellular localization , gphnb  napbb  chrna1  ipo7  nkd1  KPNA2  wnt5b  ldlra
+7,Biological adhesion , si:dkey-22o22.2  thbs1b  itgb1b  nptnb  pcdh9  pcdh17  ctnna2
+7,Immune response , C3  aire  ccr6a
+7,Cell adhesion , si:dkey-22o22.2  thbs1b  itgb1b  nptnb  pcdh9  pcdh17  ctnna2
+7,Cellular component biogenesis , cmlc1  akap12b  polr1c  fhod1  cenpn  nol11  espn
+7,Regulation of multicellular organismal process , thbs1b  skia  cxcr5  mast2  nkx2.5  si:ch211-263k4.2  her6
+6,Response to stress , thbs1b  ENDOV  gtf2h5  ldha  GPX2  slf1
+5,Catabolic process , pkma  gpcpd1  skp1  SMURF2  USP24
+5,Methylation , trmt6  setdb1b  gfi1ab  mettl22  wtap
+5,Cell motility , akap12b  nrp2b  chrna1  wnt5b  smarca4a
+5,Localization of cell , akap12b  nrp2b  chrna1  wnt5b  smarca4a
+4,Cell population proliferation , cdkn1bb  nkx2.5  si:ch211-263k4.2  smarca4a
+4,Cell cycle process , zwilch  CCNE2  chtf8  anapc15
+3,Response to abiotic stimulus , ush2a  ldha  rho
+3,Cell growth , chrna1  pcdh17  wnt5b
+3,Regulation of molecular function , sbf2  si:dkey-191g9.5  evi5b
+2,Immune effector process , C3
+2,Activation of immune response , C3
+2,Myeloid cell homeostasis , CDIN1  slc25a38a
+2,Regulation of immune system process , C3
+2,Response to endogenous stimulus , agxtb  smad6b
+2,Regulation of localization , nkd1  wnt5b
+1,Reproduction , kif5ba
+1,Reproductive process , kif5ba
+1,Rhythmic process , CIART
+1,Multi-organism process , kif5ba
+1,Developmental process involved in reproduction , kif5ba
+1,Protein folding , PPIF
+1,Circadian rhythm , CIART
+1,Response to biotic stimulus , ldlra
+1,Sexual reproduction , kif5ba
+1,Developmental induction , nkd1
+1,Multicellular organism reproduction , kif5ba
+1,Regulation of growth , chrna1
+1,Response to estrogen , agxtb
+1,Regulation of cellular component biogenesis , fhod1
+1,Biological process involved in interspecies interaction between organisms , ldlra
+1,Multi-organism reproductive process , kif5ba
+1,Multicellular organismal reproductive process , kif5ba
+1,Maintenance of location , wnt5b
+1,Detection of stimulus , rho
+1,Response to other organism , ldlra

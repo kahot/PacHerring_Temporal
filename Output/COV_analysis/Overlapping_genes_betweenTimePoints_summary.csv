@@ -1,0 +1,9 @@
+"","pop","Time","no.of.genes"
+"1","PWS","cov12_cov13",18
+"2","PWS","cov12_cov23",35
+"3","PWS","cov13_cov23",18
+"4","PWS","All",0
+"5","TB","cov12_cov13",13
+"6","TB","cov12_cov23",35
+"7","TB","cov13_cov23",20
+"8","TB","All",3

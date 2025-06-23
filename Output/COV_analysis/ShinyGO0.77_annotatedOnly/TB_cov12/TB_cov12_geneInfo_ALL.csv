@@ -1,0 +1,578 @@
+"Pasted","Symbol","Ensembl Gene ID","Entrez","Type","Species","Chr","Position (Mbp)","Description","percentage_gc_content","transcript_count","genomeSpan","cds_length","transcript_length","FiveUTR","ThreeUTR","nExons"
+"ENSCHAG00000017231"," ","ENSCHAG00000017231",NA,"lncRNA","Atlantic herring",2,0.250085,"",48.48,1,1055,NA,1056,NA,NA,1
+"ENSCHAG00000017232"," ","ENSCHAG00000017232",NA,"lncRNA","Atlantic herring",2,0.251808,"",45.99,1,2232,NA,665,NA,NA,3
+"ENSCHAG00000008409"," ","ENSCHAG00000008409",NA,"lncRNA","Atlantic herring",2,1.866662,"",48.27,1,1037,NA,1038,NA,NA,1
+"ENSCHAG00000008464"," ","ENSCHAG00000008464",NA,"lncRNA","Atlantic herring",2,1.891572,"",39.21,1,4414,NA,1367,NA,NA,3
+"ENSCHAG00000008465"," ","ENSCHAG00000008465",NA,"lncRNA","Atlantic herring",2,1.899691,"",42.54,2,3767,NA,1450.5,NA,NA,2.5
+"ENSCHAG00000020725"," ","ENSCHAG00000020725",NA,"lncRNA","Atlantic herring",2,10.6839,"",42.34,1,1128,NA,1076,NA,NA,2
+"ENSCHAG00000020726"," ","ENSCHAG00000020726",NA,"lncRNA","Atlantic herring",2,10.685049,"",39.7,3,7399,NA,560,NA,NA,7
+"ENSCHAG00000022624"," ","ENSCHAG00000022624",NA,"lncRNA","Atlantic herring",2,23.089955,"",47.03,1,30096,NA,1597,NA,NA,4
+"ENSCHAG00000009134"," ","ENSCHAG00000009134",NA,"lncRNA","Atlantic herring",3,14.883625,"",43.27,1,1820,NA,1438,NA,NA,2
+"ENSCHAG00000009137"," ","ENSCHAG00000009137",NA,"lncRNA","Atlantic herring",3,14.886009,"",42.04,1,2066,NA,1353,NA,NA,2
+"ENSCHAG00000007691"," ","ENSCHAG00000007691",NA,"lncRNA","Atlantic herring",3,18.342155,"",56.37,1,1028,NA,1029,NA,NA,1
+"ENSCHAG00000007697"," ","ENSCHAG00000007697",NA,"lncRNA","Atlantic herring",3,18.347297,"",44.68,1,1295,NA,1296,NA,NA,1
+"ENSCHAG00000016346"," ","ENSCHAG00000016346",NA,"lncRNA","Atlantic herring",3,25.671422,"",43.01,1,2117,NA,1441,NA,NA,2
+"ENSCHAG00000016349"," ","ENSCHAG00000016349",NA,"lncRNA","Atlantic herring",3,25.674956,"",50.19,1,1539,NA,1159,NA,NA,2
+"ENSCHAG00000025020"," ","ENSCHAG00000025020",NA,"lncRNA","Atlantic herring",4,8.15822,"",53.3,1,1528,NA,1222,NA,NA,2
+"ENSCHAG00000024726"," ","ENSCHAG00000024726",NA,"lncRNA","Atlantic herring",4,17.892096,"",47.26,1,2879,NA,2607,NA,NA,3
+"ENSCHAG00000022401"," ","ENSCHAG00000022401",NA,"lncRNA","Atlantic herring",5,8.168396,"",44.96,1,1298,NA,1144,NA,NA,2
+"ENSCHAG00000015422"," ","ENSCHAG00000015422",NA,"lncRNA","Atlantic herring",6,8.233238,"",48.05,1,3851,NA,3852,NA,NA,1
+"ENSCHAG00000000676"," ","ENSCHAG00000000676",NA,"lncRNA","Atlantic herring",6,8.359189,"",55.93,1,1011,NA,1012,NA,NA,1
+"ENSCHAG00000020583"," ","ENSCHAG00000020583",NA,"lncRNA","Atlantic herring",6,16.437093,"",47.22,1,48329,NA,780,NA,NA,3
+"ENSCHAG00000000252"," ","ENSCHAG00000000252",NA,"lncRNA","Atlantic herring",6,16.605387,"",44.38,1,13033,NA,300,NA,NA,3
+"ENSCHAG00000023139"," ","ENSCHAG00000023139",NA,"lncRNA","Atlantic herring",9,3.990302,"",48.48,2,19958,NA,1038.5,NA,NA,2.5
+"ENSCHAG00000013791"," ","ENSCHAG00000013791",NA,"lncRNA","Atlantic herring",10,13.083719,"",39.38,1,6598,NA,1053,NA,NA,2
+"ENSCHAG00000000422"," ","ENSCHAG00000000422",NA,"lncRNA","Atlantic herring",10,16.141395,"",41.46,1,5009,NA,508,NA,NA,3
+"ENSCHAG00000000471"," ","ENSCHAG00000000471",NA,"lncRNA","Atlantic herring",10,16.249801,"",49.86,1,1064,NA,1065,NA,NA,1
+"ENSCHAG00000009692"," ","ENSCHAG00000009692",NA,"lncRNA","Atlantic herring",10,16.37736,"",41.58,2,17409,NA,852,NA,NA,3.5
+"ENSCHAG00000025722"," ","ENSCHAG00000025722",NA,"lncRNA","Atlantic herring",10,28.897718,"",46.46,1,19721,NA,1387,NA,NA,2
+"ENSCHAG00000010806"," ","ENSCHAG00000010806",NA,"lncRNA","Atlantic herring",11,0.722397,"",44.41,1,2591,NA,382,NA,NA,3
+"ENSCHAG00000010886"," ","ENSCHAG00000010886",NA,"lncRNA","Atlantic herring",11,0.742156,"",50.21,3,11333,NA,1305,NA,NA,4
+"ENSCHAG00000011028"," ","ENSCHAG00000011028",NA,"lncRNA","Atlantic herring",11,0.854014,"",49.73,1,2253,NA,1431,NA,NA,2
+"ENSCHAG00000011032"," ","ENSCHAG00000011032",NA,"lncRNA","Atlantic herring",11,0.861662,"",50.14,1,1419,NA,1420,NA,NA,1
+"ENSCHAG00000006819"," ","ENSCHAG00000006819",NA,"lncRNA","Atlantic herring",12,28.596789,"",46.57,1,1165,NA,827,NA,NA,3
+"ENSCHAG00000013397"," ","ENSCHAG00000013397",NA,"lncRNA","Atlantic herring",12,29.935587,"",51.55,1,1479,NA,1480,NA,NA,1
+"ENSCHAG00000013400"," ","ENSCHAG00000013400",NA,"lncRNA","Atlantic herring",12,29.970388,"",43.16,1,1366,NA,1367,NA,NA,1
+"ENSCHAG00000018128"," ","ENSCHAG00000018128",NA,"lncRNA","Atlantic herring",13,8.014762,"",45.86,1,11644,NA,1761,NA,NA,2
+"ENSCHAG00000009216"," ","ENSCHAG00000009216",NA,"lncRNA","Atlantic herring",13,23.482998,"",47.32,1,116680,NA,797,NA,NA,4
+"ENSCHAG00000002458"," ","ENSCHAG00000002458",NA,"lncRNA","Atlantic herring",13,29.427784,"",41.73,1,2352,NA,1891,NA,NA,2
+"ENSCHAG00000004347"," ","ENSCHAG00000004347",NA,"lncRNA","Atlantic herring",13,29.626573,"",48.63,1,14141,NA,1575,NA,NA,3
+"ENSCHAG00000023574"," ","ENSCHAG00000023574",NA,"lncRNA","Atlantic herring",14,14.619214,"",47.62,1,1324,NA,1325,NA,NA,1
+"ENSCHAG00000011225"," ","ENSCHAG00000011225",NA,"lncRNA","Atlantic herring",14,24.203648,"",43.18,1,4073,NA,917,NA,NA,3
+"ENSCHAG00000009332"," ","ENSCHAG00000009332",NA,"lncRNA","Atlantic herring",15,5.647227,"",53.56,1,1291,NA,1292,NA,NA,1
+"ENSCHAG00000009431"," ","ENSCHAG00000009431",NA,"lncRNA","Atlantic herring",15,5.697721,"",58.59,1,1245,NA,1246,NA,NA,1
+"ENSCHAG00000009433"," ","ENSCHAG00000009433",NA,"lncRNA","Atlantic herring",15,5.866899,"",53.07,1,1173,NA,1174,NA,NA,1
+"ENSCHAG00000004142"," ","ENSCHAG00000004142",NA,"lncRNA","Atlantic herring",17,8.686654,"",60.06,1,1013,NA,1014,NA,NA,1
+"ENSCHAG00000010877"," ","ENSCHAG00000010877",NA,"lncRNA","Atlantic herring",17,12.650637,"",50.15,1,6149,NA,4295,NA,NA,5
+"ENSCHAG00000013001"," ","ENSCHAG00000013001",NA,"lncRNA","Atlantic herring",17,16.476522,"",48.67,1,2524,NA,1664,NA,NA,3
+"ENSCHAG00000013004"," ","ENSCHAG00000013004",NA,"lncRNA","Atlantic herring",17,16.479972,"",49.13,3,26757,NA,1807,NA,NA,9
+"ENSCHAG00000013027"," ","ENSCHAG00000013027",NA,"lncRNA","Atlantic herring",17,16.518893,"",58.35,1,1166,NA,1167,NA,NA,1
+"ENSCHAG00000013724"," ","ENSCHAG00000013724",NA,"lncRNA","Atlantic herring",17,16.683131,"",41.41,1,1279,NA,1087,NA,NA,2
+"ENSCHAG00000013544"," ","ENSCHAG00000013544",NA,"lncRNA","Atlantic herring",17,26.392627,"",41.72,2,4640,NA,2148,NA,NA,4.5
+"ENSCHAG00000013546"," ","ENSCHAG00000013546",NA,"lncRNA","Atlantic herring",17,26.395497,"",44.78,1,1598,NA,1239,NA,NA,2
+"ENSCHAG00000000570"," ","ENSCHAG00000000570",NA,"lncRNA","Atlantic herring",19,0.176485,"",49.22,1,1726,NA,1727,NA,NA,1
+"ENSCHAG00000012361"," ","ENSCHAG00000012361",NA,"lncRNA","Atlantic herring",20,0.906083,"",24.56,1,3777,NA,200,NA,NA,3
+"ENSCHAG00000021066"," ","ENSCHAG00000021066",NA,"lncRNA","Atlantic herring",20,13.120297,"",46.63,1,11138,NA,1063,NA,NA,2
+"ENSCHAG00000006367"," ","ENSCHAG00000006367",NA,"lncRNA","Atlantic herring",20,22.659074,"",44.11,1,3651,NA,506,NA,NA,3
+"ENSCHAG00000006369"," ","ENSCHAG00000006369",NA,"lncRNA","Atlantic herring",20,22.663343,"",44.05,1,1915,NA,836,NA,NA,3
+"ENSCHAG00000006372"," ","ENSCHAG00000006372",NA,"lncRNA","Atlantic herring",20,22.667973,"",51.54,1,4549,NA,1226,NA,NA,3
+"ENSCHAG00000006374"," ","ENSCHAG00000006374",NA,"lncRNA","Atlantic herring",20,22.672543,"",47.13,1,1586,NA,1587,NA,NA,1
+"ENSCHAG00000010174"," ","ENSCHAG00000010174",NA,"lncRNA","Atlantic herring",23,24.771998,"",47.25,3,13670,NA,734,NA,NA,3
+"ENSCHAG00000010177"," ","ENSCHAG00000010177",NA,"lncRNA","Atlantic herring",23,24.776363,"",47.42,1,1123,NA,1124,NA,NA,1
+"ENSCHAG00000010178"," ","ENSCHAG00000010178",NA,"lncRNA","Atlantic herring",23,24.779693,"",43.95,1,1148,NA,1149,NA,NA,1
+"ENSCHAG00000011938"," ","ENSCHAG00000011938",NA,"lncRNA","Atlantic herring",24,5.280953,"",38.7,2,1358,NA,979.5,NA,NA,3.5
+"ENSCHAG00000017966"," ","ENSCHAG00000017966",NA,"lncRNA","Atlantic herring",24,5.477873,"",39.5,2,26478,NA,1684.5,NA,NA,6
+"ENSCHAG00000022995"," ","ENSCHAG00000022995",NA,"lncRNA","Atlantic herring",25,7.179684,"",39.7,3,3430,NA,1590,NA,NA,5
+"ENSCHAG00000007008"," ","ENSCHAG00000007008",NA,"lncRNA","Atlantic herring",26,0.202644,"",50.42,1,6953,NA,3456,NA,NA,7
+"ENSCHAG00000007013"," ","ENSCHAG00000007013",NA,"lncRNA","Atlantic herring",26,0.209618,"",53.28,1,1842,NA,1365,NA,NA,2
+"ENSCHAG00000007043"," ","ENSCHAG00000007043",NA,"lncRNA","Atlantic herring",26,0.229534,"",51.52,1,3654,NA,2846,NA,NA,3
+"ENSCHAG00000002701"," ","ENSCHAG00000002701",NA,"lncRNA","Atlantic herring",26,0.293031,"",53.68,1,1180,NA,1181,NA,NA,1
+"ENSCHAG00000002703"," ","ENSCHAG00000002703",NA,"lncRNA","Atlantic herring",26,0.301048,"",46,1,1599,NA,441,NA,NA,3
+"ENSCHAG00000008546"," nxph3","ENSCHAG00000008546",NA,"protein_coding","Atlantic herring",1,20.966188,"neurexophilin 3 [Source:HGNC Symbol;Acc:HGNC:8077]",46.62,1,18878,813,1571,755,1,2
+"ENSCHAG00000008557"," spop","ENSCHAG00000008557",105898864,"protein_coding","Atlantic herring",1,21.06258,"speckle type BTB/POZ protein [Source:NCBI gene;Acc:105898864]",45.85,5,80083,1125,2666,193,1124,11
+"ENSCHAG00000008704"," ","ENSCHAG00000008704",105898660,"protein_coding","Atlantic herring",1,21.177555,"cytochrome c oxidase subunit NDUFA4-like [Source:NCBI gene;Acc:105898660]",39.3,2,3264,249,884,363,270,3.5
+"ENSCHAG00000008733"," slc35b1","ENSCHAG00000008733",NA,"protein_coding","Atlantic herring",1,21.183442,"solute carrier family 35 member B1 [Source:NCBI gene;Acc:447844]",42.92,9,8024,1029,2217,628,1187,10
+"ENSCHAG00000009073"," fam117aa","ENSCHAG00000009073",NA,"protein_coding","Atlantic herring",1,21.192625,"family with sequence similarity 117 member Aa [Source:ZFIN;Acc:ZDB-GENE-110606-4]",46.34,3,11128,1093.5,2418.5,733,999,7
+"ENSCHAG00000017053"," ","ENSCHAG00000017053",NA,"protein_coding","Atlantic herring",2,0.005503,"",41.34,6,193921,3456,4907,82,999,13.5
+"ENSCHAG00000017181"," ","ENSCHAG00000017181",NA,"protein_coding","Atlantic herring",2,0.090017,"",41.39,1,125391,834,945,108,1,5
+"ENSCHAG00000017233"," ","ENSCHAG00000017233",NA,"protein_coding","Atlantic herring",2,0.257972,"",47.23,2,4320,676.5,1653,143,687.5,6
+"ENSCHAG00000017247"," ","ENSCHAG00000017247",NA,"protein_coding","Atlantic herring",2,0.270864,"",44.61,1,8459,1176,2304,127,999,8
+"ENSCHAG00000017256"," hdac3","ENSCHAG00000017256",105898498,"protein_coding","Atlantic herring",2,0.279403,"histone deacetylase 3 [Source:NCBI gene;Acc:105898498]",47.11,1,3981,1287,3609,839,1481,2
+"ENSCHAG00000017269"," ","ENSCHAG00000017269",NA,"protein_coding","Atlantic herring",2,0.28054,"",52.51,1,557,558,558,NA,NA,1
+"ENSCHAG00000017274"," RSPH1","ENSCHAG00000017274",NA,"protein_coding","Atlantic herring",2,0.284566,"radial spoke head component 1 [Source:HGNC Symbol;Acc:HGNC:12371]",41.98,1,3879,954,1842,197,689,7
+"ENSCHAG00000000605"," ","ENSCHAG00000000605",NA,"protein_coding","Atlantic herring",2,0.290735,"",44.99,2,27857,1537.5,2897.5,782,576,16.5
+"ENSCHAG00000000887"," dhrs12","ENSCHAG00000000887",NA,"protein_coding","Atlantic herring",2,0.384437,"dehydrogenase/reductase (SDR family) member 12 [Source:ZFIN;Acc:ZDB-GENE-060929-1134]",45.99,2,12437,1044,2572,NA,1527,9
+"ENSCHAG00000001113"," wdfy2","ENSCHAG00000001113",105905178,"protein_coding","Atlantic herring",2,0.39762,"WD repeat and FYVE domain-containing protein 2-like [Source:NCBI gene;Acc:105905178]",45.5,5,31366,1233,1233,NA,75,11
+"ENSCHAG00000001466"," FAM124A","ENSCHAG00000001466",NA,"protein_coding","Atlantic herring",2,0.446821,"si:dkeyp-74a11.1 [Source:ZFIN;Acc:ZDB-GENE-081104-474]",47.91,2,13340,1464,2782.5,206.5,1110,3
+"ENSCHAG00000001500"," ","ENSCHAG00000001500",NA,"protein_coding","Atlantic herring",2,0.46142,"",46.29,3,38944,1431,1431,106,NA,13
+"ENSCHAG00000007933"," ","ENSCHAG00000007933",NA,"protein_coding","Atlantic herring",2,1.501489,"",41.69,1,242670,1143,1530,NA,386,6
+"ENSCHAG00000008082"," ","ENSCHAG00000008082",NA,"protein_coding","Atlantic herring",2,1.7206,"",45.04,1,2861,1563,1693,83,45,2
+"ENSCHAG00000008095"," ","ENSCHAG00000008095",NA,"protein_coding","Atlantic herring",2,1.749956,"",46.28,4,69906,1044,1833,717,215,7.5
+"ENSCHAG00000008402"," ","ENSCHAG00000008402",NA,"protein_coding","Atlantic herring",2,1.84087,"",47.48,1,17620,2076,3172,214,665,8
+"ENSCHAG00000008414"," ","ENSCHAG00000008414",105888513,"protein_coding","Atlantic herring",2,1.86841,"chromosome unknown open reading frame, human C21orf62 [Source:NCBI gene;Acc:105888513]",53.26,1,1719,867,867,NA,NA,2
+"ENSCHAG00000008469"," ","ENSCHAG00000008469",NA,"protein_coding","Atlantic herring",2,1.904068,"",40,2,7079,411,1839,213,631,3.5
+"ENSCHAG00000017746"," ","ENSCHAG00000017746",NA,"protein_coding","Atlantic herring",2,10.392972,"",42.91,5,147478,4542,6076,59,1279,4
+"ENSCHAG00000017769"," ","ENSCHAG00000017769",NA,"protein_coding","Atlantic herring",2,10.40829,"",41.71,1,4996,4530,4530,NA,NA,2
+"ENSCHAG00000017950"," ","ENSCHAG00000017950",NA,"protein_coding","Atlantic herring",2,10.4479,"",45.23,1,151358,594,594,NA,NA,3
+"ENSCHAG00000017978"," tfcp2l1","ENSCHAG00000017978",NA,"protein_coding","Atlantic herring",2,10.45515,"transcription factor CP2-like 1 [Source:ZFIN;Acc:ZDB-GENE-040704-58]",42.54,1,10890,1362,1362,NA,NA,13
+"ENSCHAG00000018184"," clasp1a","ENSCHAG00000018184",NA,"protein_coding","Atlantic herring",2,10.473804,"cytoplasmic linker associated protein 1a [Source:ZFIN;Acc:ZDB-GENE-081104-520]",46.26,10,178111,4374,4925,550,NA,31
+"ENSCHAG00000020700"," ","ENSCHAG00000020700",NA,"protein_coding","Atlantic herring",2,10.601179,"",46.94,1,59834,909,909,NA,NA,3
+"ENSCHAG00000020721"," ","ENSCHAG00000020721",NA,"protein_coding","Atlantic herring",2,10.665026,"",40.03,2,13017,982.5,1813.5,317,512,7.5
+"ENSCHAG00000020732"," ","ENSCHAG00000020732",NA,"protein_coding","Atlantic herring",2,10.692469,"",39.94,2,5988,630,1722,128.5,274,4.5
+"ENSCHAG00000020744"," ","ENSCHAG00000020744",NA,"protein_coding","Atlantic herring",2,10.692469,"",40.87,1,2950,657,657,NA,NA,2
+"ENSCHAG00000002100"," kdm6a","ENSCHAG00000002100",NA,"protein_coding","Atlantic herring",2,22.994728,"lysine (K)-specific demethylase 6A [Source:ZFIN;Acc:ZDB-GENE-081105-56]",44.62,8,68050,4137,4597,NA,459,30
+"ENSCHAG00000022620"," dipk2b","ENSCHAG00000022620",NA,"protein_coding","Atlantic herring",2,23.064604,"divergent protein kinase domain 2B [Source:ZFIN;Acc:ZDB-GENE-110411-223]",45.64,1,6112,1377,1691,NA,313,6
+"ENSCHAG00000022629"," ccdc80","ENSCHAG00000022629",105908988,"protein_coding","Atlantic herring",2,23.219658,"coiled-coil domain-containing protein 80-like [Source:NCBI gene;Acc:105908988]",46.7,1,15456,2646,3954,977,329,7
+"ENSCHAG00000022633"," slc35a5","ENSCHAG00000022633",105908995,"protein_coding","Atlantic herring",2,23.236283,"solute carrier family 35 member A5 [Source:NCBI gene;Acc:105908995]",47.15,2,5363,1419,2424.5,66,937.5,5.5
+"ENSCHAG00000022668"," f5","ENSCHAG00000022668",NA,"protein_coding","Atlantic herring",2,23.24341,"coagulation factor V [Source:ZFIN;Acc:ZDB-GENE-030131-5531]",41.9,10,17034,4167,4302,120,162,24.5
+"ENSCHAG00000022945"," gpr161","ENSCHAG00000022945",NA,"protein_coding","Atlantic herring",2,23.261845,"G protein-coupled receptor 161 [Source:NCBI gene;Acc:368421]",47.35,1,7469,1647,3470,580,1241,5
+"ENSCHAG00000022971"," dcaf6","ENSCHAG00000022971",NA,"protein_coding","Atlantic herring",2,23.273635,"ddb1 and cul4 associated factor 6 [Source:ZFIN;Acc:ZDB-GENE-090206-2]",45.22,10,36716,2289,2776,486,NA,17
+"ENSCHAG00000008521"," shank3a","ENSCHAG00000008521",NA,"protein_coding","Atlantic herring",3,14.509907,"SH3 and multiple ankyrin repeat domains 3a [Source:ZFIN;Acc:ZDB-GENE-060503-369]",47.42,7,302800,5037,6724,334,999,28
+"ENSCHAG00000008836"," ","ENSCHAG00000008836",NA,"protein_coding","Atlantic herring",3,14.822693,"",46.09,1,856,681,681,NA,NA,2
+"ENSCHAG00000008855"," rabl2","ENSCHAG00000008855",105912558,"protein_coding","Atlantic herring",3,14.829849,"RAB, member of RAS oncogene family like 2A [Source:NCBI gene;Acc:105912558]",46.74,5,5592,675,2404,651,1547,9
+"ENSCHAG00000009083"," ODF3","ENSCHAG00000009083",105912557,"protein_coding","Atlantic herring",3,14.841572,"outer dense fiber of sperm tails 3 [Source:NCBI gene;Acc:105912557]",52.02,1,1779,777,838,NA,60,6
+"ENSCHAG00000009109"," zgc:77752","ENSCHAG00000009109",NA,"protein_coding","Atlantic herring",3,14.847366,"zgc:77752 [Source:ZFIN;Acc:ZDB-GENE-040426-1867]",47.11,1,6057,1452,1452,NA,NA,6
+"ENSCHAG00000009143"," arf5","ENSCHAG00000009143",105912562,"protein_coding","Atlantic herring",3,14.889239,"ADP-ribosylation factor 4 [Source:NCBI gene;Acc:105912562]",45.12,2,6324,543,3027,215,2267,5.5
+"ENSCHAG00000021723"," vwf","ENSCHAG00000021723",NA,"protein_coding","Atlantic herring",3,16.683838,"von Willebrand factor [Source:ZFIN;Acc:ZDB-GENE-070103-1]",48.35,1,38282,8196,8823,626,NA,54
+"ENSCHAG00000006657"," usp3","ENSCHAG00000006657",NA,"protein_coding","Atlantic herring",3,18.293127,"ubiquitin specific peptidase 3 [Source:ZFIN;Acc:ZDB-GENE-030131-5142]",44.38,10,23131,1653,2642,483,999,17
+"ENSCHAG00000007655"," ","ENSCHAG00000007655",NA,"protein_coding","Atlantic herring",3,18.297086,"",41.77,1,655,282,282,NA,NA,2
+"ENSCHAG00000007717"," DAPK2","ENSCHAG00000007717",NA,"protein_coding","Atlantic herring",3,18.423005,"death associated protein kinase 2 [Source:HGNC Symbol;Acc:HGNC:2675]",47.36,4,29749,1171.5,1171.5,NA,NA,9
+"ENSCHAG00000007897"," tbc1d2b","ENSCHAG00000007897",NA,"protein_coding","Atlantic herring",3,18.455689,"TBC1 domain family, member 2B [Source:ZFIN;Acc:ZDB-GENE-100922-148]",45.85,1,29587,2907,5097,136,2052,13
+"ENSCHAG00000007931"," cib2","ENSCHAG00000007931",105892468,"protein_coding","Atlantic herring",3,18.51003,"calcium and integrin binding family member 2 [Source:NCBI gene;Acc:105892468]",44.19,2,37160,660,1549,327,560,6
+"ENSCHAG00000007974"," lrrc61","ENSCHAG00000007974",105892521,"protein_coding","Atlantic herring",3,18.538549,"leucine rich repeat containing 61 [Source:NCBI gene;Acc:105892521]",38.7,4,7988,777,2048,NA,1270,9
+"ENSCHAG00000008118"," idh3a","ENSCHAG00000008118",105892520,"protein_coding","Atlantic herring",3,18.547211,"isocitrate dehydrogenase (NAD(+)) 3 catalytic subunit alpha [Source:NCBI gene;Acc:105892520]",43.61,8,11081,1092,1847,143,754,10
+"ENSCHAG00000009400"," DNAJA4","ENSCHAG00000009400",NA,"protein_coding","Atlantic herring",3,18.556418,"DnaJ heat shock protein family (Hsp40) member A4 [Source:HGNC Symbol;Acc:HGNC:14885]",43.25,1,14877,1365,2959,152,610,11
+"ENSCHAG00000009594"," acsbg1","ENSCHAG00000009594",105892397,"protein_coding","Atlantic herring",3,18.558451,"acyl-CoA synthetase bubblegum family member 1 [Source:NCBI gene;Acc:105892397]",44.51,10,7772,2013,2100,51.5,NA,14
+"ENSCHAG00000010048"," rps27l","ENSCHAG00000010048",NA,"protein_coding","Atlantic herring",3,18.571523,"ribosomal protein S27 like [Source:ZFIN;Acc:ZDB-GENE-060331-65]",39.96,3,1876,300,300,NA,NA,4
+"ENSCHAG00000010155"," megf8","ENSCHAG00000010155",105892440,"protein_coding","Atlantic herring",3,18.574531,"RAB8B, member RAS oncogene family [Source:NCBI gene;Acc:105892440]",46.5,3,15810,594,738,143,2798,7
+"ENSCHAG00000010296"," trpm1b","ENSCHAG00000010296",NA,"protein_coding","Atlantic herring",3,18.59193,"transient receptor potential cation channel, subfamily M, member 1b [Source:ZFIN;Acc:ZDB-GENE-070424-31]",47.76,10,43880,5370,6526,276,NA,27
+"ENSCHAG00000013364"," ","ENSCHAG00000013364",NA,"protein_coding","Atlantic herring",3,18.60249,"",50.85,1,760,204,204,NA,NA,2
+"ENSCHAG00000015392"," th","ENSCHAG00000015392",105900747,"protein_coding","Atlantic herring",3,25.59619,"tyrosine hydroxylase [Source:NCBI gene;Acc:105900747]",42.4,6,9847,1341,2197,185,762,12.5
+"ENSCHAG00000016146"," ","ENSCHAG00000016146",NA,"protein_coding","Atlantic herring",3,25.636302,"si:dkeyp-19e1.3 [Source:ZFIN;Acc:ZDB-GENE-081104-56]",48.76,1,13092,2352,3892,NA,1539,13
+"ENSCHAG00000016164"," ","ENSCHAG00000016164",105900785,"protein_coding","Atlantic herring",3,25.649135,"ubiquitin-conjugating enzyme E2 variant 3-like [Source:NCBI gene;Acc:105900785]",43.24,1,5864,1416,2589,NA,1172,12
+"ENSCHAG00000016320"," spty2d1","ENSCHAG00000016320",NA,"protein_coding","Atlantic herring",3,25.656222,"SPT2 chromatin protein domain containing 1 [Source:NCBI gene;Acc:337191]",47.31,2,4723,1980,2876,894,0,6
+"ENSCHAG00000016338"," tmem86a","ENSCHAG00000016338",105900790,"protein_coding","Atlantic herring",3,25.661073,"transmembrane protein 86A [Source:NCBI gene;Acc:105900790]",44.9,1,4195,714,890,175,NA,3
+"ENSCHAG00000016361"," b4galnt4a","ENSCHAG00000016361",NA,"protein_coding","Atlantic herring",3,25.696284,"beta-1,4-N-acetyl-galactosaminyl transferase 4a [Source:ZFIN;Acc:ZDB-GENE-100422-4]",47.88,5,156092,2319,3799,NA,1479,17
+"ENSCHAG00000016981"," abtb2b","ENSCHAG00000016981",NA,"protein_coding","Atlantic herring",3,25.853761,"ankyrin repeat and BTB (POZ) domain containing 2b [Source:ZFIN;Acc:ZDB-GENE-100422-14]",48.92,3,51624,3132,4632,378.5,740,18
+"ENSCHAG00000023183"," bmp7b","ENSCHAG00000023183",NA,"protein_coding","Atlantic herring",4,7.8769,"bone morphogenetic protein 7b [Source:ZFIN;Acc:ZDB-GENE-060929-328]",47.63,3,28010,1194,2422,447,698,6
+"ENSCHAG00000023191"," spo11","ENSCHAG00000023191",NA,"protein_coding","Atlantic herring",4,7.910411,"SPO11 initiator of meiotic double stranded breaks [Source:ZFIN;Acc:ZDB-GENE-040426-1900]",43.62,2,6627,1119,1119,NA,NA,12.5
+"ENSCHAG00000023223"," rbm38","ENSCHAG00000023223",105906784,"protein_coding","Atlantic herring",4,7.924348,"RNA-binding protein 38-like [Source:NCBI gene;Acc:105906784]",46.18,1,13571,717,2540,519,1302,4
+"ENSCHAG00000023231"," mipb","ENSCHAG00000023231",105906797,"protein_coding","Atlantic herring",4,7.941307,"lens fiber major intrinsic protein-like [Source:NCBI gene;Acc:105906797]",48.59,1,2156,792,1215,NA,422,4
+"ENSCHAG00000023236"," ","ENSCHAG00000023236",105906783,"protein_coding","Atlantic herring",4,7.9473,"aquaporin-4-like [Source:NCBI gene;Acc:105906783]",46.56,1,2776,855,855,NA,NA,6
+"ENSCHAG00000023256"," baz2a","ENSCHAG00000023256",105906782,"protein_coding","Atlantic herring",4,7.95369,"bromodomain adjacent to zinc finger domain protein 2A-like [Source:NCBI gene;Acc:105906782]",49.31,2,20506,8169,9747,NA,1577,28
+"ENSCHAG00000023309"," ptges3b","ENSCHAG00000023309",105906841,"protein_coding","Atlantic herring",4,7.978655,"prostaglandin E synthase 3-like [Source:NCBI gene;Acc:105906841]",39.14,1,4736,480,1889,400,1007,8
+"ENSCHAG00000023337"," itga5","ENSCHAG00000023337",105906789,"protein_coding","Atlantic herring",4,7.999404,"integrin alpha-5-like [Source:NCBI gene;Acc:105906789]",46.75,9,44795,2883,6036,312,2950,24
+"ENSCHAG00000023888"," csrnp2","ENSCHAG00000023888",NA,"protein_coding","Atlantic herring",4,8.084838,"cysteine-serine-rich nuclear protein 2 [Source:ZFIN;Acc:ZDB-GENE-090312-137]",53.02,1,2911,1224,1224,NA,NA,4
+"ENSCHAG00000023898"," ","ENSCHAG00000023898",NA,"protein_coding","Atlantic herring",4,8.089404,"",44.4,1,30204,2379,4408,401,1626,25
+"ENSCHAG00000023907"," or135-1","ENSCHAG00000023907",105906778,"protein_coding","Atlantic herring",4,8.125738,"olfactory receptor 1M1-like [Source:NCBI gene;Acc:105906778]",51.17,1,1410,951,951,NA,NA,2
+"ENSCHAG00000023913"," fmodb","ENSCHAG00000023913",105906776,"protein_coding","Atlantic herring",4,8.130495,"fibromodulin [Source:NCBI gene;Acc:105906776]",44.58,3,2545,1011,1011,NA,NA,3
+"ENSCHAG00000023946"," mapkapk2b","ENSCHAG00000023946",NA,"protein_coding","Atlantic herring",4,8.136195,"MAPK activated protein kinase 2b [Source:ZFIN;Acc:ZDB-GENE-071018-1]",42.84,8,9543,1125,1250,NA,151,11
+"ENSCHAG00000024355"," eif2d","ENSCHAG00000024355",105906791,"protein_coding","Atlantic herring",4,8.147636,"eukaryotic translation initiation factor 2D [Source:NCBI gene;Acc:105906791]",43.81,6,6546,1737,1966,NA,228,14
+"ENSCHAG00000025049"," slc12a5b","ENSCHAG00000025049",105906774,"protein_coding","Atlantic herring",4,8.180174,"solute carrier family 12 member 5-like [Source:NCBI gene;Acc:105906774]",44.98,10,56440,3319.5,3506.5,31,179,24.5
+"ENSCHAG00000024478"," sulf2b","ENSCHAG00000024478",NA,"protein_coding","Atlantic herring",4,17.678738,"sulfatase 2b [Source:ZFIN;Acc:ZDB-GENE-030131-775]",47.16,10,124937,2679,2854,51,3466.5,20
+"ENSCHAG00000024718"," si:ch211-218g4.2","ENSCHAG00000024718",NA,"protein_coding","Atlantic herring",4,17.804439,"si:ch211-218g4.2 [Source:ZFIN;Acc:ZDB-GENE-090312-60]",48.86,1,81121,3546,3546,NA,NA,11
+"ENSCHAG00000024730"," ","ENSCHAG00000024730",NA,"protein_coding","Atlantic herring",4,17.913467,"",39.59,1,1651,426,426,NA,NA,3
+"ENSCHAG00000024739"," phf20b","ENSCHAG00000024739",105906431,"protein_coding","Atlantic herring",4,17.969066,"PHD finger protein 20 [Source:NCBI gene;Acc:105906431]",43.97,3,11775,3003,3384,189.5,NA,18
+"ENSCHAG00000011120"," ","ENSCHAG00000011120",NA,"protein_coding","Atlantic herring",4,26.755682,"",41.82,1,268710,681,1954,429.5,411,7
+"ENSCHAG00000011290"," ","ENSCHAG00000011290",NA,"protein_coding","Atlantic herring",4,26.824629,"",41.7,3,378321,774,1328,156,221,6
+"ENSCHAG00000011312"," ","ENSCHAG00000011312",NA,"protein_coding","Atlantic herring",4,26.837226,"",40.91,1,36905,726,726,NA,NA,7
+"ENSCHAG00000011355"," ","ENSCHAG00000011355",NA,"protein_coding","Atlantic herring",4,26.854692,"",44.43,1,645,387,387,NA,NA,3
+"ENSCHAG00000013549"," ","ENSCHAG00000013549",NA,"protein_coding","Atlantic herring",4,29.259703,"",52.16,2,9032,1354.5,1354.5,NA,NA,3.5
+"ENSCHAG00000013592"," ","ENSCHAG00000013592",NA,"protein_coding","Atlantic herring",4,29.384493,"",45.54,1,2254,1089,1089,NA,NA,4
+"ENSCHAG00000021302"," igsf8","ENSCHAG00000021302",NA,"protein_coding","Atlantic herring",5,7.904552,"immunoglobulin superfamily, member 8 [Source:ZFIN;Acc:ZDB-GENE-040426-2444]",45.2,1,10159,1872,4815,430,2511,6
+"ENSCHAG00000021305"," sp7","ENSCHAG00000021305",105912223,"protein_coding","Atlantic herring",5,7.953058,"Sp7 transcription factor [Source:NCBI gene;Acc:105912223]",64.42,1,1289,1290,1290,NA,NA,1
+"ENSCHAG00000021309"," tarbp2","ENSCHAG00000021309",105912229,"protein_coding","Atlantic herring",5,7.963022,"TARBP2 subunit of RISC loading complex [Source:NCBI gene;Acc:105912229]",41.35,2,6076,990,2810,572,1246,6.5
+"ENSCHAG00000021367"," lrp1aa","ENSCHAG00000021367",NA,"protein_coding","Atlantic herring",5,8.005329,"low density lipoprotein receptor-related protein 1Aa [Source:ZFIN;Acc:ZDB-GENE-030131-7889]",46.83,9,127290,13441.5,14011,26,573,87
+"ENSCHAG00000022356"," ","ENSCHAG00000022356",NA,"protein_coding","Atlantic herring",5,8.156771,"",41.85,3,3019,807,1096,NA,288,5
+"ENSCHAG00000022403"," nuf2","ENSCHAG00000022403",105909904,"protein_coding","Atlantic herring",5,8.176942,"NUF2 component of NDC80 kinetochore complex [Source:NCBI gene;Acc:105909904]",41.98,1,8804,1371,2485,84.5,942,14
+"ENSCHAG00000022422"," rab43","ENSCHAG00000022422",105909856,"protein_coding","Atlantic herring",5,8.185929,"RAB43, member RAS oncogene family [Source:NCBI gene;Acc:105909856]",42.23,1,3030,627,1172,544,NA,3
+"ENSCHAG00000022429"," zgc:77375","ENSCHAG00000022429",NA,"protein_coding","Atlantic herring",5,8.194259,"zgc:77375 [Source:ZFIN;Acc:ZDB-GENE-040426-1827]",43.98,1,8058,1275,1275,NA,NA,8
+"ENSCHAG00000013389"," skib","ENSCHAG00000013389",NA,"protein_coding","Atlantic herring",5,17.566066,"v-ski avian sarcoma viral oncogene homolog b [Source:ZFIN;Acc:ZDB-GENE-990715-10]",47.85,1,44737,2178,2178,NA,NA,8
+"ENSCHAG00000013468"," plch2b","ENSCHAG00000013468",NA,"protein_coding","Atlantic herring",5,17.621762,"phospholipase C, eta 2b [Source:ZFIN;Acc:ZDB-GENE-101112-1]",48.13,5,24005,3018,3018,NA,NA,20
+"ENSCHAG00000013881"," si:dkey-183j2.10","ENSCHAG00000013881",NA,"protein_coding","Atlantic herring",5,17.647466,"si:dkey-183j2.10 [Source:ZFIN;Acc:ZDB-GENE-130530-729]",48.7,1,8582,1350,1350,NA,NA,9
+"ENSCHAG00000014010"," brpf3a","ENSCHAG00000014010",NA,"protein_coding","Atlantic herring",5,17.662758,"bromodomain and PHD finger containing, 3a [Source:ZFIN;Acc:ZDB-GENE-130530-730]",51.73,2,11157,3375,3375,NA,NA,13
+"ENSCHAG00000014205"," mon1bb","ENSCHAG00000014205",NA,"protein_coding","Atlantic herring",5,17.678603,"MON1 secretory trafficking family member Bb [Source:ZFIN;Acc:ZDB-GENE-030131-3790]",53.54,4,5193,1639.5,1639.5,NA,NA,6
+"ENSCHAG00000014495"," rnpep","ENSCHAG00000014495",NA,"protein_coding","Atlantic herring",5,17.68688,"arginyl aminopeptidase (aminopeptidase B) [Source:ZFIN;Acc:ZDB-GENE-040718-241]",48.51,10,7593,1881,1881,NA,NA,12
+"ENSCHAG00000015850"," adipor1a","ENSCHAG00000015850",NA,"protein_coding","Atlantic herring",5,17.704543,"adiponectin receptor 1a [Source:ZFIN;Acc:ZDB-GENE-040718-169]",49.9,1,4853,1137,1137,NA,NA,8
+"ENSCHAG00000015959"," rabif","ENSCHAG00000015959",NA,"protein_coding","Atlantic herring",5,17.711023,"RAB interacting factor [Source:ZFIN;Acc:ZDB-GENE-040718-216]",44.25,1,1504,405,405,NA,NA,3
+"ENSCHAG00000016007"," kdm5ba","ENSCHAG00000016007",NA,"protein_coding","Atlantic herring",5,17.71463,"lysine (K)-specific demethylase 5Ba [Source:ZFIN;Acc:ZDB-GENE-030131-5379]",48.15,9,26794,4273.5,4273.5,NA,NA,24
+"ENSCHAG00000017407"," ipo9","ENSCHAG00000017407",NA,"protein_coding","Atlantic herring",5,17.742617,"importin 9 [Source:ZFIN;Acc:ZDB-GENE-040426-2953]",48.47,4,23295,2961,2961,NA,NA,22
+"ENSCHAG00000018848"," shisa4","ENSCHAG00000018848",NA,"protein_coding","Atlantic herring",5,17.773805,"shisa family member 4 [Source:ZFIN;Acc:ZDB-GENE-050417-419]",48.67,1,4844,576,576,NA,NA,4
+"ENSCHAG00000018881"," lmod1b","ENSCHAG00000018881",NA,"protein_coding","Atlantic herring",5,17.783693,"leiomodin 1b (smooth muscle) [Source:ZFIN;Acc:ZDB-GENE-141215-22]",52.38,2,5018,1885.5,1885.5,NA,NA,5
+"ENSCHAG00000018986"," rap1ab","ENSCHAG00000018986",105901888,"protein_coding","Atlantic herring",5,17.821225,"ras-related protein Rap-1A-like [Source:NCBI gene;Acc:105901888]",48.07,3,9825,444,444,NA,NA,6
+"ENSCHAG00000019140"," si:dkey-43k4.5","ENSCHAG00000019140",NA,"protein_coding","Atlantic herring",5,17.882697,"si:dkey-43k4.5 [Source:ZFIN;Acc:ZDB-GENE-120215-82]",44.69,2,2890,1332,1332,NA,NA,4
+"ENSCHAG00000019189"," ","ENSCHAG00000019189",NA,"protein_coding","Atlantic herring",5,17.886328,"",39.78,9,20730,1453.5,4703,NA,3274,11
+"ENSCHAG00000015390"," ","ENSCHAG00000015390",NA,"protein_coding","Atlantic herring",6,8.203285,"",45.72,1,1250,1128,1128,NA,NA,2
+"ENSCHAG00000015426"," ","ENSCHAG00000015426",NA,"protein_coding","Atlantic herring",6,8.243527,"",44.59,1,1127,1128,1128,NA,NA,1
+"ENSCHAG00000015431"," ","ENSCHAG00000015431",NA,"protein_coding","Atlantic herring",6,8.249053,"",43.69,1,1361,1245,1245,NA,NA,2
+"ENSCHAG00000015482"," ","ENSCHAG00000015482",NA,"protein_coding","Atlantic herring",6,8.289425,"",44.53,1,1982,1185,1185,NA,NA,2
+"ENSCHAG00000013738"," adcy7","ENSCHAG00000013738",NA,"protein_coding","Atlantic herring",6,15.411752,"adenylate cyclase 7 [Source:ZFIN;Acc:ZDB-GENE-040713-1]",43.76,3,26723,3327,3837,509,NA,25
+"ENSCHAG00000013986"," brd7","ENSCHAG00000013986",105899788,"protein_coding","Atlantic herring",6,15.439925,"bromodomain containing 7 [Source:NCBI gene;Acc:105899788]",43.64,2,11052,1944,2201,147,108,16.5
+"ENSCHAG00000014022"," nkd1","ENSCHAG00000014022",NA,"protein_coding","Atlantic herring",6,15.504051,"NKD inhibitor of WNT signaling pathway 1 [Source:NCBI gene;Acc:751108]",47.82,1,30216,1449,3422,972,999,10
+"ENSCHAG00000014031"," nod2","ENSCHAG00000014031",NA,"protein_coding","Atlantic herring",6,15.546092,"nucleotide-binding oligomerization domain containing 2 [Source:ZFIN;Acc:ZDB-GENE-061108-4]",40.37,3,7867,2838,3546,353,NA,11
+"ENSCHAG00000014127"," cylda","ENSCHAG00000014127",105899779,"protein_coding","Atlantic herring",6,15.55672,"CYLD lysine 63 deubiquitinase [Source:NCBI gene;Acc:105899779]",46.77,7,17032,2766,4417,177,1448,16
+"ENSCHAG00000014333"," sall1a","ENSCHAG00000014333",105899763,"protein_coding","Atlantic herring",6,15.650299,"spalt like transcription factor 1 [Source:NCBI gene;Acc:105899763]",44.04,2,177745,3927,5381.5,453.5,999,3
+"ENSCHAG00000000301"," irx5a","ENSCHAG00000000301",105899764,"protein_coding","Atlantic herring",6,16.639956,"iroquois homeobox 5 [Source:NCBI gene;Acc:105899764]",43.71,1,2758,1344,1344,NA,NA,3
+"ENSCHAG00000017649"," MAF","ENSCHAG00000017649",NA,"protein_coding","Atlantic herring",6,17.914174,"MAF bZIP transcription factor [Source:HGNC Symbol;Acc:HGNC:6776]",45.46,1,102381,990,2229,466,385,3
+"ENSCHAG00000018095"," myo9aa","ENSCHAG00000018095",NA,"protein_coding","Atlantic herring",6,18.735329,"myosin IXAa [Source:NCBI gene;Acc:100006612]",44.89,6,67832,4224,4368,65,NA,26
+"ENSCHAG00000018171"," gramd2aa","ENSCHAG00000018171",NA,"protein_coding","Atlantic herring",6,18.805254,"GRAM domain containing 2Aa [Source:ZFIN;Acc:ZDB-GENE-040724-9]",39.57,1,11392,567,567,NA,NA,5
+"ENSCHAG00000018202"," znf609b","ENSCHAG00000018202",105892919,"protein_coding","Atlantic herring",6,18.834058,"zinc finger protein 609 [Source:NCBI gene;Acc:105892919]",41.49,1,68817,4236,4949,353,4,8
+"ENSCHAG00000018218"," trip4","ENSCHAG00000018218",105892940,"protein_coding","Atlantic herring",6,18.906868,"thyroid hormone receptor interactor 4 [Source:NCBI gene;Acc:105892940]",43.21,2,46380,1719,2327,294,312,13
+"ENSCHAG00000018269"," ADAMTS7","ENSCHAG00000018269",NA,"protein_coding","Atlantic herring",6,18.955702,"ADAM metallopeptidase with thrombospondin type 1 motif 7 [Source:HGNC Symbol;Acc:HGNC:223]",43.37,10,113841,5142,5292,416,149,25
+"ENSCHAG00000019101"," rxfp3.3a2","ENSCHAG00000019101",NA,"protein_coding","Atlantic herring",6,19.07036,"relaxin family peptide receptor 3.3a2 [Source:ZFIN;Acc:ZDB-GENE-121030-2]",42.47,1,2010,1239,1239,NA,NA,3
+"ENSCHAG00000019130"," ","ENSCHAG00000019130",NA,"protein_coding","Atlantic herring",6,19.078758,"",40.92,2,5510,2199,3151,34,916,13.5
+"ENSCHAG00000019148"," drd4b","ENSCHAG00000019148",105892881,"protein_coding","Atlantic herring",6,19.092325,"dopamine receptor D4 [Source:NCBI gene;Acc:105892881]",42.7,1,3425,1194,1194,NA,NA,4
+"ENSCHAG00000019155"," sirt3","ENSCHAG00000019155",105892937,"protein_coding","Atlantic herring",6,19.099173,"sirtuin 3 [Source:NCBI gene;Acc:105892937]",41.18,1,4074,1074,1377,150.5,NA,9
+"ENSCHAG00000007010"," mvb12bb","ENSCHAG00000007010",NA,"protein_coding","Atlantic herring",7,23.847878,"multivesicular body subunit 12Bb [Source:ZFIN;Acc:ZDB-GENE-080414-2]",47.19,1,53342,828,1911,276,528,10
+"ENSCHAG00000007017"," lmx1bb","ENSCHAG00000007017",NA,"protein_coding","Atlantic herring",7,23.920279,"LIM homeobox transcription factor 1, beta b [Source:ZFIN;Acc:ZDB-GENE-050114-2]",48.49,2,91977,729,729,NA,NA,5
+"ENSCHAG00000007135"," zbtb34","ENSCHAG00000007135",105905306,"protein_coding","Atlantic herring",7,24.091777,"zinc finger and BTB domain containing 34 [Source:NCBI gene;Acc:105905306]",69.24,1,1631,1632,1632,NA,NA,1
+"ENSCHAG00000007191"," ralgps1","ENSCHAG00000007191",NA,"protein_coding","Atlantic herring",7,24.102961,"Ral GEF with PH domain and SH3 binding motif 1 [Source:NCBI gene;Acc:100101642]",48.79,7,149932,1731,2134,89,402,15
+"ENSCHAG00000008718"," angptl2b","ENSCHAG00000008718",105905313,"protein_coding","Atlantic herring",7,24.155001,"angiopoietin-related protein 2-like [Source:NCBI gene;Acc:105905313]",48.53,3,27917,1590,3151,436,1123,5
+"ENSCHAG00000016998"," adrb3a","ENSCHAG00000016998",NA,"protein_coding","Atlantic herring",7,26.915926,"adrenoceptor beta 3a [Source:ZFIN;Acc:ZDB-GENE-080917-21]",43.72,1,24069,1380,2515,NA,1134,2
+"ENSCHAG00000017006"," npm2a","ENSCHAG00000017006",NA,"protein_coding","Atlantic herring",7,26.945463,"nucleophosmin/nucleoplasmin, 2a [Source:ZFIN;Acc:ZDB-GENE-060810-57]",40.03,2,1895,414,642,2,287.5,4
+"ENSCHAG00000017021"," got1l1","ENSCHAG00000017021",105895275,"protein_coding","Atlantic herring",7,26.947848,"aspartate aminotransferase, cytoplasmic-like [Source:NCBI gene;Acc:105895275]",44.96,1,4525,1203,1203,NA,NA,8
+"ENSCHAG00000017082"," ","ENSCHAG00000017082",NA,"protein_coding","Atlantic herring",7,26.963322,"",48.27,1,2483,2484,2484,NA,NA,1
+"ENSCHAG00000017087"," prlhr2a","ENSCHAG00000017087",105895297,"protein_coding","Atlantic herring",7,26.976427,"prolactin-releasing peptide receptor-like [Source:NCBI gene;Acc:105895297]",47.85,2,6277,1068,1068,NA,NA,3
+"ENSCHAG00000017130"," ","ENSCHAG00000017130",NA,"protein_coding","Atlantic herring",7,26.990874,"",42.13,1,1499,741,997,253,1,2
+"ENSCHAG00000017140"," ","ENSCHAG00000017140",NA,"protein_coding","Atlantic herring",7,26.997454,"",44.74,2,25044,2082,3919,NA,1836,4.5
+"ENSCHAG00000017179"," adgra2","ENSCHAG00000017179",NA,"protein_coding","Atlantic herring",7,27.0248,"adhesion G protein-coupled receptor A2 [Source:NCBI gene;Acc:560700]",49.57,5,64079,3675,5905,854,2229,18
+"ENSCHAG00000018351"," pdlim2","ENSCHAG00000018351",NA,"protein_coding","Atlantic herring",7,27.095065,"PDZ and LIM domain 2 (mystique) [Source:ZFIN;Acc:ZDB-GENE-070308-4]",50.47,1,47080,987,1027,39,NA,9
+"ENSCHAG00000018358"," sorbs3","ENSCHAG00000018358",NA,"protein_coding","Atlantic herring",7,27.154889,"sorbin and SH3 domain containing 3 [Source:ZFIN;Acc:ZDB-GENE-050327-1]",45.98,1,39136,2364,3472,453,199,20
+"ENSCHAG00000018364"," sytl1","ENSCHAG00000018364",NA,"protein_coding","Atlantic herring",7,27.196219,"synaptotagmin-like 1 [Source:ZFIN;Acc:ZDB-GENE-060503-439]",43.54,1,13190,1605,3476,29,1840,14
+"ENSCHAG00000000295"," ebf2","ENSCHAG00000000295",NA,"protein_coding","Atlantic herring",7,27.789192,"EBF transcription factor 2 [Source:NCBI gene;Acc:30692]",46.8,1,30819,1779,2323,510,32,15
+"ENSCHAG00000000329"," ","ENSCHAG00000000329",NA,"protein_coding","Atlantic herring",7,27.91063,"",46.95,1,3543,1008,1008,NA,NA,7
+"ENSCHAG00000001526"," ank1a","ENSCHAG00000001526",NA,"protein_coding","Atlantic herring",7,28.012625,"ankyrin 1, erythrocytic a [Source:ZFIN;Acc:ZDB-GENE-041010-44]",47.44,10,63280,4371,5287,519.5,999,35
+"ENSCHAG00000007056"," ","ENSCHAG00000007056",NA,"protein_coding","Atlantic herring",7,28.088866,"",47.09,1,7736,1686,3713,491,1042,7
+"ENSCHAG00000008415"," msi2a","ENSCHAG00000008415",NA,"protein_coding","Atlantic herring",8,20.325406,"musashi RNA-binding protein 2a [Source:ZFIN;Acc:ZDB-GENE-030826-25]",48.22,6,255158,1002,1217.5,227,34,12.5
+"ENSCHAG00000009171"," ","ENSCHAG00000009171",NA,"protein_coding","Atlantic herring",8,20.533901,"",50.78,1,706,291,291,NA,NA,3
+"ENSCHAG00000009272"," nf1b","ENSCHAG00000009272",NA,"protein_coding","Atlantic herring",8,20.593279,"neurofibromin 1b [Source:ZFIN;Acc:ZDB-GENE-091111-4]",46.14,5,65210,8163,8206,42,NA,57
+"ENSCHAG00000022972"," DYNC2H1","ENSCHAG00000022972",NA,"protein_coding","Atlantic herring",9,3.772498,"dynein cytoplasmic 2 heavy chain 1 [Source:HGNC Symbol;Acc:HGNC:2962]",47.89,6,168639,12570,12841,134.5,NA,90.5
+"ENSCHAG00000013767"," ","ENSCHAG00000013767",NA,"protein_coding","Atlantic herring",10,13.050205,"",44.61,1,13230,552,5240,1708.5,1268,5
+"ENSCHAG00000013781"," ","ENSCHAG00000013781",NA,"protein_coding","Atlantic herring",10,13.06016,"",50.63,1,3159,306,306,NA,NA,3
+"ENSCHAG00000015279"," osbpl9","ENSCHAG00000015279",105898331,"protein_coding","Atlantic herring",10,14.872002,"oxysterol binding protein like 9 [Source:NCBI gene;Acc:105898331]",43.6,10,60056,2182.5,2360,NA,298,23
+"ENSCHAG00000016469"," ","ENSCHAG00000016469",NA,"protein_coding","Atlantic herring",10,14.909263,"",56.2,1,668,300,300,NA,NA,2
+"ENSCHAG00000016498"," cirbpa","ENSCHAG00000016498",NA,"protein_coding","Atlantic herring",10,14.920111,"cold inducible RNA binding protein a [Source:ZFIN;Acc:ZDB-GENE-050417-329]",53.85,1,779,420,420,NA,NA,2
+"ENSCHAG00000016538"," ","ENSCHAG00000016538",NA,"protein_coding","Atlantic herring",10,14.926851,"",48.17,1,1201,261,261,NA,NA,2
+"ENSCHAG00000016561"," ","ENSCHAG00000016561",NA,"protein_coding","Atlantic herring",10,14.938493,"",54.94,1,647,360,360,NA,NA,2
+"ENSCHAG00000016569"," ","ENSCHAG00000016569",NA,"protein_coding","Atlantic herring",10,14.961346,"",55.22,1,631,312,312,NA,NA,2
+"ENSCHAG00000016604"," tor3a","ENSCHAG00000016604",105898305,"protein_coding","Atlantic herring",10,14.966313,"torsin family 3 member A [Source:NCBI gene;Acc:105898305]",42.08,1,3991,1104,1815,31,NA,8
+"ENSCHAG00000016619"," calr","ENSCHAG00000016619",NA,"protein_coding","Atlantic herring",10,14.972373,"calreticulin [Source:ZFIN;Acc:ZDB-GENE-030131-4042]",43.82,1,3872,1278,1278,NA,NA,9
+"ENSCHAG00000016805"," inpp5d","ENSCHAG00000016805",NA,"protein_coding","Atlantic herring",10,14.985309,"inositol polyphosphate-5-phosphatase D [Source:ZFIN;Acc:ZDB-GENE-100922-30]",42.31,3,18417,3316.5,3947,443,372,24
+"ENSCHAG00000016938"," gpr17","ENSCHAG00000016938",NA,"protein_coding","Atlantic herring",10,15.0062,"G protein-coupled receptor 17 [Source:ZFIN;Acc:ZDB-GENE-100922-133]",51.66,1,1871,1029,1284,NA,254,2
+"ENSCHAG00000017017"," ","ENSCHAG00000017017",NA,"protein_coding","Atlantic herring",10,15.012879,"si:ch73-194h10.2 [Source:ZFIN;Acc:ZDB-GENE-100921-21]",43.02,5,22020,5934,5934,NA,NA,44
+"ENSCHAG00000019008"," sap130a","ENSCHAG00000019008",105898313,"protein_coding","Atlantic herring",10,15.03886,"Sin3A associated protein 130 [Source:NCBI gene;Acc:105898313]",47.56,4,10527,3079.5,4542.5,NA,1462,19.5
+"ENSCHAG00000019851"," amotl2a","ENSCHAG00000019851",105898320,"protein_coding","Atlantic herring",10,15.062801,"angiomotin like 2 [Source:NCBI gene;Acc:105898320]",45.97,1,11307,2184,4712,152,2221,11
+"ENSCHAG00000019891"," im:7152348","ENSCHAG00000019891",NA,"protein_coding","Atlantic herring",10,15.11758,"im:7152348 [Source:ZFIN;Acc:ZDB-GENE-041111-308]",62.66,1,398,399,399,NA,NA,1
+"ENSCHAG00000019900"," rab6ba","ENSCHAG00000019900",NA,"protein_coding","Atlantic herring",10,15.129666,"RAB6B, member RAS oncogene family a [Source:ZFIN;Acc:ZDB-GENE-050809-136]",46.39,5,76112,672,1026,311,1830,8
+"ENSCHAG00000026155"," anos1b","ENSCHAG00000026155",105898256,"protein_coding","Atlantic herring",10,16.057925,"anosmin-1-like [Source:NCBI gene;Acc:105898256]",45.32,2,41015,1918.5,1919.5,NA,0,14
+"ENSCHAG00000026165"," lsg1","ENSCHAG00000026165",NA,"protein_coding","Atlantic herring",10,16.104166,"large 60S subunit nuclear export GTPase 1 [Source:NCBI gene;Acc:323464]",41.68,3,9157,1905,2141,268,NA,15
+"ENSCHAG00000026174"," ","ENSCHAG00000026174",NA,"protein_coding","Atlantic herring",10,16.114078,"",49.69,1,816,372,372,NA,NA,5
+"ENSCHAG00000000397"," fam43a","ENSCHAG00000000397",NA,"protein_coding","Atlantic herring",10,16.11411,"family with sequence similarity 43 member A [Source:ZFIN;Acc:ZDB-GENE-030131-6098]",49.9,1,1031,1032,1032,NA,NA,1
+"ENSCHAG00000000458"," ","ENSCHAG00000000458",NA,"protein_coding","Atlantic herring",10,16.233383,"",41.25,1,7131,645,645,NA,NA,4
+"ENSCHAG00000000499"," ","ENSCHAG00000000499",105898258,"protein_coding","Atlantic herring",10,16.253803,"histamine H3 receptor-like [Source:NCBI gene;Acc:105898258]",41.89,1,6330,1326,2047,80,639,3
+"ENSCHAG00000001490"," osbpl1a","ENSCHAG00000001490",NA,"protein_coding","Atlantic herring",10,16.273279,"oxysterol binding protein-like 1A [Source:ZFIN;Acc:ZDB-GENE-050208-657]",42.44,10,16650,1830,3116,194,522,17
+"ENSCHAG00000006840"," ttc39c","ENSCHAG00000006840",105898295,"protein_coding","Atlantic herring",10,16.314551,"tetratricopeptide repeat protein 39C-like [Source:NCBI gene;Acc:105898295]",40.01,5,12749,1683,3046,886,1371,15
+"ENSCHAG00000007705"," ankrd29","ENSCHAG00000007705",105898271,"protein_coding","Atlantic herring",10,16.334581,"ankyrin repeat domain 29 [Source:NCBI gene;Acc:105898271]",39.77,2,7753,894,1847,280,671,10
+"ENSCHAG00000007839"," VPS4B","ENSCHAG00000007839",105898282,"protein_coding","Atlantic herring",10,16.342516,"vacuolar protein sorting-associated protein 4B-like [Source:NCBI gene;Acc:105898282]",40.98,7,4550,1312.5,1312.5,NA,NA,11
+"ENSCHAG00000008788"," plekhb2","ENSCHAG00000008788",105898340,"protein_coding","Atlantic herring",10,16.348931,"pleckstrin homology domain containing B2 [Source:NCBI gene;Acc:105898340]",40.59,1,4463,690,1432,370,NA,8
+"ENSCHAG00000008804"," ing5a","ENSCHAG00000008804",105898337,"protein_coding","Atlantic herring",10,16.354781,"inhibitor of growth protein 5-like [Source:NCBI gene;Acc:105898337]",39.53,2,4469,726,726,NA,NA,8
+"ENSCHAG00000008846"," cep19","ENSCHAG00000008846",105898284,"protein_coding","Atlantic herring",10,16.361421,"centrosomal protein 19 [Source:NCBI gene;Acc:105898284]",45.35,1,837,489,489,NA,NA,2
+"ENSCHAG00000008849"," pigx","ENSCHAG00000008849",105898276,"protein_coding","Atlantic herring",10,16.363144,"phosphatidylinositol glycan anchor biosynthesis class X [Source:NCBI gene;Acc:105898276]",40.62,1,10568,771,3849,NA,125,20
+"ENSCHAG00000009466"," pak2b","ENSCHAG00000009466",105898321,"protein_coding","Atlantic herring",10,16.364509,"p21 (RAC1) activated kinase 2 [Source:NCBI gene;Acc:105898321]",40.81,8,9203,1534.5,3326,191,887,14
+"ENSCHAG00000009696"," ticam1","ENSCHAG00000009696",NA,"protein_coding","Atlantic herring",10,16.401305,"toll-like receptor adaptor molecule 1 [Source:ZFIN;Acc:ZDB-GENE-040219-2]",60.11,1,1982,1983,1983,NA,NA,1
+"ENSCHAG00000002346"," palm1a","ENSCHAG00000002346",NA,"protein_coding","Atlantic herring",10,28.93596,"paralemmin 1a [Source:ZFIN;Acc:ZDB-GENE-050417-409]",48.8,4,27220,1248,1637,388,NA,6
+"ENSCHAG00000002478"," si:ch211-262i1.3","ENSCHAG00000002478",NA,"protein_coding","Atlantic herring",10,28.972028,"si:ch211-262i1.3 [Source:ZFIN;Acc:ZDB-GENE-141222-7]",50.24,3,8926,3606,4119,126,444,4
+"ENSCHAG00000002621"," ","ENSCHAG00000002621",NA,"protein_coding","Atlantic herring",10,28.986637,"",47.52,1,3905,1743,2023,85,107,4
+"ENSCHAG00000002764"," ptbp1b","ENSCHAG00000002764",105896446,"protein_coding","Atlantic herring",10,28.992209,"polypyrimidine tract binding protein 1 [Source:NCBI gene;Acc:105896446]",47.58,8,16143,1678.5,1678.5,488,NA,13
+"ENSCHAG00000005190"," si:ch211-262i1.6","ENSCHAG00000005190",105896436,"protein_coding","Atlantic herring",10,29.011102,"family with sequence similarity 174 member C [Source:NCBI gene;Acc:105896436]",42.91,1,3220,426,2923,NA,2496,2
+"ENSCHAG00000005203"," efna2b","ENSCHAG00000005203",NA,"protein_coding","Atlantic herring",10,29.053494,"ephrin-A2b [Source:ZFIN;Acc:ZDB-GENE-141120-2]",48.14,1,148926,630,741,NA,110,4
+"ENSCHAG00000010810"," ","ENSCHAG00000010810",NA,"protein_coding","Atlantic herring",11,0.729459,"si:ch211-269k10.2 [Source:ZFIN;Acc:ZDB-GENE-131120-171]",51.2,1,10894,2337,2827,NA,489,8
+"ENSCHAG00000010900"," si:ch73-22o12.1","ENSCHAG00000010900",NA,"protein_coding","Atlantic herring",11,0.768535,"si:ch73-22o12.1 [Source:ZFIN;Acc:ZDB-GENE-110411-27]",49.18,1,32053,1539,3496,NA,1956,7
+"ENSCHAG00000010910"," ","ENSCHAG00000010910",NA,"protein_coding","Atlantic herring",11,0.807023,"",49.17,3,14108,1758,1758,NA,NA,6
+"ENSCHAG00000011054"," ","ENSCHAG00000011054",NA,"protein_coding","Atlantic herring",11,0.872047,"",49.1,10,50919,2952,4681,425.5,1608,19.5
+"ENSCHAG00000012279"," rabac1","ENSCHAG00000012279",105893534,"protein_coding","Atlantic herring",11,0.927234,"Rab acceptor 1 [Source:NCBI gene;Acc:105893534]",46.16,2,5697,649.5,2256.5,43,1562,4.5
+"ENSCHAG00000012313"," dedd1","ENSCHAG00000012313",NA,"protein_coding","Atlantic herring",11,0.934499,"death effector domain-containing 1 [Source:ZFIN;Acc:ZDB-GENE-000616-2]",50.47,4,14779,882,1310,155.5,156,5.5
+"ENSCHAG00000006133"," phf1","ENSCHAG00000006133",105891741,"protein_coding","Atlantic herring",11,6.516487,"PHD finger protein 1 [Source:NCBI gene;Acc:105891741]",45.32,8,12145,1410,1954,271,441,13
+"ENSCHAG00000006474"," rgl2","ENSCHAG00000006474",NA,"protein_coding","Atlantic herring",11,6.530831,"ral guanine nucleotide dissociation stimulator-like 2 [Source:ZFIN;Acc:ZDB-GENE-010131-1]",44.51,3,22156,2157,3775,169,1274,20
+"ENSCHAG00000006550"," dnase2","ENSCHAG00000006550",105891742,"protein_coding","Atlantic herring",11,6.553152,"deoxyribonuclease-2-alpha-like [Source:NCBI gene;Acc:105891742]",45.02,2,4306,1110,1165.5,3,10,6
+"ENSCHAG00000006588"," ","ENSCHAG00000006588",NA,"protein_coding","Atlantic herring",11,6.559251,"",41.93,1,4726,1155,2746,280.5,1027,5
+"ENSCHAG00000006602"," pbx2","ENSCHAG00000006602",105891883,"protein_coding","Atlantic herring",11,6.564304,"pre-B-cell leukemia transcription factor 2-like [Source:NCBI gene;Acc:105891883]",44.74,1,6653,1209,2414,168,1035,8
+"ENSCHAG00000006649"," tap1","ENSCHAG00000006649",NA,"protein_coding","Atlantic herring",11,6.579903,"transporter 1, ATP-binding cassette, sub-family B (MDR/TAP) [Source:ZFIN;Acc:ZDB-GENE-050517-43]",42.68,7,7206,1791,2632,73,NA,15
+"ENSCHAG00000006857"," BRD2","ENSCHAG00000006857",NA,"protein_coding","Atlantic herring",11,6.590712,"bromodomain containing 2 [Source:HGNC Symbol;Acc:HGNC:1103]",47.89,5,11019,1155,1695,269,NA,9
+"ENSCHAG00000007176"," ","ENSCHAG00000007176",NA,"protein_coding","Atlantic herring",11,6.605366,"",47.55,1,1366,615,615,NA,NA,3
+"ENSCHAG00000007206"," ","ENSCHAG00000007206",NA,"protein_coding","Atlantic herring",11,6.610344,"",48.7,1,56646,1935,4225,23,2265,9
+"ENSCHAG00000007216"," ","ENSCHAG00000007216",NA,"protein_coding","Atlantic herring",11,6.681554,"",41.95,1,1973,723,723,NA,NA,7
+"ENSCHAG00000007265"," plcl2","ENSCHAG00000007265",105891931,"protein_coding","Atlantic herring",11,6.685931,"phospholipase C like 2 [Source:NCBI gene;Acc:105891931]",42.57,1,33515,3336,4368,NA,1031,6
+"ENSCHAG00000005767"," ctps1b","ENSCHAG00000005767",105910103,"protein_coding","Atlantic herring",11,14.637581,"CTP synthase 1-like [Source:NCBI gene;Acc:105910103]",42.39,9,10376,1764,3139,617,693,18
+"ENSCHAG00000006739"," taf12","ENSCHAG00000006739",NA,"protein_coding","Atlantic herring",11,14.648378,"TAF12 RNA polymerase II, TATA box binding protein (TBP)-associated factor [Source:ZFIN;Acc:ZDB-GENE-031030-5]",40.18,1,3735,453,2101,NA,1647,6
+"ENSCHAG00000006793"," si:dkey-34d22.5","ENSCHAG00000006793",105910005,"protein_coding","Atlantic herring",11,14.653306,"ras-related protein Rab-39B-like [Source:NCBI gene;Acc:105910005]",51.74,1,1835,663,1287,527,95,2
+"ENSCHAG00000006803"," si:dkey-34d22.1","ENSCHAG00000006803",105910098,"protein_coding","Atlantic herring",11,14.65645,"discoidin, CUB and LCCL domain-containing protein 1-like [Source:NCBI gene;Acc:105910098]",43.9,2,24334,1948.5,2514.5,NA,565,14.5
+"ENSCHAG00000006833"," ","ENSCHAG00000006833",NA,"protein_coding","Atlantic herring",11,14.683119,"",42.86,1,9034,1746,3309,NA,1562,9
+"ENSCHAG00000006963"," ptprub","ENSCHAG00000006963",NA,"protein_coding","Atlantic herring",11,14.696401,"protein tyrosine phosphatase receptor type Ub [Source:NCBI gene;Acc:335096]",45.65,10,199317,4200,4899,205,698,27.5
+"ENSCHAG00000015386"," si:ch211-215k15.4","ENSCHAG00000015386",NA,"protein_coding","Atlantic herring",11,19.118005,"si:ch211-215k15.4 [Source:ZFIN;Acc:ZDB-GENE-131127-215]",41.34,10,130867,963,2202,326,911,6
+"ENSCHAG00000015759"," ","ENSCHAG00000015759",NA,"protein_coding","Atlantic herring",11,19.25033,"",42.62,6,6055,954,1045,NA,123,5.5
+"ENSCHAG00000016059"," pkdc","ENSCHAG00000016059",105897617,"protein_coding","Atlantic herring",11,19.257879,"uncharacterized LOC105897617 [Source:NCBI gene;Acc:105897617]",47.94,1,971,972,972,NA,NA,1
+"ENSCHAG00000016066"," herpud2","ENSCHAG00000016066",NA,"protein_coding","Atlantic herring",11,19.260743,"HERPUD family member 2 [Source:NCBI gene;Acc:393157]",48.37,1,5866,1242,1684,268,172,8
+"ENSCHAG00000016081"," tbx20","ENSCHAG00000016081",105897619,"protein_coding","Atlantic herring",11,19.271169,"T-box transcription factor 20 [Source:NCBI gene;Acc:105897619]",40.92,2,10825,1305,4724,311,3106,8.5
+"ENSCHAG00000016172"," dpy19l1l","ENSCHAG00000016172",105897636,"protein_coding","Atlantic herring",11,19.339428,"dpy-19 like C-mannosyltransferase 1 [Source:NCBI gene;Acc:105897636]",41.68,5,7882,2043,2354,321,310,20
+"ENSCHAG00000016862"," slc4a7","ENSCHAG00000016862",NA,"protein_coding","Atlantic herring",11,19.351277,"solute carrier family 4 member 7 [Source:ZFIN;Acc:ZDB-GENE-140106-104]",44.84,10,49713,3513,4158.5,730,NA,26
+"ENSCHAG00000017311"," ","ENSCHAG00000017311",NA,"protein_coding","Atlantic herring",11,19.356712,"",46.25,1,1013,1014,1014,NA,NA,1
+"ENSCHAG00000017313"," ","ENSCHAG00000017313",105897624,"protein_coding","Atlantic herring",11,19.362828,"complement C1q-like protein 3 [Source:NCBI gene;Acc:105897624]",45.65,1,2400,600,1382,610,170,4
+"ENSCHAG00000017324"," nt5c3a","ENSCHAG00000017324",NA,"protein_coding","Atlantic herring",11,19.417042,"5'-nucleotidase, cytosolic IIIA [Source:NCBI gene;Acc:321720]",41.87,7,15869,901.5,2004.5,556,1108,9
+"ENSCHAG00000017787"," bckdhb","ENSCHAG00000017787",NA,"protein_coding","Atlantic herring",11,19.434548,"branched chain keto acid dehydrogenase E1 subunit beta [Source:ZFIN;Acc:ZDB-GENE-030124-2]",44.71,8,60925,1179,1683,19,251,11.5
+"ENSCHAG00000011016"," irx2a","ENSCHAG00000011016",NA,"protein_coding","Atlantic herring",11,21.61416,"iroquois homeobox 2a [Source:ZFIN;Acc:ZDB-GENE-040426-1446]",45.65,2,4415,1359,2901,363,1177,3.5
+"ENSCHAG00000011027"," irx1a","ENSCHAG00000011027",105905501,"protein_coding","Atlantic herring",11,21.756159,"iroquois-class homeodomain protein irx-1-like [Source:NCBI gene;Acc:105905501]",43.54,2,4351,1348.5,1930.5,253,327,4.5
+"ENSCHAG00000013164"," uap1l1","ENSCHAG00000013164",105909125,"protein_coding","Atlantic herring",12,24.3931,"UDP-N-acetylglucosamine pyrophosphorylase 1 like 1 [Source:NCBI gene;Acc:105909125]",41.65,1,6013,1497,1892,NA,394,9
+"ENSCHAG00000013283"," zdhhc12b","ENSCHAG00000013283",105909209,"protein_coding","Atlantic herring",12,24.399796,"zinc finger DHHC-type containing 12 [Source:NCBI gene;Acc:105909209]",43.52,2,2883,924,2318.5,NA,1393.5,4.5
+"ENSCHAG00000013440"," pkn3","ENSCHAG00000013440",NA,"protein_coding","Atlantic herring",12,24.40461,"protein kinase N3 [Source:ZFIN;Acc:ZDB-GENE-030131-1902]",46.56,10,15689,2766,2766,676,NA,20
+"ENSCHAG00000019128"," setb","ENSCHAG00000019128",NA,"protein_coding","Atlantic herring",12,24.421099,"SET nuclear proto-oncogene b [Source:ZFIN;Acc:ZDB-GENE-030131-433]",43.68,1,3106,924,1211,286,NA,7
+"ENSCHAG00000019172"," wdr34","ENSCHAG00000019172",NA,"protein_coding","Atlantic herring",12,24.426169,"WD repeat domain 34 [Source:ZFIN;Acc:ZDB-GENE-070928-9]",47.56,1,3777,1509,1509,NA,NA,9
+"ENSCHAG00000019407"," sptan1","ENSCHAG00000019407",NA,"protein_coding","Atlantic herring",12,24.430875,"spectrin alpha, non-erythrocytic 1 [Source:ZFIN;Acc:ZDB-GENE-051113-60]",48.22,10,40426,1527,6878,137,NA,51
+"ENSCHAG00000022991"," PTGES2","ENSCHAG00000022991",NA,"protein_coding","Atlantic herring",12,24.485058,"prostaglandin E synthase 2 [Source:HGNC Symbol;Acc:HGNC:17822]",42.9,1,6016,1158,1921,61,700,7
+"ENSCHAG00000023015"," zer1","ENSCHAG00000023015",NA,"protein_coding","Atlantic herring",12,24.492737,"zyg-11 related, cell cycle regulator [Source:ZFIN;Acc:ZDB-GENE-040426-2307]",47.44,4,13402,2313,3871,NA,1557,16.5
+"ENSCHAG00000023380"," TBC1D13","ENSCHAG00000023380",NA,"protein_coding","Atlantic herring",12,24.509084,"TBC1 domain family member 13 [Source:HGNC Symbol;Acc:HGNC:25571]",43.91,4,78465,1146,2195.5,107,999,11
+"ENSCHAG00000023478"," odf2a","ENSCHAG00000023478",NA,"protein_coding","Atlantic herring",12,24.54408,"outer dense fiber of sperm tails 2a [Source:ZFIN;Acc:ZDB-GENE-091117-46]",46.07,2,6333,1317,1895,288,NA,12
+"ENSCHAG00000023511"," PTGES2","ENSCHAG00000023511",NA,"protein_coding","Atlantic herring",12,24.552282,"prostaglandin E synthase 2 [Source:HGNC Symbol;Acc:HGNC:17822]",39.29,1,3000,735,1436,NA,700,6
+"ENSCHAG00000023524"," zer1","ENSCHAG00000023524",NA,"protein_coding","Atlantic herring",12,24.561642,"zyg-11 related, cell cycle regulator [Source:ZFIN;Acc:ZDB-GENE-040426-2307]",48.95,2,11525,2275.5,2275.5,NA,NA,15.5
+"ENSCHAG00000023569"," ","ENSCHAG00000023569",NA,"protein_coding","Atlantic herring",12,24.625493,"",48.5,3,45590,2391,6336,62,3905,16
+"ENSCHAG00000023656"," lmbrd2b","ENSCHAG00000023656",NA,"protein_coding","Atlantic herring",12,24.672231,"LMBR1 domain containing 2b [Source:NCBI gene;Acc:335257]",46.05,5,10206,2103,2393,101.5,573,17
+"ENSCHAG00000023871"," capslb","ENSCHAG00000023871",NA,"protein_coding","Atlantic herring",12,24.685436,"calcyphosine-like b [Source:ZFIN;Acc:ZDB-GENE-050417-298]",41.76,1,2724,630,1505,NA,436.5,5
+"ENSCHAG00000023878"," il7r","ENSCHAG00000023878",NA,"protein_coding","Atlantic herring",12,24.689176,"interleukin 7 receptor [Source:ZFIN;Acc:ZDB-GENE-080110-7]",42.58,2,4903,1107,1636,172,NA,6.5
+"ENSCHAG00000024021"," myo5b","ENSCHAG00000024021",NA,"protein_coding","Atlantic herring",12,24.702542,"myosin VB [Source:ZFIN;Acc:ZDB-GENE-031219-7]",46.41,10,68646,5292,7941,563,2084,38.5
+"ENSCHAG00000006639"," galt","ENSCHAG00000006639",NA,"protein_coding","Atlantic herring",12,28.550079,"galactose-1-phosphate uridylyltransferase [Source:ZFIN;Acc:ZDB-GENE-070112-172]",48.93,3,38519,1011,1011,NA,NA,5
+"ENSCHAG00000013349"," ","ENSCHAG00000013349",NA,"protein_coding","Atlantic herring",12,29.6515,"palm2 and akap2 fusion [Source:ZFIN;Acc:ZDB-GENE-050208-62]",45.54,5,62792,2748,4494,422,951,5
+"ENSCHAG00000013372"," plppr1","ENSCHAG00000013372",NA,"protein_coding","Atlantic herring",12,29.828653,"phospholipid phosphatase related 1 [Source:HGNC Symbol;Acc:HGNC:25993]",47.23,2,50774,975,2574,428,740,8
+"ENSCHAG00000013391"," ","ENSCHAG00000013391",NA,"protein_coding","Atlantic herring",12,29.899008,"",45.3,1,8043,774,1484,708,0,2
+"ENSCHAG00000016870"," epcam","ENSCHAG00000016870",NA,"protein_coding","Atlantic herring",13,7.799274,"epithelial cell adhesion molecule [Source:ZFIN;Acc:ZDB-GENE-040426-2209]",41.33,5,23992,918,1919,463,695,9
+"ENSCHAG00000016959"," plekhh2","ENSCHAG00000016959",NA,"protein_coding","Atlantic herring",13,7.828741,"pleckstrin homology domain containing, family H (with MyTH4 domain) member 2 [Source:ZFIN;Acc:ZDB-GENE-081028-42]",45.89,9,30319,4167,6742,778,2574,26
+"ENSCHAG00000017933"," THADA","ENSCHAG00000017933",NA,"protein_coding","Atlantic herring",13,7.863253,"THADA armadillo repeat containing [Source:HGNC Symbol;Acc:HGNC:19217]",46.77,3,84437,5811,5911,7,91,37
+"ENSCHAG00000018278"," wu:fj16a03","ENSCHAG00000018278",NA,"protein_coding","Atlantic herring",13,8.293971,"wu:fj16a03 [Source:ZFIN;Acc:ZDB-GENE-030131-7415]",44.53,1,3327,231,1393,161,999,3
+"ENSCHAG00000018324"," EML4","ENSCHAG00000018324",NA,"protein_coding","Atlantic herring",13,8.302228,"EMAP like 4 [Source:HGNC Symbol;Acc:HGNC:1316]",47.13,10,38273,2836.5,2836.5,NA,NA,20.5
+"ENSCHAG00000019596"," pkdcca","ENSCHAG00000019596",105900045,"protein_coding","Atlantic herring",13,8.428771,"protein kinase domain containing, cytoplasmic [Source:NCBI gene;Acc:105900045]",44.9,3,80479,1635,3195,446,1155,7
+"ENSCHAG00000019625"," zgc:153981","ENSCHAG00000019625",NA,"protein_coding","Atlantic herring",13,8.582267,"zgc:153981 [Source:ZFIN;Acc:ZDB-GENE-061103-367]",42.75,1,2956,558,1129,570,NA,3
+"ENSCHAG00000019634"," si:ch211-223p8.8","ENSCHAG00000019634",NA,"protein_coding","Atlantic herring",13,8.585244,"si:ch211-223p8.8 [Source:ZFIN;Acc:ZDB-GENE-090313-91]",42.78,1,1759,711,1019,307,NA,3
+"ENSCHAG00000019649"," SLK","ENSCHAG00000019649",NA,"protein_coding","Atlantic herring",13,8.58836,"STE20 like kinase [Source:HGNC Symbol;Acc:HGNC:11088]",46.48,10,28199,3483,4358,874,NA,18
+"ENSCHAG00000019878"," wdr11","ENSCHAG00000019878",NA,"protein_coding","Atlantic herring",13,14.211497,"WD repeat domain 11 [Source:NCBI gene;Acc:558865]",48.02,7,63766,3630,3773,142,NA,28
+"ENSCHAG00000019945"," si:ch211-198a12.6","ENSCHAG00000019945",105909930,"protein_coding","Atlantic herring",13,14.280506,"zinc finger protein 883-like [Source:NCBI gene;Acc:105909930]",51.99,1,1661,1662,1662,NA,NA,1
+"ENSCHAG00000019950"," stox1","ENSCHAG00000019950",105909602,"protein_coding","Atlantic herring",13,14.285592,"storkhead box 1 [Source:NCBI gene;Acc:105909602]",42.14,1,14787,2988,3257,268,NA,4
+"ENSCHAG00000019967"," ccar1","ENSCHAG00000019967",NA,"protein_coding","Atlantic herring",13,14.308392,"cell division cycle and apoptosis regulator 1 [Source:ZFIN;Acc:ZDB-GENE-030131-146]",43.86,4,17547,3462,3645,NA,1051,21.5
+"ENSCHAG00000020522"," zgc:110319","ENSCHAG00000020522",105909981,"protein_coding","Atlantic herring",13,14.328934,"NFU1 iron-sulfur cluster scaffold homolog, mitochondrial-like [Source:NCBI gene;Acc:105909981]",39.4,1,3288,801,801,NA,NA,8
+"ENSCHAG00000020527"," si:dkey-228d14.5","ENSCHAG00000020527",NA,"protein_coding","Atlantic herring",13,14.334291,"si:dkey-228d14.5 [Source:ZFIN;Acc:ZDB-GENE-090313-252]",41.34,1,1627,618,618,NA,NA,5
+"ENSCHAG00000020559"," eif4e1c","ENSCHAG00000020559",105910017,"protein_coding","Atlantic herring",13,14.337219,"eukaryotic translation initiation factor 4E-like [Source:NCBI gene;Acc:105910017]",38.2,3,6518,705,2368,NA,1662,6
+"ENSCHAG00000020578"," tet1","ENSCHAG00000020578",105909953,"protein_coding","Atlantic herring",13,14.346828,"tet methylcytosine dioxygenase 1 [Source:NCBI gene;Acc:105909953]",44.57,2,23098,5917.5,6057.5,139,NA,10.5
+"ENSCHAG00000020593"," slc25a16","ENSCHAG00000020593",105910227,"protein_coding","Atlantic herring",13,14.372537,"solute carrier family 25 member 16 [Source:NCBI gene;Acc:105910227]",41.66,1,5062,966,966,NA,NA,9
+"ENSCHAG00000020632"," alox5a","ENSCHAG00000020632",105909748,"protein_coding","Atlantic herring",13,14.380326,"arachidonate 5-lipoxygenase [Source:NCBI gene;Acc:105909748]",39,3,8657,1899,1899,NA,NA,14
+"ENSCHAG00000021036"," ","ENSCHAG00000021036",NA,"protein_coding","Atlantic herring",13,14.390434,"",43.43,1,11749,3615,3615,NA,NA,24
+"ENSCHAG00000021130"," zfand4","ENSCHAG00000021130",NA,"protein_coding","Atlantic herring",13,14.405759,"zinc finger, AN1-type domain 4 [Source:ZFIN;Acc:ZDB-GENE-090312-102]",46.7,4,11756,2133,2187,80,NA,9
+"ENSCHAG00000021243"," march8","ENSCHAG00000021243",NA,"protein_coding","Atlantic herring",13,14.420814,"membrane-associated ring finger (C3HC4) 8 [Source:ZFIN;Acc:ZDB-GENE-080204-8]",45.2,8,59190,900,2311,105,527,7
+"ENSCHAG00000021340"," ","ENSCHAG00000021340",NA,"protein_coding","Atlantic herring",13,14.484133,"",36.74,1,1025,1026,1026,NA,NA,1
+"ENSCHAG00000021357"," vdac2","ENSCHAG00000021357",NA,"protein_coding","Atlantic herring",13,14.486893,"voltage-dependent anion channel 2 [Source:ZFIN;Acc:ZDB-GENE-030131-845]",41.8,6,4267,892.5,892.5,NA,NA,9
+"ENSCHAG00000021515"," ","ENSCHAG00000021515",NA,"protein_coding","Atlantic herring",13,14.49283,"",45.75,3,3494,1173,2575,NA,1425,4
+"ENSCHAG00000021597"," comtd1","ENSCHAG00000021597",105909795,"protein_coding","Atlantic herring",13,14.500315,"catechol O-methyltransferase domain-containing protein 1-like [Source:NCBI gene;Acc:105909795]",40.38,1,5673,738,1650,575,335,7
+"ENSCHAG00000001687"," camk2g2","ENSCHAG00000001687",NA,"protein_coding","Atlantic herring",13,26.219567,"calcium/calmodulin-dependent protein kinase (CaM kinase) II gamma 2 [Source:ZFIN;Acc:ZDB-GENE-070323-2]",50.01,10,89018,1540.5,5178.5,360,1637.5,17
+"ENSCHAG00000002649"," ndst2a","ENSCHAG00000002649",NA,"protein_coding","Atlantic herring",13,26.330608,"N-deacetylase/N-sulfotransferase (heparan glucosaminyl) 2a [Source:ZFIN;Acc:ZDB-GENE-060810-182]",51.88,7,93828,2715,5836,133,2137,14
+"ENSCHAG00000005956"," zswim8","ENSCHAG00000005956",NA,"protein_coding","Atlantic herring",13,26.463142,"zinc finger, SWIM-type containing 8 [Source:ZFIN;Acc:ZDB-GENE-050320-59]",50.31,8,41739,5430,7179,42,1748,29.5
+"ENSCHAG00000011630"," si:ch211-51a6.2","ENSCHAG00000011630",NA,"protein_coding","Atlantic herring",13,26.510332,"si:ch211-51a6.2 [Source:ZFIN;Acc:ZDB-GENE-090313-118]",48.33,3,22454,2457,2470,342.5,NA,13
+"ENSCHAG00000011676"," chchd1","ENSCHAG00000011676",NA,"protein_coding","Atlantic herring",13,26.534698,"coiled-coil-helix-coiled-coil-helix domain containing 1 [Source:ZFIN;Acc:ZDB-GENE-060810-176]",42.62,2,2343,369,592,177,391.5,2.5
+"ENSCHAG00000011690"," si:dkey-191g9.5","ENSCHAG00000011690",NA,"protein_coding","Atlantic herring",13,26.544495,"si:dkey-191g9.5 [Source:ZFIN;Acc:ZDB-GENE-090313-217]",48.75,2,17089,1683,2928,719,524,14
+"ENSCHAG00000011754"," si:dkey-191g9.7","ENSCHAG00000011754",NA,"protein_coding","Atlantic herring",13,26.577677,"si:dkey-191g9.7 [Source:ZFIN;Acc:ZDB-GENE-141216-135]",69.65,1,1574,1575,1575,NA,NA,1
+"ENSCHAG00000011767"," polr1c","ENSCHAG00000011767",NA,"protein_coding","Atlantic herring",13,26.584165,"RNA polymerase I and III subunit C [Source:ZFIN;Acc:ZDB-GENE-040426-1495]",43.21,7,6171,1038,1720,65,681,9
+"ENSCHAG00000012037"," ldb1a","ENSCHAG00000012037",105900301,"protein_coding","Atlantic herring",13,26.593787,"LIM domain binding 1 [Source:NCBI gene;Acc:105900301]",46.74,4,22630,1239,2110,73,NA,11
+"ENSCHAG00000002372"," ","ENSCHAG00000002372",NA,"protein_coding","Atlantic herring",13,29.416133,"",42.98,1,9115,2304,2304,NA,NA,7
+"ENSCHAG00000002689"," ","ENSCHAG00000002689",NA,"protein_coding","Atlantic herring",13,29.455771,"",47.88,1,4903,1269,2769,499,999,7
+"ENSCHAG00000002710"," ","ENSCHAG00000002710",NA,"protein_coding","Atlantic herring",13,29.465607,"",43.28,1,9017,2103,2687,NA,583,5
+"ENSCHAG00000002747"," ","ENSCHAG00000002747",NA,"protein_coding","Atlantic herring",13,29.475174,"",40.67,1,2438,624,1312,NA,687,2
+"ENSCHAG00000002756"," si:ch211-235o23.1","ENSCHAG00000002756",NA,"protein_coding","Atlantic herring",13,29.487931,"si:ch211-235o23.1 [Source:NCBI gene;Acc:570302]",47.44,2,3631,873,1873,NA,999,3.5
+"ENSCHAG00000003833"," slc39a6","ENSCHAG00000003833",NA,"protein_coding","Atlantic herring",13,29.5821,"solute carrier family 39 member 6 [Source:ZFIN;Acc:ZDB-GENE-030131-3023]",49.09,4,9117,1771.5,2289,NA,662,9
+"ENSCHAG00000004449"," ","ENSCHAG00000004449",NA,"protein_coding","Atlantic herring",13,29.682193,"",40.06,1,693,186,186,NA,NA,2
+"ENSCHAG00000009254"," ush2a","ENSCHAG00000009254",NA,"protein_coding","Atlantic herring",14,2.400649,"Usher syndrome 2A (autosomal recessive, mild) [Source:ZFIN;Acc:ZDB-GENE-060503-794]",47.91,2,358208,14763,14763,NA,NA,70.5
+"ENSCHAG00000010109"," kctd3","ENSCHAG00000010109",NA,"protein_coding","Atlantic herring",14,2.765316,"potassium channel tetramerization domain containing 3 [Source:ZFIN;Acc:ZDB-GENE-060503-169]",48.02,8,19815,1795.5,1795.5,NA,618,15
+"ENSCHAG00000011468"," ","ENSCHAG00000011468",NA,"protein_coding","Atlantic herring",14,2.794521,"",45.1,1,7356,660,1804,174,483.5,7
+"ENSCHAG00000011478"," fzd3b","ENSCHAG00000011478",NA,"protein_coding","Atlantic herring",14,2.803052,"frizzled class receptor 3b [Source:ZFIN;Acc:ZDB-GENE-070122-1]",50.97,2,36269,2148,4899,420.5,1907,7.5
+"ENSCHAG00000011584"," cdc42bpaa","ENSCHAG00000011584",NA,"protein_coding","Atlantic herring",14,2.845925,"CDC42 binding protein kinase alpha (DMPK-like) a [Source:ZFIN;Acc:ZDB-GENE-120727-12]",49.24,10,95729,5229,5448,NA,999,37
+"ENSCHAG00000015563"," ","ENSCHAG00000015563",NA,"protein_coding","Atlantic herring",14,2.926315,"",59.28,1,635,636,636,NA,NA,1
+"ENSCHAG00000015578"," lft2","ENSCHAG00000015578",NA,"protein_coding","Atlantic herring",14,2.948918,"lefty2 [Source:ZFIN;Acc:ZDB-GENE-990630-11]",48.84,1,1592,1077,1213,44,90,4
+"ENSCHAG00000015583"," adpgk2","ENSCHAG00000015583",NA,"protein_coding","Atlantic herring",14,2.954099,"ADP-dependent glucokinase 2 [Source:ZFIN;Acc:ZDB-GENE-090609-3]",45.59,1,10392,1461,3763,410,1890,6
+"ENSCHAG00000015653"," hnrnpua","ENSCHAG00000015653",NA,"protein_coding","Atlantic herring",14,2.967217,"heterogeneous nuclear ribonucleoprotein Ua [Source:ZFIN;Acc:ZDB-GENE-030131-3731]",46.73,9,11454,1860,2878,NA,639,13
+"ENSCHAG00000017495"," EFCAB2","ENSCHAG00000017495",NA,"protein_coding","Atlantic herring",14,2.979341,"EF-hand calcium binding domain 2 [Source:HGNC Symbol;Acc:HGNC:28166]",45.24,2,9952,432,572,NA,139,6
+"ENSCHAG00000017604"," ","ENSCHAG00000017604",NA,"protein_coding","Atlantic herring",14,2.992296,"",50.02,1,70932,1134,1134,NA,NA,5
+"ENSCHAG00000023446"," kcnk2a","ENSCHAG00000023446",105908158,"protein_coding","Atlantic herring",14,14.390376,"potassium two pore domain channel subfamily K member 2 [Source:NCBI gene;Acc:105908158]",43.03,2,18079,1146,1276,129,NA,6.5
+"ENSCHAG00000023466"," cenpf","ENSCHAG00000023466",105908159,"protein_coding","Atlantic herring",14,14.423736,"centromere protein F [Source:NCBI gene;Acc:105908159]",42.71,2,15984,8433,9282,66.5,713,19.5
+"ENSCHAG00000023508"," smyd2a","ENSCHAG00000023508",NA,"protein_coding","Atlantic herring",14,14.441198,"SET and MYND domain containing 2a [Source:NCBI gene;Acc:541423]",41.76,3,14663,1314,1473,472,158,13
+"ENSCHAG00000023560"," prox1a","ENSCHAG00000023560",NA,"protein_coding","Atlantic herring",14,14.474417,"prospero homeobox 1a [Source:ZFIN;Acc:ZDB-GENE-980526-397]",47.63,2,30850,2331,2521,62,126,4.5
+"ENSCHAG00000023578"," snx9a","ENSCHAG00000023578",105908252,"protein_coding","Atlantic herring",14,14.652243,"sorting nexin 9 [Source:NCBI gene;Acc:105908252]",42.53,1,13889,1683,1683,NA,NA,18
+"ENSCHAG00000023593"," ","ENSCHAG00000023593",NA,"protein_coding","Atlantic herring",14,14.669174,"",43.09,3,8417,1317,2005,343,NA,5
+"ENSCHAG00000002347"," pomca","ENSCHAG00000002347",NA,"protein_coding","Atlantic herring",14,14.67946,"proopiomelanocortin a [Source:ZFIN;Acc:ZDB-GENE-030513-2]",44.02,1,2248,831,1189,11,345,3
+"ENSCHAG00000002368"," pomca","ENSCHAG00000002368",NA,"protein_coding","Atlantic herring",14,14.687378,"proopiomelanocortin a [Source:ZFIN;Acc:ZDB-GENE-030513-2]",44.24,1,2560,828,1599,429,340,3
+"ENSCHAG00000002516"," efr3ba","ENSCHAG00000002516",NA,"protein_coding","Atlantic herring",14,14.690222,"EFR3 homolog Ba (S. cerevisiae) [Source:ZFIN;Acc:ZDB-GENE-030616-64]",44.42,10,27263,2250,2910,76,2050,22
+"ENSCHAG00000027748"," pacrg","ENSCHAG00000027748",105908338,"protein_coding","Atlantic herring",14,16.751901,"parkin coregulated [Source:NCBI gene;Acc:105908338]",47.22,2,135886,714,1295,337,242,5
+"ENSCHAG00000027749"," qkia","ENSCHAG00000027749",105908305,"protein_coding","Atlantic herring",14,16.902858,"protein quaking-A [Source:NCBI gene;Acc:105908305]",49,2,81953,1182,1698,374,140,8
+"ENSCHAG00000010536"," rnf144aa","ENSCHAG00000010536",105896920,"protein_coding","Atlantic herring",14,23.879376,"ring finger protein 144A [Source:NCBI gene;Acc:105896920]",44.26,1,27974,882,2186,151,999,8
+"ENSCHAG00000010550"," id2a","ENSCHAG00000010550",105897296,"protein_coding","Atlantic herring",14,24.091284,"inhibitor of DNA binding 2 [Source:NCBI gene;Acc:105897296]",44.1,1,686,408,408,NA,NA,2
+"ENSCHAG00000010596"," kidins220a","ENSCHAG00000010596",NA,"protein_coding","Atlantic herring",14,24.095052,"kinase D-interacting substrate 220a [Source:ZFIN;Acc:ZDB-GENE-041014-170]",48.34,9,42210,5091,5116,24,NA,29
+"ENSCHAG00000011085"," MBOAT2","ENSCHAG00000011085",NA,"protein_coding","Atlantic herring",14,24.143644,"membrane bound O-acyltransferase domain containing 2a [Source:ZFIN;Acc:ZDB-GENE-041210-257]",45.67,4,58564,1470,1672,130,336,11.5
+"ENSCHAG00000009195"," lats1","ENSCHAG00000009195",105899446,"protein_coding","Atlantic herring",15,5.593914,"large tumor suppressor kinase 1 [Source:NCBI gene;Acc:105899446]",51.51,1,7098,3417,4309,127,763,7
+"ENSCHAG00000009214"," crip2l","ENSCHAG00000009214",105899448,"protein_coding","Atlantic herring",15,5.604977,"cysteine-rich protein 2-like [Source:NCBI gene;Acc:105899448]",41.87,4,5316,618,992,373,NA,8
+"ENSCHAG00000009299"," rdh14b","ENSCHAG00000009299",105899447,"protein_coding","Atlantic herring",15,5.612721,"retinol dehydrogenase 14 [Source:NCBI gene;Acc:105899447]",45.57,1,2312,972,972,NA,NA,2
+"ENSCHAG00000009312"," si:dkey-174m14.3","ENSCHAG00000009312",NA,"protein_coding","Atlantic herring",15,5.61845,"si:dkey-174m14.3 [Source:ZFIN;Acc:ZDB-GENE-030131-8158]",47.87,2,28749,2136,2916,374,NA,7
+"ENSCHAG00000009323"," ","ENSCHAG00000009323",NA,"protein_coding","Atlantic herring",15,5.626194,"",45.18,1,1068,438,438,NA,NA,3
+"ENSCHAG00000009334"," nt5c1bb","ENSCHAG00000009334",NA,"protein_coding","Atlantic herring",15,5.654028,"5'-nucleotidase, cytosolic IB b [Source:ZFIN;Acc:ZDB-GENE-030131-7205]",43.09,1,5562,1092,2815,430,1291,6
+"ENSCHAG00000009355"," syt14b","ENSCHAG00000009355",NA,"protein_coding","Atlantic herring",15,5.665541,"synaptotagmin XIVb [Source:ZFIN;Acc:ZDB-GENE-041014-36]",45.59,3,10953,1722,2722,265,999,8
+"ENSCHAG00000009392"," kcnk5b","ENSCHAG00000009392",105899415,"protein_coding","Atlantic herring",15,5.681212,"potassium channel subfamily K member 5-like [Source:NCBI gene;Acc:105899415]",42.83,1,7179,1554,2856,301,999,5
+"ENSCHAG00000009402"," ","ENSCHAG00000009402",105899414,"protein_coding","Atlantic herring",15,5.693041,"fos-related antigen 2-like [Source:NCBI gene;Acc:105899414]",45.02,2,2849,912,1909,122,873,4.5
+"ENSCHAG00000005408"," pde3a","ENSCHAG00000005408",NA,"protein_coding","Atlantic herring",16,14.244422,"phosphodiesterase 3A, cGMP-inhibited [Source:ZFIN;Acc:ZDB-GENE-041210-23]",47.21,5,64010,3426,4332,905,NA,16
+"ENSCHAG00000005528"," aebp2","ENSCHAG00000005528",NA,"protein_coding","Atlantic herring",16,14.359704,"AE binding protein 2 [Source:NCBI gene;Acc:406815]",48.43,1,16155,1374,2203,179,648,8
+"ENSCHAG00000005592"," plekha5","ENSCHAG00000005592",NA,"protein_coding","Atlantic herring",16,14.378135,"pleckstrin homology domain containing, family A member 5 [Source:ZFIN;Acc:ZDB-GENE-041210-25]",46.9,8,116069,4701,5673,53,917,28.5
+"ENSCHAG00000006655"," ","ENSCHAG00000006655",NA,"protein_coding","Atlantic herring",16,14.581273,"",40.81,1,3510,684,2360,794,880,4
+"ENSCHAG00000006661"," ","ENSCHAG00000006661",105896686,"protein_coding","Atlantic herring",16,14.587644,"protein bicaudal D homolog 1-like [Source:NCBI gene;Acc:105896686]",46.1,1,26576,2637,3261,595,27,8
+"ENSCHAG00000002434"," asap1b","ENSCHAG00000002434",NA,"protein_coding","Atlantic herring",17,8.36145,"ArfGAP with SH3 domain, ankyrin repeat and PH domain 1b [Source:ZFIN;Acc:ZDB-GENE-091112-16]",45.3,8,63570,3111,3876,73,323,28.5
+"ENSCHAG00000003659"," si:dkey-37o8.1","ENSCHAG00000003659",105889298,"protein_coding","Atlantic herring",17,8.427237,"elongation factor 1-alpha-like [Source:NCBI gene;Acc:105889298]",44.91,1,2424,1365,1868,222,279,7
+"ENSCHAG00000003694"," fam49bb","ENSCHAG00000003694",105889302,"protein_coding","Atlantic herring",17,8.443843,"family with sequence similarity 49 member B [Source:NCBI gene;Acc:105889302]",48.04,3,39413,969,2155,82,897,12
+"ENSCHAG00000003841"," ","ENSCHAG00000003841",NA,"protein_coding","Atlantic herring",17,8.544268,"",43.9,1,1229,417,417,NA,NA,3
+"ENSCHAG00000003864"," myca","ENSCHAG00000003864",NA,"protein_coding","Atlantic herring",17,8.623055,"MYC proto-oncogene, bHLH transcription factor a [Source:NCBI gene;Acc:30686]",50.74,1,1834,1242,1242,NA,NA,2
+"ENSCHAG00000003898"," B3GAT1","ENSCHAG00000003898",NA,"protein_coding","Atlantic herring",17,8.647064,"beta-1,3-glucuronyltransferase 1 [Source:HGNC Symbol;Acc:HGNC:921]",51.16,2,2120,924,924,NA,NA,4
+"ENSCHAG00000004010"," ankha","ENSCHAG00000004010",105889305,"protein_coding","Atlantic herring",17,8.664964,"progressive ankylosis protein homolog [Source:NCBI gene;Acc:105889305]",41.72,2,14363,1386,3225,461,1376,11.5
+"ENSCHAG00000004091"," ","ENSCHAG00000004091",NA,"protein_coding","Atlantic herring",17,8.679356,"",42.42,1,3757,888,1884,NA,995,5
+"ENSCHAG00000004148"," otulina","ENSCHAG00000004148",105889313,"protein_coding","Atlantic herring",17,8.689955,"YAE1 maturation factor of ABCE1 [Source:NCBI gene;Acc:105889313]",43.85,1,1910,648,1291,186,455,3
+"ENSCHAG00000007930"," si:dkey-61p9.11","ENSCHAG00000007930",NA,"protein_coding","Atlantic herring",17,12.495917,"si:dkey-61p9.11 [Source:ZFIN;Acc:ZDB-GENE-041210-242]",43.61,1,8706,6159,6159,NA,NA,8
+"ENSCHAG00000007975"," PTCHD3","ENSCHAG00000007975",NA,"protein_coding","Atlantic herring",17,12.509738,"patched domain containing 3 [Source:HGNC Symbol;Acc:HGNC:24776]",42.55,1,8501,2955,4556,NA,1600,4
+"ENSCHAG00000008007"," ","ENSCHAG00000008007",NA,"protein_coding","Atlantic herring",17,12.518689,"",43.63,1,7139,6174,6174,NA,NA,7
+"ENSCHAG00000008093"," yme1l1a","ENSCHAG00000008093",NA,"protein_coding","Atlantic herring",17,12.52915,"YME1-like 1a [Source:ZFIN;Acc:ZDB-GENE-091113-41]",42.43,7,11229,2109,2981,303,567,17
+"ENSCHAG00000010245"," mastl","ENSCHAG00000010245",NA,"protein_coding","Atlantic herring",17,12.541423,"microtubule associated serine/threonine kinase-like [Source:NCBI gene;Acc:445215]",45.25,3,7100,2232,2981,245,553,11
+"ENSCHAG00000010360"," acbd5a","ENSCHAG00000010360",NA,"protein_coding","Atlantic herring",17,12.549942,"acyl-CoA binding domain containing 5a [Source:NCBI gene;Acc:553674]",41.39,2,8955,1495.5,1970.5,99,274,13.5
+"ENSCHAG00000010398"," abi1a","ENSCHAG00000010398",NA,"protein_coding","Atlantic herring",17,12.559143,"abl interactor 1 [Source:HGNC Symbol;Acc:HGNC:11320]",46.56,4,50134,1321.5,1515.5,193,NA,9.5
+"ENSCHAG00000010461"," pdss1","ENSCHAG00000010461",105889401,"protein_coding","Atlantic herring",17,12.611849,"decaprenyl diphosphate synthase subunit 1 [Source:NCBI gene;Acc:105889401]",43.36,3,6521,1155,1515.5,720,NA,10
+"ENSCHAG00000010708"," ","ENSCHAG00000010708",NA,"protein_coding","Atlantic herring",17,12.617468,"",41.53,3,7074,1650,2063,NA,412,19
+"ENSCHAG00000010773"," apbb1ip","ENSCHAG00000010773",NA,"protein_coding","Atlantic herring",17,12.625675,"amyloid beta (A4) precursor protein-binding, family B, member 1 interacting protein [Source:NCBI gene;Acc:393607]",45.04,3,21341,1953,2916,480.5,1018,13
+"ENSCHAG00000010888"," gad2","ENSCHAG00000010888",105889318,"protein_coding","Atlantic herring",17,12.663826,"glutamate decarboxylase 2 [Source:NCBI gene;Acc:105889318]",42.98,7,19679,1458,5540,90,3868,14
+"ENSCHAG00000011556"," myo3a","ENSCHAG00000011556",NA,"protein_coding","Atlantic herring",17,12.686449,"myosin IIIA [Source:ZFIN;Acc:ZDB-GENE-041026-4]",44.9,5,58143,3363,3363,NA,NA,27
+"ENSCHAG00000012984"," ","ENSCHAG00000012984",NA,"protein_coding","Atlantic herring",17,12.77064,"",41.95,1,900,219,219,NA,NA,3
+"ENSCHAG00000013030"," gpr158a","ENSCHAG00000013030",NA,"protein_coding","Atlantic herring",17,12.782369,"G protein-coupled receptor 158a [Source:ZFIN;Acc:ZDB-GENE-060130-18]",45.84,6,72746,3870,5226.5,NA,2712,12
+"ENSCHAG00000012853"," ankk1","ENSCHAG00000012853",NA,"protein_coding","Atlantic herring",17,16.392205,"ankyrin repeat and kinase domain containing 1 [Source:ZFIN;Acc:ZDB-GENE-071015-4]",51.92,3,9163,2082,2082,NA,NA,8
+"ENSCHAG00000012974"," ttc12","ENSCHAG00000012974",NA,"protein_coding","Atlantic herring",17,16.419376,"tetratricopeptide repeat domain 12 [Source:ZFIN;Acc:ZDB-GENE-071016-4]",48.54,1,35332,2151,3126,562,205,22
+"ENSCHAG00000012988"," ","ENSCHAG00000012988",105903773,"protein_coding","Atlantic herring",17,16.458386,"interferon-induced transmembrane protein 1-like [Source:NCBI gene;Acc:105903773]",45.11,1,2941,294,2101,440,924,3
+"ENSCHAG00000013019"," zgc:162608","ENSCHAG00000013019",105903771,"protein_coding","Atlantic herring",17,16.507585,"uncharacterized LOC105903771 [Source:NCBI gene;Acc:105903771]",48.6,1,4264,966,1536,NA,569,3
+"ENSCHAG00000013029"," laynb","ENSCHAG00000013029",NA,"protein_coding","Atlantic herring",17,16.529852,"layilin b [Source:ZFIN;Acc:ZDB-GENE-071012-6]",47.65,1,9218,1146,2881,316,1417,7
+"ENSCHAG00000013038"," sik2b","ENSCHAG00000013038",NA,"protein_coding","Atlantic herring",17,16.54203,"salt-inducible kinase 2b [Source:ZFIN;Acc:ZDB-GENE-071012-1]",48.53,3,52534,2205,2646,320,4131,13
+"ENSCHAG00000013110"," ppp2r1bb","ENSCHAG00000013110",105903801,"protein_coding","Atlantic herring",17,16.599165,"serine/threonine-protein phosphatase 2A 65 kDa regulatory subunit A beta isoform [Source:NCBI gene;Acc:105903801]",51.21,7,13687,1698,2702,118,947,14
+"ENSCHAG00000013383"," zgc:162339","ENSCHAG00000013383",105903783,"protein_coding","Atlantic herring",17,16.62696,"NKAP domain containing 1 [Source:NCBI gene;Acc:105903783]",49.49,1,3307,807,1374,7,558,5
+"ENSCHAG00000013390"," cryaba","ENSCHAG00000013390",105903786,"protein_coding","Atlantic herring",17,16.631239,"alpha-crystallin B chain-like [Source:NCBI gene;Acc:105903786]",49.77,1,2617,510,1433,170,751,3
+"ENSCHAG00000013401"," dixdc1a","ENSCHAG00000013401",NA,"protein_coding","Atlantic herring",17,16.63557,"DIX domain containing 1a [Source:NCBI gene;Acc:360137]",48.14,2,16509,1335,3207,999,871,14.5
+"ENSCHAG00000013480"," DLAT","ENSCHAG00000013480",NA,"protein_coding","Atlantic herring",17,16.652709,"dihydrolipoamide S-acetyltransferase [Source:HGNC Symbol;Acc:HGNC:2896]",48.92,2,11639,1872,3298,470,954,14.5
+"ENSCHAG00000013572"," pih1d2","ENSCHAG00000013572",105903766,"protein_coding","Atlantic herring",17,16.665463,"PIH1 domain containing 2 [Source:NCBI gene;Acc:105903766]",48.98,3,2839,909,909,NA,NA,5
+"ENSCHAG00000013655"," tmprss5","ENSCHAG00000013655",NA,"protein_coding","Atlantic herring",17,16.668516,"transmembrane serine protease 5 [Source:ZFIN;Acc:ZDB-GENE-131121-184]",43.89,2,14584,474,740,265,NA,6
+"ENSCHAG00000012629"," ","ENSCHAG00000012629",NA,"protein_coding","Atlantic herring",17,26.197787,"",47.27,1,6051,942,2475,265.5,999,4
+"ENSCHAG00000012633"," ","ENSCHAG00000012633",NA,"protein_coding","Atlantic herring",17,26.204188,"",49.67,1,4517,4518,4518,NA,NA,1
+"ENSCHAG00000012642"," LYN","ENSCHAG00000012642",NA,"protein_coding","Atlantic herring",17,26.213403,"LYN proto-oncogene, Src family tyrosine kinase [Source:HGNC Symbol;Acc:HGNC:6735]",43.54,1,97712,1506,2672,141.5,880,13
+"ENSCHAG00000012743"," ","ENSCHAG00000012743",105894794,"protein_coding","Atlantic herring",17,26.233565,"ribosomal protein S20 [Source:NCBI gene;Acc:105894794]",43.63,3,88601,360,594,204,67,4
+"ENSCHAG00000012838"," chchd7","ENSCHAG00000012838",NA,"protein_coding","Atlantic herring",17,26.248237,"coiled-coil-helix-coiled-coil-helix domain containing 7 [Source:ZFIN;Acc:ZDB-GENE-080204-55]",41.32,1,4726,243,243,NA,NA,2
+"ENSCHAG00000012868"," sdr16c5b","ENSCHAG00000012868",NA,"protein_coding","Atlantic herring",17,26.25432,"short chain dehydrogenase/reductase family 16C, member 5b [Source:ZFIN;Acc:ZDB-GENE-040426-2861]",42.72,1,8119,939,2124,NA,1184,7
+"ENSCHAG00000012956"," penkb","ENSCHAG00000012956",NA,"protein_coding","Atlantic herring",17,26.265279,"proenkephalin b [Source:ZFIN;Acc:ZDB-GENE-030729-3]",43.62,2,92116,825,2007,158,855,3
+"ENSCHAG00000013028"," ","ENSCHAG00000013028",NA,"protein_coding","Atlantic herring",17,26.297423,"",43.25,1,2612,951,951,NA,NA,4
+"ENSCHAG00000013250"," chchd7","ENSCHAG00000013250",NA,"protein_coding","Atlantic herring",17,26.335324,"coiled-coil-helix-coiled-coil-helix domain containing 7 [Source:ZFIN;Acc:ZDB-GENE-080204-55]",40.68,1,6316,243,243,NA,NA,2
+"ENSCHAG00000013271"," sdr16c5b","ENSCHAG00000013271",NA,"protein_coding","Atlantic herring",17,26.342974,"short chain dehydrogenase/reductase family 16C, member 5b [Source:ZFIN;Acc:ZDB-GENE-040426-2861]",42.53,2,7902,900,2083,NA,1182,8
+"ENSCHAG00000013507"," ","ENSCHAG00000013507",NA,"protein_coding","Atlantic herring",17,26.385957,"",43.64,1,2146,888,888,NA,NA,4
+"ENSCHAG00000013555"," unm_hu7910","ENSCHAG00000013555",NA,"protein_coding","Atlantic herring",17,26.401615,"un-named hu7910 [Source:ZFIN;Acc:ZDB-GENE-120727-22]",44.73,2,8977,1687.5,3511.5,239,1583,17.5
+"ENSCHAG00000013824"," ggh","ENSCHAG00000013824",NA,"protein_coding","Atlantic herring",17,26.412138,"gamma-glutamyl hydrolase (conjugase, folylpolygammaglutamyl hydrolase) [Source:ZFIN;Acc:ZDB-GENE-040426-2615]",40.43,4,3521,949.5,949.5,NA,NA,9
+"ENSCHAG00000014122"," ggh","ENSCHAG00000014122",NA,"protein_coding","Atlantic herring",17,26.417999,"gamma-glutamyl hydrolase (conjugase, folylpolygammaglutamyl hydrolase) [Source:ZFIN;Acc:ZDB-GENE-040426-2615]",40.78,4,7304,939,1363,313,414,9
+"ENSCHAG00000014309"," ggh","ENSCHAG00000014309",NA,"protein_coding","Atlantic herring",17,26.425414,"gamma-glutamyl hydrolase (conjugase, folylpolygammaglutamyl hydrolase) [Source:ZFIN;Acc:ZDB-GENE-040426-2615]",38.4,1,3283,951,1109,52,104,9
+"ENSCHAG00000014381"," nsmaf","ENSCHAG00000014381",NA,"protein_coding","Atlantic herring",17,26.430273,"neutral sphingomyelinase (N-SMase) activation associated factor [Source:ZFIN;Acc:ZDB-GENE-050417-342]",45.01,8,18597,2586,4077,360,1490,25.5
+"ENSCHAG00000015635"," ","ENSCHAG00000015635",NA,"protein_coding","Atlantic herring",17,26.452303,"",44.65,1,2259,1116,1201,NA,84,2
+"ENSCHAG00000015650"," si:ch73-173p19.1","ENSCHAG00000015650",NA,"protein_coding","Atlantic herring",17,26.459102,"si:ch73-173p19.1 [Source:ZFIN;Acc:ZDB-GENE-130530-952]",47.18,3,16808,2709,3709,328,999,17
+"ENSCHAG00000015969"," slc4a2b","ENSCHAG00000015969",NA,"protein_coding","Atlantic herring",17,26.493511,"solute carrier family 4 member 2b [Source:ZFIN;Acc:ZDB-GENE-030429-14]",46.3,10,38914,3372,5271,97,1898,20
+"ENSCHAG00000006606"," ","ENSCHAG00000006606",NA,"protein_coding","Atlantic herring",19,5.50212,"",46.61,1,226788,3126,3126,NA,NA,22
+"ENSCHAG00000005470"," top2b","ENSCHAG00000005470",NA,"protein_coding","Atlantic herring",19,6.678432,"DNA topoisomerase II beta [Source:ZFIN;Acc:ZDB-GENE-041008-136]",47.72,6,32406,3876,3876,NA,NA,29
+"ENSCHAG00000010610"," ngly1","ENSCHAG00000010610",NA,"protein_coding","Atlantic herring",19,6.714973,"N-glycanase 1 [Source:NCBI gene;Acc:553627]",49.45,2,8976,1837.5,1837.5,NA,NA,13
+"ENSCHAG00000010728"," oxsm","ENSCHAG00000010728",NA,"protein_coding","Atlantic herring",19,6.724721,"3-oxoacyl-ACP synthase, mitochondrial [Source:ZFIN;Acc:ZDB-GENE-170215-2]",62.25,1,1681,1398,1398,NA,NA,2
+"ENSCHAG00000010779"," ","ENSCHAG00000010779",NA,"protein_coding","Atlantic herring",19,6.776573,"septin 7 [Source:HGNC Symbol;Acc:HGNC:1717]",49,7,33916,1270.5,1270.5,NA,NA,13
+"ENSCHAG00000012641"," si:dkey-222b8.4","ENSCHAG00000012641",NA,"protein_coding","Atlantic herring",19,6.883956,"si:dkey-222b8.4 [Source:ZFIN;Acc:ZDB-GENE-060503-438]",48.75,1,14654,1617,2186,426,141,7
+"ENSCHAG00000012650"," anln","ENSCHAG00000012650",NA,"protein_coding","Atlantic herring",19,6.899636,"anillin, actin binding protein [Source:ZFIN;Acc:ZDB-GENE-030131-4486]",46.64,3,16949,3300,3734,130.5,170,21
+"ENSCHAG00000012707"," ","ENSCHAG00000012707",NA,"protein_coding","Atlantic herring",19,6.915253,"",46.09,1,1214,588,588,NA,NA,2
+"ENSCHAG00000012713"," ccdc126","ENSCHAG00000012713",105906345,"protein_coding","Atlantic herring",19,6.919312,"coiled-coil domain containing 126 [Source:NCBI gene;Acc:105906345]",46.24,1,4543,522,2281,346.5,1063,3
+"ENSCHAG00000012717"," tra2a","ENSCHAG00000012717",NA,"protein_coding","Atlantic herring",19,6.925512,"transformer 2 alpha homolog [Source:ZFIN;Acc:ZDB-GENE-040426-1391]",48.11,2,5314,843,843,NA,NA,5.5
+"ENSCHAG00000012923"," igf2bp3","ENSCHAG00000012923",NA,"protein_coding","Atlantic herring",19,6.943099,"insulin-like growth factor 2 mRNA binding protein 3 [Source:NCBI gene;Acc:30967]",45.84,5,22656,1716,2716,NA,999,13
+"ENSCHAG00000014124"," gpnmb","ENSCHAG00000014124",NA,"protein_coding","Atlantic herring",19,6.967953,"glycoprotein (transmembrane) nmb [Source:ZFIN;Acc:ZDB-GENE-060503-106]",46.05,1,8268,1776,2889,NA,1112,11
+"ENSCHAG00000014180"," ","ENSCHAG00000014180",NA,"protein_coding","Atlantic herring",19,6.982553,"",37.17,1,1067,384,473,86,1,3
+"ENSCHAG00000014187"," ","ENSCHAG00000014187",NA,"protein_coding","Atlantic herring",19,6.987541,"",39.76,1,907,309,309,NA,NA,4
+"ENSCHAG00000014221"," ","ENSCHAG00000014221",NA,"protein_coding","Atlantic herring",19,6.991461,"",41.09,2,4238,561,2560,498.5,999,5.5
+"ENSCHAG00000012296"," ","ENSCHAG00000012296",NA,"protein_coding","Atlantic herring",20,0.85265,"",45.39,1,14454,1257,1758,103,89.5,11
+"ENSCHAG00000012311"," ","ENSCHAG00000012311",NA,"protein_coding","Atlantic herring",20,0.894376,"",45.72,1,2381,1008,1008,NA,NA,6
+"ENSCHAG00000012390"," ","ENSCHAG00000012390",NA,"protein_coding","Atlantic herring",20,0.938742,"",46.86,1,20461,1440,5275,97,2286,20
+"ENSCHAG00000012410"," ","ENSCHAG00000012410",NA,"protein_coding","Atlantic herring",20,0.957372,"",37.88,1,1831,222,222,NA,NA,3
+"ENSCHAG00000012906"," ","ENSCHAG00000012906",NA,"protein_coding","Atlantic herring",20,1.068172,"",47.73,1,15747,2682,4617,466.5,999,10
+"ENSCHAG00000012914"," depdc7b","ENSCHAG00000012914",NA,"protein_coding","Atlantic herring",20,1.09694,"DEP domain containing 7, paralog b [Source:ZFIN;Acc:ZDB-GENE-030131-9492]",41.06,1,3175,1413,1605,191,NA,9
+"ENSCHAG00000013634"," adam10a","ENSCHAG00000013634",NA,"protein_coding","Atlantic herring",20,12.862692,"ADAM metallopeptidase domain 10a [Source:ZFIN;Acc:ZDB-GENE-040917-2]",46.14,10,73561,2244,3269,632,997,16
+"ENSCHAG00000015875"," ","ENSCHAG00000015875",NA,"protein_coding","Atlantic herring",20,12.924019,"",41.54,1,2948,1881,1881,NA,NA,5
+"ENSCHAG00000015913"," lipca","ENSCHAG00000015913",NA,"protein_coding","Atlantic herring",20,12.940087,"lipase, hepatic a [Source:ZFIN;Acc:ZDB-GENE-040426-1361]",45.57,8,9257,1281,1281,NA,NA,8
+"ENSCHAG00000016470"," aqp9b","ENSCHAG00000016470",NA,"protein_coding","Atlantic herring",20,12.950119,"aquaporin 9b [Source:ZFIN;Acc:ZDB-GENE-070911-1]",44.95,3,29566,1146,3472,NA,2595,4
+"ENSCHAG00000016706"," aldh1a2","ENSCHAG00000016706",NA,"protein_coding","Atlantic herring",20,12.981502,"aldehyde dehydrogenase 1 family, member A2 [Source:ZFIN;Acc:ZDB-GENE-011010-3]",47.41,10,38258,1554,2554,492,999,13
+"ENSCHAG00000020954"," polr2m","ENSCHAG00000020954",105893066,"protein_coding","Atlantic herring",20,13.076309,"RNA polymerase II subunit M [Source:NCBI gene;Acc:105893066]",48.66,1,3538,1077,1938,154,705,4
+"ENSCHAG00000020964"," myzap","ENSCHAG00000020964",NA,"protein_coding","Atlantic herring",20,13.08114,"myocardial zonula adherens protein [Source:ZFIN;Acc:ZDB-GENE-041111-91]",45.05,1,24060,1824,2487,333,328,14
+"ENSCHAG00000021076"," tcf12","ENSCHAG00000021076",105893107,"protein_coding","Atlantic herring",20,13.170205,"transcription factor 12 [Source:NCBI gene;Acc:105893107]",46.72,8,124906,2043,2388,167,77,19.5
+"ENSCHAG00000004520"," ","ENSCHAG00000004520",NA,"protein_coding","Atlantic herring",20,22.539513,"",42.08,1,35159,2436,3212,122,1,6
+"ENSCHAG00000006379"," ","ENSCHAG00000006379",NA,"protein_coding","Atlantic herring",20,22.690776,"murine retrovirus integration site 1 homolog [Source:ZFIN;Acc:ZDB-GENE-120221-4]",47.29,1,12286,1089,1089,NA,NA,9
+"ENSCHAG00000006426"," ","ENSCHAG00000006426",NA,"protein_coding","Atlantic herring",20,22.716936,"",48.4,1,5297,684,1523,269,568,4
+"ENSCHAG00000006440"," ","ENSCHAG00000006440",NA,"protein_coding","Atlantic herring",20,22.734503,"",52.31,1,2014,528,1518,NA,989,3
+"ENSCHAG00000006532"," sbf2","ENSCHAG00000006532",NA,"protein_coding","Atlantic herring",20,22.743166,"SET binding factor 2 [Source:ZFIN;Acc:ZDB-GENE-030911-10]",47.07,10,53867,5343,5343,NA,NA,40
+"ENSCHAG00000009376"," ipo7","ENSCHAG00000009376",NA,"protein_coding","Atlantic herring",20,22.801918,"importin 7 [Source:ZFIN;Acc:ZDB-GENE-030131-458]",46.33,9,52344,2977.5,5488,737,3005,23
+"ENSCHAG00000014232"," nlgn4xa","ENSCHAG00000014232",NA,"protein_coding","Atlantic herring",21,25.561315,"neuroligin 4 X-linked a [Source:ZFIN;Acc:ZDB-GENE-100309-2]",47.81,7,143617,2565,5109,584,2075,7
+"ENSCHAG00000014979"," tmem198b","ENSCHAG00000014979",NA,"protein_coding","Atlantic herring",21,25.774909,"transmembrane protein 198b [Source:NCBI gene;Acc:564608]",46.14,1,13123,1122,1635,247,264,4
+"ENSCHAG00000000665"," ","ENSCHAG00000000665",NA,"protein_coding","Atlantic herring",21,25.83345,"",49.06,1,8097,423,1760,167.5,999,4
+"ENSCHAG00000000920"," cyp27c1","ENSCHAG00000000920",NA,"protein_coding","Atlantic herring",21,25.849987,"cytochrome P450, family 27, subfamily C, polypeptide 1 [Source:ZFIN;Acc:ZDB-GENE-080204-68]",47.31,7,12461,1548,2773,451,1224,10
+"ENSCHAG00000001369"," ercc3","ENSCHAG00000001369",NA,"protein_coding","Atlantic herring",21,25.869378,"excision repair cross-complementation group 3 [Source:NCBI gene;Acc:324323]",47.96,3,28875,2334,2933,165,435,15
+"ENSCHAG00000001707"," ","ENSCHAG00000001707",NA,"protein_coding","Atlantic herring",21,25.89916,"",46.27,1,8746,2088,2379,75,138,13
+"ENSCHAG00000001925"," nbeal1","ENSCHAG00000001925",NA,"protein_coding","Atlantic herring",21,26.041913,"neurobeachin-like 1 [Source:ZFIN;Acc:ZDB-GENE-130530-544]",48.59,6,80205,7036.5,7984.5,424,1895,47
+"ENSCHAG00000005803"," sema5bb","ENSCHAG00000005803",NA,"protein_coding","Atlantic herring",21,26.232398,"sema domain, seven thrombospondin repeats (type 1 and type 1-like), transmembrane domain (TM) and short cytoplasmic domain, (semaphorin) 5Bb [Source:ZFIN;Acc:ZDB-GENE-130530-778]",47.47,5,27534,2379,2676,147.5,NA,15
+"ENSCHAG00000015252"," C4orf33","ENSCHAG00000015252",105908447,"protein_coding","Atlantic herring",22,12.406697,"chromosome unknown open reading frame, human C4orf33 [Source:NCBI gene;Acc:105908447]",38.48,1,2663,591,1661,26.5,1014,6
+"ENSCHAG00000015265"," sclt1","ENSCHAG00000015265",105908547,"protein_coding","Atlantic herring",22,12.410024,"sodium channel and clathrin linker 1 [Source:NCBI gene;Acc:105908547]",44.11,1,12429,2052,2200,46,53,22
+"ENSCHAG00000015343"," grk4","ENSCHAG00000015343",105908523,"protein_coding","Atlantic herring",22,12.425626,"G protein-coupled receptor kinase 4 [Source:NCBI gene;Acc:105908523]",44.32,9,47877,1657.5,3985.5,366,2369,14
+"ENSCHAG00000017705"," htt","ENSCHAG00000017705",NA,"protein_coding","Atlantic herring",22,12.477425,"huntingtin [Source:ZFIN;Acc:ZDB-GENE-990415-131]",48.2,1,36342,9378,11295,332,1583,68
+"ENSCHAG00000019293"," rgs12b","ENSCHAG00000019293",NA,"protein_coding","Atlantic herring",22,12.517505,"regulator of G protein signaling 12b [Source:ZFIN;Acc:ZDB-GENE-031006-13]",46.31,2,44887,3720,6444,350,2372,16
+"ENSCHAG00000019357"," dok7","ENSCHAG00000019357",NA,"protein_coding","Atlantic herring",22,12.569449,"docking protein 7 [Source:ZFIN;Acc:ZDB-GENE-090312-103]",44.16,1,20892,2322,2538,NA,215,14
+"ENSCHAG00000019384"," lrpap1","ENSCHAG00000019384",NA,"protein_coding","Atlantic herring",22,12.593014,"low density lipoprotein receptor-related protein associated protein 1 [Source:ZFIN;Acc:ZDB-GENE-030131-5871]",41.41,10,5119,1107,1107,NA,NA,9
+"ENSCHAG00000019922"," ","ENSCHAG00000019922",NA,"protein_coding","Atlantic herring",22,12.61207,"",42.61,1,1001,246,246,NA,NA,4
+"ENSCHAG00000019939"," adra2c","ENSCHAG00000019939",105908371,"protein_coding","Atlantic herring",22,12.67195,"alpha-2C adrenergic receptor-like [Source:NCBI gene;Acc:105908371]",49.73,1,1507,1311,1311,NA,NA,2
+"ENSCHAG00000003402"," mcrip1","ENSCHAG00000003402",105904971,"protein_coding","Atlantic herring",23,23.290258,"MAPK regulated corepressor interacting protein 1 [Source:NCBI gene;Acc:105904971]",47.75,1,6495,297,1505,133.5,938,5
+"ENSCHAG00000003444"," alyref","ENSCHAG00000003444",105904970,"protein_coding","Atlantic herring",23,23.301417,"THO complex subunit 4-like [Source:NCBI gene;Acc:105904970]",47,5,51615,837,1305,341,338,6
+"ENSCHAG00000003580"," arhgdia","ENSCHAG00000003580",NA,"protein_coding","Atlantic herring",23,23.315733,"Rho GDP dissociation inhibitor alpha [Source:HGNC Symbol;Acc:HGNC:678]",46.95,2,69433,609,1841,115,999,5
+"ENSCHAG00000003867"," recql5","ENSCHAG00000003867",NA,"protein_coding","Atlantic herring",23,23.404428,"RecQ helicase-like 5 [Source:ZFIN;Acc:ZDB-GENE-071214-1]",47.4,1,37043,2922,5674,90,2660,15
+"ENSCHAG00000007146"," ","ENSCHAG00000007146",NA,"protein_coding","Atlantic herring",23,24.502822,"",47.4,3,7489,672,1053,189.5,NA,6
+"ENSCHAG00000007285"," sez6l2","ENSCHAG00000007285",105890662,"protein_coding","Atlantic herring",23,24.510233,"seizure related 6 homolog like 2 [Source:NCBI gene;Acc:105890662]",48.05,7,32414,2499,2499,357,576,12
+"ENSCHAG00000009040"," kctd13","ENSCHAG00000009040",NA,"protein_coding","Atlantic herring",23,24.548459,"potassium channel tetramerization domain containing 13 [Source:NCBI gene;Acc:100000647]",47.66,2,12088,943.5,3112.5,42,2125,6.5
+"ENSCHAG00000009067"," hirip3","ENSCHAG00000009067",NA,"protein_coding","Atlantic herring",23,24.561864,"HIRA interacting protein 3 [Source:ZFIN;Acc:ZDB-GENE-030131-5753]",47.12,5,11534,1269,1802,112,167,6
+"ENSCHAG00000009184"," ","ENSCHAG00000009184",NA,"protein_coding","Atlantic herring",23,24.585517,"",47.03,4,7956,834,1105,NA,270,5.5
+"ENSCHAG00000009308"," taok2a","ENSCHAG00000009308",NA,"protein_coding","Atlantic herring",23,24.600714,"TAO kinase 2a [Source:ZFIN;Acc:ZDB-GENE-030131-9416]",47.01,5,19162,3270,3563,384,NA,14
+"ENSCHAG00000009604"," maza","ENSCHAG00000009604",NA,"protein_coding","Atlantic herring",23,24.633437,"MYC-associated zinc finger protein a (purine-binding transcription factor) [Source:ZFIN;Acc:ZDB-GENE-110603-4]",46.66,2,8807,372,1764,89,999,5.5
+"ENSCHAG00000009646"," nlk1","ENSCHAG00000009646",NA,"protein_coding","Atlantic herring",23,24.646169,"nemo-like kinase, type 1 [Source:ZFIN;Acc:ZDB-GENE-040701-1]",47.06,2,5466,991.5,991.5,NA,NA,6.5
+"ENSCHAG00000010036"," ","ENSCHAG00000010036",NA,"protein_coding","Atlantic herring",23,24.737535,"",50.46,1,861,267,267,NA,NA,2
+"ENSCHAG00000012127"," mapk3","ENSCHAG00000012127",NA,"protein_coding","Atlantic herring",23,24.920853,"mitogen-activated protein kinase 3 [Source:ZFIN;Acc:ZDB-GENE-040121-1]",47.98,10,56485,1104,4016,NA,1456.5,10
+"ENSCHAG00000002537"," nudt9","ENSCHAG00000002537",NA,"protein_coding","Atlantic herring",23,24.935072,"nudix (nucleoside diphosphate linked moiety X)-type motif 9 [Source:ZFIN;Acc:ZDB-GENE-040426-2669]",48.05,1,50408,981,1214,NA,232,6
+"ENSCHAG00000003093"," ","ENSCHAG00000003093",NA,"protein_coding","Atlantic herring",23,25.007325,"",52.13,2,4104,892.5,1246.5,60,292,4.5
+"ENSCHAG00000003142"," ","ENSCHAG00000003142",NA,"protein_coding","Atlantic herring",23,25.023947,"",51.95,2,4661,2772,3157,168,241.5,2.5
+"ENSCHAG00000003173"," ALDOA","ENSCHAG00000003173",NA,"protein_coding","Atlantic herring",23,25.032795,"aldolase, fructose-bisphosphate A [Source:HGNC Symbol;Acc:HGNC:414]",48.97,2,13218,1050,2464,305,801,9
+"ENSCHAG00000003244"," ","ENSCHAG00000003244",NA,"protein_coding","Atlantic herring",23,25.072113,"zgc:100868 [Source:ZFIN;Acc:ZDB-GENE-040801-33]",44.22,2,28355,1243.5,1243.5,NA,NA,6
+"ENSCHAG00000003348"," ","ENSCHAG00000003348",NA,"protein_coding","Atlantic herring",23,25.094396,"",42.07,1,1606,708,708,NA,NA,2
+"ENSCHAG00000011808"," ","ENSCHAG00000011808",NA,"protein_coding","Atlantic herring",24,5.197188,"",43.54,1,1060,549,549,NA,NA,2
+"ENSCHAG00000011820"," MFAP4","ENSCHAG00000011820",NA,"protein_coding","Atlantic herring",24,5.240484,"microfibril associated protein 4 [Source:HGNC Symbol;Acc:HGNC:7035]",39.38,3,2630,717,1099,NA,381,5
+"ENSCHAG00000011950"," ","ENSCHAG00000011950",NA,"protein_coding","Atlantic herring",24,5.345847,"",42.09,1,1997,825,1498,67,604,2
+"ENSCHAG00000012074"," pnpla6","ENSCHAG00000012074",NA,"protein_coding","Atlantic herring",24,5.35991,"patatin-like phospholipase domain containing 6 [Source:ZFIN;Acc:ZDB-GENE-050107-4]",45.26,10,30525,3681,3681,NA,NA,28.5
+"ENSCHAG00000017046"," r3hcc1l","ENSCHAG00000017046",NA,"protein_coding","Atlantic herring",24,5.395888,"R3H domain and coiled-coil containing 1-like [Source:ZFIN;Acc:ZDB-GENE-030131-4156]",46,1,3553,573,573,NA,NA,5
+"ENSCHAG00000017109"," crtac1a","ENSCHAG00000017109",105891013,"protein_coding","Atlantic herring",24,5.400158,"cartilage acidic protein 1-like [Source:NCBI gene;Acc:105891013]",42.48,7,7324,1677,1677,NA,NA,13
+"ENSCHAG00000017905"," ","ENSCHAG00000017905",NA,"protein_coding","Atlantic herring",24,5.408374,"",40.34,1,4977,1551,2881,705,623,8
+"ENSCHAG00000017915"," ","ENSCHAG00000017915",NA,"protein_coding","Atlantic herring",24,5.424006,"",38.75,1,1777,855,855,NA,NA,4
+"ENSCHAG00000017940"," ","ENSCHAG00000017940",NA,"protein_coding","Atlantic herring",24,5.444223,"",44.59,1,932,675,675,NA,NA,2
+"ENSCHAG00000022402"," stard3nl","ENSCHAG00000022402",NA,"protein_coding","Atlantic herring",25,6.892927,"STARD3 N-terminal like [Source:ZFIN;Acc:ZDB-GENE-040718-4]",41.58,3,6117,675,933,120,69,7
+"ENSCHAG00000022453"," epdr1","ENSCHAG00000022453",NA,"protein_coding","Atlantic herring",25,6.900177,"ependymin related 1 [Source:ZFIN;Acc:ZDB-GENE-040718-113]",44.25,2,2078,609,892,282,NA,4
+"ENSCHAG00000022467"," nol7","ENSCHAG00000022467",NA,"protein_coding","Atlantic herring",25,6.901763,"nucleolar protein 7 [Source:ZFIN;Acc:ZDB-GENE-030131-9100]",39.14,1,2393,615,941,NA,325,7
+"ENSCHAG00000022521"," ranbp9","ENSCHAG00000022521",NA,"protein_coding","Atlantic herring",25,6.905194,"RAN binding protein 9 [Source:NCBI gene;Acc:558976]",41.94,3,10074,1794,2363,NA,568,14
+"ENSCHAG00000022766"," rnf182","ENSCHAG00000022766",105907513,"protein_coding","Atlantic herring",25,6.916272,"ring finger protein 182 [Source:NCBI gene;Acc:105907513]",53.67,1,1471,747,747,NA,NA,3
+"ENSCHAG00000022922"," and2","ENSCHAG00000022922",105907514,"protein_coding","Atlantic herring",25,7.111877,"uncharacterized LOC105907514 [Source:NCBI gene;Acc:105907514]",53.91,1,2008,1518,1518,NA,NA,3
+"ENSCHAG00000022925"," ","ENSCHAG00000022925",NA,"protein_coding","Atlantic herring",25,7.135459,"",46.3,1,850,291,291,NA,NA,2
+"ENSCHAG00000022931"," ","ENSCHAG00000022931",NA,"protein_coding","Atlantic herring",25,7.140034,"RALY RNA binding protein like [Source:ZFIN;Acc:ZDB-GENE-060607-5]",42.31,2,10899,699,1287,462,119,7
+"ENSCHAG00000022941"," lrrcc1","ENSCHAG00000022941",105907516,"protein_coding","Atlantic herring",25,7.154267,"leucine rich repeat and coiled-coil centrosomal protein 1 [Source:NCBI gene;Acc:105907516]",43.17,2,12453,2985,3344,48,309,18.5
+"ENSCHAG00000022966"," e2f5","ENSCHAG00000022966",NA,"protein_coding","Atlantic herring",25,7.166431,"E2F transcription factor 5 [Source:ZFIN;Acc:ZDB-GENE-030828-3]",40.5,1,2372,450,1191,499,240,3
+"ENSCHAG00000022978"," e2f5","ENSCHAG00000022978",NA,"protein_coding","Atlantic herring",25,7.168883,"E2F transcription factor 5 [Source:ZFIN;Acc:ZDB-GENE-030828-3]",42.93,1,3251,471,679,207,NA,4
+"ENSCHAG00000022989"," ackr4a","ENSCHAG00000022989",NA,"protein_coding","Atlantic herring",25,7.175027,"atypical chemokine receptor 4a [Source:ZFIN;Acc:ZDB-GENE-070301-6]",47.77,1,3321,1320,1878,273,283,2
+"ENSCHAG00000023006"," si:ch211-106h4.9","ENSCHAG00000023006",NA,"protein_coding","Atlantic herring",25,7.186075,"si:ch211-106h4.9 [Source:ZFIN;Acc:ZDB-GENE-070705-17]",47.21,3,34021,3798,5579,452,969,15
+"ENSCHAG00000005747"," prkcba","ENSCHAG00000005747",NA,"protein_coding","Atlantic herring",26,0.053737,"protein kinase C, beta a [Source:ZFIN;Acc:ZDB-GENE-040426-1354]",47.56,4,9953,1377,1568,NA,190,12.5
+"ENSCHAG00000006290"," cacng3a","ENSCHAG00000006290",NA,"protein_coding","Atlantic herring",26,0.077393,"calcium channel, voltage-dependent, gamma subunit 3a [Source:ZFIN;Acc:ZDB-GENE-090312-124]",47.7,1,11935,1356,2205,NA,848,4
+"ENSCHAG00000006798"," ern2","ENSCHAG00000006798",NA,"protein_coding","Atlantic herring",26,0.171627,"endoplasmic reticulum to nucleus signaling 2 [Source:ZFIN;Acc:ZDB-GENE-090312-15]",47.96,1,11958,2451,2937,485,NA,13
+"ENSCHAG00000006826"," plk1","ENSCHAG00000006826",NA,"protein_coding","Atlantic herring",26,0.185197,"polo-like kinase 1 (Drosophila) [Source:ZFIN;Acc:ZDB-GENE-021115-7]",48.21,5,7886,1761,2800,725,357,11
+"ENSCHAG00000007016"," ","ENSCHAG00000007016",NA,"protein_coding","Atlantic herring",26,0.217552,"NADH:ubiquinone oxidoreductase subunit AB1a [Source:ZFIN;Acc:ZDB-GENE-040801-1]",46.34,1,2800,471,735,NA,131,5
+"ENSCHAG00000007022"," ","ENSCHAG00000007022",NA,"protein_coding","Atlantic herring",26,0.222075,"",51.49,1,401,255,255,NA,NA,2
+"ENSCHAG00000007045"," fscn1b","ENSCHAG00000007045",NA,"protein_coding","Atlantic herring",26,0.253173,"fascin actin-bundling protein 1a [Source:ZFIN;Acc:ZDB-GENE-031009-1]",54.18,1,1625,837,837,NA,NA,2
+"ENSCHAG00000007065"," actb1","ENSCHAG00000007065",105899933,"protein_coding","Atlantic herring",26,0.268594,"actin, cytoplasmic 1 [Source:NCBI gene;Acc:105910547]",53.61,2,3101,1128,1641,1,510,4
+"ENSCHAG00000002646"," fbxl18","ENSCHAG00000002646",NA,"protein_coding","Atlantic herring",26,0.273275,"F-box and leucine-rich repeat protein 18 [Source:ZFIN;Acc:ZDB-GENE-050913-65]",54.04,2,6659,2695.5,3851,NA,1154.5,4
+"ENSCHAG00000007853"," ","ENSCHAG00000007853",NA,"protein_coding","Atlantic herring",26,3.708757,"",41.37,9,164048,2139,2139,NA,NA,5
+"ENSCHAG00000008791"," ","ENSCHAG00000008791",NA,"protein_coding","Atlantic herring",26,3.790577,"",41.7,3,141058,1503,1705,18,182,3
+"ENSCHAG00000008484"," ","ENSCHAG00000008484",NA,"pseudogene","Atlantic herring",2,1.912592,"",48.54,1,2430,NA,1683,NA,NA,3
+"ENSCHAG00000020972"," ","ENSCHAG00000020972",NA,"pseudogene","Atlantic herring",20,13.118162,"",47.95,1,39158,NA,5708,NA,NA,21
+"ENSCHAG00000020718"," ","ENSCHAG00000020718",NA,"snoRNA","Atlantic herring",2,10.656941,"",50.78,1,127,NA,128,NA,NA,1
+"ENSCHAG00000016592"," ","ENSCHAG00000016592",NA,"snoRNA","Atlantic herring",10,14.963293,"",35.8,1,80,NA,81,NA,NA,1
+"ENSCHAG00000016594"," ","ENSCHAG00000016594",NA,"snoRNA","Atlantic herring",10,14.963547,"",38.57,1,69,NA,70,NA,NA,1
+"ENSCHAG00000016595"," SNORD79","ENSCHAG00000016595",NA,"snoRNA","Atlantic herring",10,14.96399,"Small nucleolar RNA SNORD79 [Source:RFAM;Acc:RF00152]",35.37,1,81,NA,82,NA,NA,1
+"ENSCHAG00000016597"," ","ENSCHAG00000016597",NA,"snoRNA","Atlantic herring",10,14.964263,"",43.37,1,82,NA,83,NA,NA,1
+"ENSCHAG00000016600"," ","ENSCHAG00000016600",NA,"snoRNA","Atlantic herring",10,14.964486,"",42.17,1,82,NA,83,NA,NA,1
+"ENSCHAG00000016613"," ","ENSCHAG00000016613",NA,"snoRNA","Atlantic herring",10,14.96638,"",41.1,1,72,NA,73,NA,NA,1
+"ENSCHAG00000016616"," ","ENSCHAG00000016616",NA,"snoRNA","Atlantic herring",10,14.966631,"",39.73,1,72,NA,73,NA,NA,1
+"ENSCHAG00000020716"," ","ENSCHAG00000020716",NA,"snRNA","Atlantic herring",2,10.614665,"",47.58,1,123,NA,124,NA,NA,1

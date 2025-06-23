@@ -1,0 +1,41 @@
+#Calculate Dxy from angsd maf data using calcDxy.R script
+
+#on terminal 
+
+Rscript calcDxy.R -p p1 --popA='PWS96.mafs' -q p2 --popB='PWS17.mafs'
+[1] "Total length not supplied. The output will not be a per site estimate."
+[1] "Created Dxy_persite.txt"
+[1] "Global dxy is: 71725.9281416285"
+
+
+#### Output for PWS using VCF maf05
+
+(base) Kahos-MacBook-Pro:calculateDxy kahotisthammer$ Rscript calcDxy.R -p PWS91 --popA='PWS91.mafs.txt' -q PWS96 --popB='PWS96.mafs.txt'
+[1] "Total length not supplied. The output will not be a per site estimate."
+[1] "Created Dxy_persite.txt"
+[1] "Global dxy is: 71914.4048090072"
+(base) Kahos-MacBook-Pro:calculateDxy kahotisthammer$ Rscript calcDxy.R -p PWS91 --popA='PWS91.mafs.txt' -q PWS96 --popB='PWS07.mafs'
+[1] "Total length not supplied. The output will not be a per site estimate."
+[1] "Created Dxy_persite.txt"
+[1] "Global dxy is: 73507.1668887269"
+(base) Kahos-MacBook-Pro:calculateDxy kahotisthammer$ Rscript calcDxy.R -p PWS91 --popA='PWS91.mafs.txt' -q PWS96 --popB='PWS17.mafs'
+[1] "Total length not supplied. The output will not be a per site estimate."
+[1] "Created Dxy_persite.txt"
+[1] "Global dxy is: 70321.1592468197"
+(base) Kahos-MacBook-Pro:calculateDxy kahotisthammer$ Rscript calcDxy.R -p p1 --popA='PWS96.mafs' -q p2 --popB='PWS07.mafs'
+[1] "Total length not supplied. The output will not be a per site estimate."
+[1] "Created Dxy_persite.txt"
+[1] "Global dxy is: 74830.0710530407"
+(base) Kahos-MacBook-Pro:calculateDxy kahotisthammer$ Rscript calcDxy.R -p p1 --popA='PWS96.mafs' -q p2 --popB='PWS17.mafs'
+[1] "Total length not supplied. The output will not be a per site estimate."
+[1] "Created Dxy_persite.txt"
+[1] "Global dxy is: 71725.9281416285"
+(base) Kahos-MacBook-Pro:calculateDxy kahotisthammer$ Rscript calcDxy.R -p p1 --popA='PWS07.mafs' -q p2 --popB='PWS17.mafs'
+[1] "Total length not supplied. The output will not be a per site estimate."
+[1] "Created Dxy_persite.txt"
+[1] "Global dxy is: 73329.9960475326"
+
+#nSites = 330482
+
+
+

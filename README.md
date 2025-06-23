@@ -11,3 +11,4 @@ The large data necessary to run R scripts are available at the following reposit
 Unavailable files at any repositores are available upon request to kahot@hawaii.edu.
 Additional related analysis scripts may be available at https://github.com/kahot/PacHerring/
 
+Raw sequencing reads are available at the NCBI SRA (PRJNA972458).  

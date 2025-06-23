@@ -1,0 +1,28 @@
+Wed Jul  5 20:13:15 2023: Running validation tests on input files
+Wed Jul  5 20:13:15 2023: Finished validating - Submitting job to queue
+Wed Jul  5 20:13:15 2023: Job 1688577195 was submitted to queue.
+Wed Jul  5 20:15:52 2023: Job 1688577195 started running.
+Wed Jul  5 20:15:52 2023: Retrieving data from files for each K
+Wed Jul  5 20:15:52 2023: K=2 mean: -49290520.3928207
+Wed Jul  5 20:15:52 2023: K=2 standard deviation: 0.235526874899484
+Wed Jul  5 20:15:52 2023: K=2 median: -49290520.2924255
+Wed Jul  5 20:15:52 2023: K=3 mean: -49013183.7704248
+Wed Jul  5 20:15:52 2023: K=3 standard deviation: 100.046312570391
+Wed Jul  5 20:15:52 2023: K=3 median: -49013155.3685015
+Wed Jul  5 20:15:52 2023: K=4 mean: -48748861.7397996
+Wed Jul  5 20:15:52 2023: K=4 standard deviation: 180.40785090625
+Wed Jul  5 20:15:52 2023: K=4 median: -48748768.428675
+Wed Jul  5 20:15:52 2023: Calculating Best K by Evanno
+Wed Jul  5 20:15:52 2023: Ln'(3) = 277336.622395895
+Wed Jul  5 20:15:52 2023: Ln'(4) = 264322.030625194
+Wed Jul  5 20:15:52 2023: |Ln''(K=3)| = 13014.5917707011
+Wed Jul  5 20:15:52 2023: Delta(K=3) = 130.085671688741
+Wed Jul  5 20:15:52 2023: Max Delta K: 130.085671688741
+Wed Jul  5 20:15:52 2023: Optimal K by Evanno is: 3
+Wed Jul  5 20:15:56 2023: Using median values of Ln Prob of Data to calculate Prob(K=k):
+Wed Jul  5 20:15:56 2023: Prob(K=2) = 0
+Wed Jul  5 20:15:56 2023: Prob(K=3) = 0
+Wed Jul  5 20:15:56 2023: Prob(K=4) = 1
+Wed Jul  5 20:15:56 2023: Max Probability: 1
+Wed Jul  5 20:15:56 2023: The k for which Prob(K=k) obtains the highest value is: 4
+Wed Jul  5 20:15:59 2023: Creating job zip file

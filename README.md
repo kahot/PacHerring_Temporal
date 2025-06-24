@@ -6,7 +6,7 @@ Large data analysis were performed at a cluster computer at UC Davis (Farm) and 
 The large data necessary to run R scripts are available at the following repositories:
 
 1. ORS Repository: https://osf.io/wrca4
-2. ORS Repository: https://osf.io/3cmkr/
+2. ORS Repository: https://osf.io/3cmkr
 
 Unavailable files at any repositores are available upon request to kahot@hawaii.edu.
 Additional related analysis scripts may be available at https://github.com/kahot/PacHerring/

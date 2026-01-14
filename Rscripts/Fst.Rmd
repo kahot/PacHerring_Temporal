@@ -457,9 +457,10 @@ write.csv(Fst.random,"../Output/Fst/random/Fst_MD2000_random_betweenPWS.SS.csv" 
 
 # Estimated Fst values based on the data
 fsts<-read.csv("../Output/Fst/newMD2000_weightedFst_3pops.csv")
+Fst.random<-read.csv("../Output/Fst/random/Fst_MD2000_random_betweenPWS.SS.csv", row.names = 1)
 Fst.random$realFst<-fsts$fst[c(22,20,21)]
 
-fstm<-melt(Fst.random[,c("Year","meanFst","realFst","sd")], id.vars=c("Year","sd"))
+fstm<-reshape2::melt(Fst.random[,c("Year","meanFst","realFst","sd")], id.vars=c("Year","sd"))
 fstm$sd[fstm$variable=="realFst"]<-NA
 fstm$Year<-factor(fstm$Year, levels=c("1996","2006","2017"))
 
@@ -467,12 +468,12 @@ fstm$Year<-factor(fstm$Year, levels=c("1996","2006","2017"))
 ggplot(fstm, aes(x=Year, y=value, fill=variable))+
     geom_bar(stat="identity", position=position_dodge(width=1))+
     geom_errorbar(aes(ymin=value-sd,ymax=value+sd), position=position_dodge(width=1), width=.2, size=.2)+
-    scale_fill_manual(values=gcols[2:3], labels=c("Randomsized", "Estimated Fst"))+
+    scale_fill_manual(values=gcols[2:3], labels=c("Randomized", "Estimated Fst"))+
     theme_bw()+theme(legend.title = element_blank())+ggtitle("PWS vs. SS Fst")
-ggsave("../Output/Fst/PWS_SS_randomsized.vs.realFst.png", width = 4.4, height = 3, dpi=300)
+ggsave("../Output/Fst/PWS_SS_randomized.vs.realFst.png", width = 4.4, height = 3, dpi=300)
 ```
 
-![](../Output/Fst/PWS_SS_randomsized.vs.realFst.png)
+![](../Output/Fst/PWS_SS_randomized.vs.realFst.png)
 
 
 
@@ -593,7 +594,7 @@ Fst.boot<-read.csv("../Output/Fst/bootstrap/fst/Fst_MD2000_means_betweenPWS.SS.c
 fsts<-read.csv("../Output/Fst/newMD2000_weightedFst_3pops.csv")
 Fst.boot$realFst<-fsts$fst[c(22,20,21)]
 
-fstm<-melt(Fst.boot[,c("Year","meanFst","realFst","sd")], id.vars=c("Year","sd"))
+fstm<-reshape2::melt(Fst.boot[,c("Year","meanFst","realFst","sd")], id.vars=c("Year","sd"))
 fstm$sd[fstm$variable=="realFst"]<-NA
 #fstm$Year<-factor(fstm$Year, levels=c("1996","2006","2017"))
 
@@ -602,7 +603,7 @@ fstm$sd[fstm$variable=="realFst"]<-NA
 fs<-t(Fst.random)
 colnames(fs)<-fs[3,]
 fs<-fs[-c(1:3),]
-fsm<-melt(fs)
+fsm<-reshape2::melt(fs)
 colnames(fsm)[1:2]<-c("variable","Year")
 fsm$Fst<-"meanFst"
 fsm<-fsm[,-1]
@@ -637,7 +638,7 @@ Fst.boot$ci_low[3]<- quantile(fs$X2017, probs=c(0.025,0.975))[1]
 Fst.boot$ci_high[3]<-quantile(fs$X2017, probs=c(0.025,0.975))[2]
 
 
-fstm<-melt(Fst.boot[,c("Year","meanFst","realFst","ci_low","ci_high")], id.vars=c("Year","ci_low","ci_high"))
+fstm<-reshape2::melt(Fst.boot[,c("Year","meanFst","realFst","ci_low","ci_high")], id.vars=c("Year","ci_low","ci_high"))
 fstm$ci_low[fstm$variable=="realFst"]<-NA
 fstm$ci_high[fstm$variable=="realFst"]<-NA
 
@@ -663,7 +664,7 @@ ann$p.symble<-c("*","**","**")
 p1<-ggplot(fstm, aes(x=factor(Year), y=value, fill=variable))+
     geom_bar(stat="identity", position=position_dodge(width=0.8), width=0.8)+
     geom_errorbar(aes(ymin=ci_low,ymax=ci_high), position=position_dodge(width=0.8), width=.2, size=.2)+
-    scale_fill_manual(values=gcols[c(3,2)], labels=c("Randomsized", "Estimated Fst"))+ylab(expression("F"[ST] ~" ± 95% CI"))+xlab('')+
+    scale_fill_manual(values=gcols[c(3,2)], labels=c("Randomized", "Estimated Fst"))+ylab(expression("F"[ST] ~" ± 95% CI"))+xlab('')+
     theme_bw()+theme(legend.title = element_blank())+
     geom_text(data=ann, mapping = aes(label = p.symble), size=3, color="gray25")+
     theme(panel.grid.major.x = element_blank(), panel.grid.minor.x = element_blank())
@@ -831,7 +832,7 @@ for (i in 1:3){
 }
 
 # CIs
-bootm<-melt(boot, id.vars=c("pop","Year","ci_low","ci_high","P.val") )
+bootm<-reshape2::melt(boot, id.vars=c("pop","Year","ci_low","ci_high","P.val") )
 bootm$ci_low[bootm$variable=="realFst"]<-NA
 bootm$ci_high[bootm$variable=="realFst"]<-NA
 colnames(bootm)[which(colnames(bootm)=="variable")]<-"Fst"
@@ -843,7 +844,7 @@ for (i in 1:3){
     fs<-t(df)
     colnames(fs)<-fs[1,]
     fs<-fs[-1,]
-    fs2<-melt(fs)
+    fs2<-reshape2::melt(fs)
     colnames(fs2)[1:2]<-c("variable","Year")
     fs2$Fst<-"meanFst"
     fs2<-fs2[,-1]
@@ -871,7 +872,7 @@ write.csv(boot, "../Output/Fst/bootstrap/Intrapop_Fst_summary_table.csv")
 
 
 # Plot with P-values
-fstm<-melt(boot[,c("Year","meanFst","realFst","ci_low","ci_high")], id.vars=c("Year","ci_low","ci_high"))
+fstm<-reshape2::melt(boot[,c("Year","meanFst","realFst","ci_low","ci_high")], id.vars=c("Year","ci_low","ci_high"))
 fstm$ci_low[fstm$variable=="realFst"]<-NA
 fstm$ci_high[fstm$variable=="realFst"]<-NA
 
@@ -884,7 +885,7 @@ p3<-ggplot(bootm, aes(x=Year, y=value,fill=Fst ))+
     facet_wrap(~pop)+
     geom_bar(stat="identity", position=position_dodge(width=0.8), width=0.8)+
     geom_errorbar(aes(ymin=ci_low,ymax=ci_high), position=position_dodge(width=0.8), width=.2, size=.2)+
-    scale_fill_manual(values=gcols[c(3,2)], labels=c("Randomsized", expression("Estimated"~ "F"[ST])))+xlab('')+
+    scale_fill_manual(values=gcols[c(3,2)], labels=c("Randomized", expression("Estimated"~ "F"[ST])))+xlab('')+
     theme_bw()+theme(legend.title = element_blank())+theme(panel.grid.major.x = element_blank(),panel.grid.minor.x = element_blank())+
     geom_text(data=ann_text, mapping = aes(label = p.symble), size=3, color="gray25")+
     ylab(expression("F"[ST] ~" ± 95% CI"))

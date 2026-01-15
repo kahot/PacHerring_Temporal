@@ -670,14 +670,12 @@ pop$Population.Year<-factor(pop$Population.Year, levels=c("TB91","TB96","TB06","
 poporder<-paste(pop$Population.Year[order(pop$Population.Year)])
 pop_order<-c("TB91","TB96","TB06","TB17","PWS91","PWS96","PWS07","PWS17","SS96","SS06","SS17")
 
+#plot only k=2 and k=3
 for (i in 1:length(qfiles)){
     # extract K from the file name
-    if (i!=3) {
         oname<-ofiles[i]
         k<-gsub("[^0-9.]", "", ofiles[i])
         k<-as.integer(gsub("\\.",'',k))
-    }
-    if (i==3) k=3
     
     #read the qopt file for k=k
     q<-read.table(paste0("../Data/ngsadmix/", qfiles[i]))
@@ -695,11 +693,10 @@ for (i in 1:length(qfiles)){
     #color assignment
     if (i==1) colors=cols[c(1,2)]
     if (i==2) colors=cols[c(1,6,2) ]
-    if (i==3) colors=cols[c(1,6,2,3) ]
-
-    {png(paste0("../Output/ngsadmix/3pops_Admix_plot_k",k,".png"), height = 3.5, width=8, unit="in", res=300)
+    
+    {png(paste0("../Output/ngsadmix/3pops_Admix_plot_k",k,".png"), height = 3.5, width=7, unit="in", res=300)
     barplot(t(q[,1:(i+2)])[,ord],col=colors,space=0,border=NA,xaxt="n",xlab="",ylab=paste0("Admixture proportions for K=",k))
-    text(xlabels$x,-0.05,xlabels$pop,xpd=T, srt=90, adj=1,cex=0.8)
+    text(xlabels$x,-0.05,xlabels$pop,xpd=T, srt=90, adj=1,cex=0.9)
     abline(v=cumsum(sapply(unique(poporder[ord]),function(x){sum(pop[ord,"Population.Year"]==x)})),col=1,lwd=1.2)
     dev.off()}
     

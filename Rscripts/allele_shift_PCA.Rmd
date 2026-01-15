@@ -183,15 +183,12 @@ ggplot(dfpwss,aes(x=pc1, y=pc2, color=id))+
     guides(color = guide_legend(override.aes = list(color=c(colgrad[3],colgrad[6],rep("white", times=5))), title=element_blank()))+
     annotate(geom="text", x=dfpwss$pc1[dfpwss$pop=="PWS"&dfpwss$year==1991], y=dfpwss$pc2[dfpwss$pop=="PWS"&dfpwss$year==1991], label="91",color ='black', size=3)+
     annotate(geom="text", x=dfpwss$pc1[dfpwss$pop=="PWS"&dfpwss$year==1996], y=dfpwss$pc2[dfpwss$pop=="PWS"&dfpwss$year==1996], label="96",color ='black', size=3)+
-    annotate(geom="text", x=dfpwss$pc1[dfpwss$pop=="PWS"&dfpwss$year==2006], y=dfpwss$pc2[dfpwss$pop=="PWS"&dfpwss$year==2006], label="06",color ='white', size=3)+
+    annotate(geom="text", x=dfpwss$pc1[dfpwss$pop=="PWS"&dfpwss$year==2006], y=dfpwss$pc2[dfpwss$pop=="PWS"&dfpwss$year==2006], label="07",color ='white', size=3)+
     annotate(geom="text", x=dfpwss$pc1[dfpwss$pop=="PWS"&dfpwss$year==2017], y=dfpwss$pc2[dfpwss$pop=="PWS"&dfpwss$year==2017], label="17",color ='white', size=3) +
         annotate(geom="text", x=dfpwss$pc1[dfpwss$pop=="SS"&dfpwss$year==1996], y=dfpwss$pc2[dfpwss$pop=="SS"&dfpwss$year==1996], label="96",color ='black', size=3)+
-    annotate(geom="text", x=dfpwss$pc1[dfpwss$pop=="SS"&dfpwss$year==2006], y=dfpwss$pc2[dfpwss$pop=="SS"&dfpwss$year==2006], label="07",color ='black', size=3)+
+    annotate(geom="text", x=dfpwss$pc1[dfpwss$pop=="SS"&dfpwss$year==2006], y=dfpwss$pc2[dfpwss$pop=="SS"&dfpwss$year==2006], label="06",color ='black', size=3)+
     annotate(geom="text", x=dfpwss$pc1[dfpwss$pop=="SS"&dfpwss$year==2017], y=dfpwss$pc2[dfpwss$pop=="SS"&dfpwss$year==2017], label="17",color ='white', size=3) 
 ggsave("../Output/PCA/newMD2000_AF_standardized_pca_PWS_SS.png", width = 5.5, height = 4.8, dpi=300)
-
-    
-
 
 ```
 ![](../Output/PCA/newMD2000_AF_standardized_pca_PWS.png)

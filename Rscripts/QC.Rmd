@@ -61,15 +61,109 @@ m<-mean(bam_summary$MEAN_COVERAGE)
 
 ggplot()+
     geom_boxplot(data=bam_summary, aes(x=Population.Year, y=MEAN_COVERAGE, color=pop))+
-    theme_classic()+ylab("Read coverage")+xlab('')+
+    theme_classic()+ylab("Read depth")+xlab('')+
     theme(axis.text.x = element_text(angle=45, hjust=1))+
     geom_point(data=byPopYr, aes(x=Group.1, y=x))+
     scale_color_manual(values=cols, guide="none")+
-    annotate(geom="text", x = 10, y=2.55,label=paste0("Mean coverage = ",round(m, digits=3)))
-ggsave("../Output/QC/Mean_coverage_plot_perPop.png", width = 6, height = 4, dpi=300)
+    annotate(geom="text", x = 10.5, y=2.6,label=paste0("Mean = ",round(m, digits=3)), size=3)+
+    geom_text(data=byPopYr, aes(x=Group.1,y=2.2, label=round(x, digits=3)), vjust = -0.5, size=2.5)
+ggsave("../Output/QC/Mean_depth_plot_perPop.png", width = 6, height = 4, dpi=300)
 
 ```
 ![](../Output/QC/Mean_coverage_plot_perPop.png)
+
+# Batch effect check
+```{r eval=FALSE, message=FALSE, warning=FALSE}
+# Number of plates
+length(unique(pops$Sequence.Plate))
+#15
+
+# How each population.year was processed on what plates:  
+table(pops$Sequence.Plate, pops$Population.Year)
+
+#     PWS07 PWS17 PWS91 PWS96 SS06 SS17 SS96 TB06 TB17 TB91 TB96
+#  6     15     8     0     0    0    0    0    0    0    3    0
+#  7     15     0     0     0    8    0    8    8    8    8    0
+#  8      0     8     0     8   15    8    8    8    0    0    0
+#  9      8     0     7     0    0    8    0    0    0    8   16
+#  10     0     8     7     8    0    8    8    0    8    0    8
+#  11     0     8    15     0    0    0    0    8    0    7    0
+#  12     0     0     0     8    0    8    8    9    0    0    8
+#  13     0     0    16     0    0    8   15    0    0    0    0
+#  14     0     0     0     0    0    0   16    3    0   16    8
+#  15     0     8     0     8    8   16    0    8    0    8    0
+#  16     0     8     0    24    0    0    8    0    0    0   14
+#  17     0     8     0     8    8    0    0    8   16    8    3
+#  18     8     0     5     8    0    0    7    0   24    0    0
+#  19     0     0     8     0    0    8    0    0   16   16    8
+#  20     0     0     0     0    2    0    0    0    0    0    8
+
+bam_summary<-read.csv("../Output/QC/BamMetrics_summay.csv")
+
+#ANOVA
+shapiro.test(bam_summary$MEAN_COVERAGE) 
+#data:  bam_summary$MEAN_COVERAGE
+#W = 0.98415, p-value = 8.918e-07
+qqnorm(bam_summary$MEAN_COVERAGE)
+
+shapiro.test(log2(bam_summary$MEAN_COVERAGE+1)) 
+#data:  log2(bam_summary$MEAN_COVERAGE + 1)
+#W = 0.99784, p-value = 0.5342
+shapiro.test(sqrt(bam_summary$MEAN_COVERAGE)) 
+#data:  sqrt(bam_summary$MEAN_COVERAGE)
+#W = 0.9975, p-value = 0.3913
+
+bartlett.test(MEAN_COVERAGE ~ Population.Year, bam_summary)
+#data:  MEAN_COVERAGE by Population.Year
+#Bartlett's K-squared = 35.051, df = 10, p-value = 0.0001224
+
+bam_summary$log.coverage<-log2(bam_summary$MEAN_COVERAGE+1)
+bartlett.test(log.coverage ~ Population.Year, bam_summary)
+#data:  log.coverage by Population.Year
+#Bartlett's K-squared = 29.78, df = 10, p-value = 0.0009304
+
+bam_summary$sqrt.coverage<-sqrt(bam_summary$MEAN_COVERAGE)
+bartlett.test(sqrt.coverage ~ Population.Year, bam_summary)
+#data:  sqrt.coverage by Population.Year
+#Bartlett's K-squared = 30.703, df = 10, p-value = 0.0006568
+
+
+aov.re1 = aov(log.coverage ~ Population.Year, bam_summary) 
+summary(aov.re1)
+#                 Df Sum Sq Mean Sq F value   Pr(>F)    
+#Population.Year  10  2.356 0.23564   5.856 1.66e-08 ***
+#Residuals       675 27.161 0.04024    
+
+kruskal.test(MEAN_COVERAGE ~ Population.Year, bam_summary)
+#data:  MEAN_COVERAGE by Population.Year
+#Kruskal-Wallis chi-squared = 59.163, df = 10, p-value = 5.217e-09
+library(dunn.test)
+dunn.test(bam_summary$MEAN_COVERAGE, bam_summary$Population.Year, method='bonferroni')
+
+
+##Plate effects
+
+bam_summary2<-merge(bam_summary, pops[,c("Sample","Sequence.Plate")], by="Sample")
+
+byPlates<-aggregate(bam_summary2$MEAN_COVERAGE, by=list(bam_summary2$Sequence.Plate), mean)
+
+kruskal.test(MEAN_COVERAGE ~ Sequence.Plate, bam_summary2)
+#data:  MEAN_COVERAGE by Sequence.Plate
+#Kruskal-Wallis chi-squared = 131.07, df = 14, p-value < 2.2e-16
+
+dunn.test(bam_summary2$MEAN_COVERAGE, bam_summary2$Sequence.Plate, method='bonferroni')
+
+kruskal.test(MEAN_COVERAGE ~ pop, bam_summary2)
+#data:  MEAN_COVERAGE by pop
+#Kruskal-Wallis chi-squared = 3.0284, df = 2, p-value = 0.22
+
+kruskal.test(MEAN_COVERAGE ~ Year.Collected, bam_summary2)
+#data:  MEAN_COVERAGE by Year.Collected
+#Kruskal-Wallis chi-squared = 36.665, df = 4, p-value = 2.112e-07
+
+```
+
+
 
 # Total reads of all samples (the entire dataset for 3 populations)
 ```{r eval=FALSE, message=FALSE, warning=FALSE}
@@ -152,9 +246,10 @@ for (i in 1: 26){
     Depth[[i]]<-df
 }
 DP.summary$max_cutoff<-DP.summary$median+2*DP.summary$sd
-write.csv(DP.summary,"/Volumes/Kaho_Data/PacHerring//Output/Depth/Read_depth_summary_3Pops_qula_filtered.csv")
-
+#write.csv(DP.summary,"/Volumes/Kaho_Data/PacHerring//Output/Depth/Read_depth_summary_3Pops_qula_filtered.csv")
 dp.all<-do.call(rbind, Depth)
+
+#DP.summary<-read.csv("/Volumes/Kaho_Data/PacHerring//Output/Depth/Read_depth_summary_3Pops_qula_filtered.csv", row.names = 1)
 
 mean(dp.all$V3, na.rm=T)
 #1898.419
@@ -162,9 +257,12 @@ mean(dp.all$V3, na.rm=T)
 median(dp.all$V3, na.rm=T)
 #1805
 
-#cutoff
+#cutoff1
+median(dp.all$V3, na.rm=T)+sd(dp.all$V3, na.rm=T)
+#6350.518
+
 median(dp.all$V3, na.rm=T)+2*sd(dp.all$V3, na.rm=T)
-#10821
+#10821.04
 
 
 hist_log<-list()
@@ -234,10 +332,14 @@ mean(maps$maprate)
 * 97.29%
 
 
-# 
+# create sample name lists for each pop * year 
 
 ```{r eval=FALSE, message=FALSE, warning=FALSE}
-
+pops<-read.csv("../Data/Sample_metadata_3pops.csv")
+pws91<-pops$Sample[pops$Population.Year=="PWS91"]
+sink("../Data/pws91.list")
+cat(pws91)
+sink(NULL)
 
 ```
 

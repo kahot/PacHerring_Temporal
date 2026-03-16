@@ -1,0 +1,739 @@
+---
+title: "PCAngsd Selection Scan -using more pruned files"
+output": html_notebook
+output:
+  html_notebook:
+      toc: true 
+      toc_float: true
+      number_sections: true
+      theme: lumen
+      highlight: tango
+      code_folding: hide
+      df_print: paged
+---
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+source("BaseScripts.R")
+library(dplyr)
+library(cowplot)
+library(knitr)
+library(kableExtra)
+library(data.table)
+library(ggpubr)
+gcols<-c('#ffffb3','#8dd3c7','#bebada')
+```
+
+## Analysis Steps
+### Prune VCF files further to check if selection scan can pick up any signals. 
+
+
+```{bash eval=FALSE, echo=TRUE}
+# vcf files not in the repository are available at: OSF Storage: https://osf.io/wrca4 Data/vcf/
+
+#file prep before running plink --indep
+plink --vcf 3pops.MD2000_new.maf05.vcf.gz --set-missing-var-ids @:#[ph]\\$r,\\$a --make-bed --out 3pop plink --bfile 3pop --recode --tab --out 3pop 
+
+#1. increase the r
+
+plink --file 3pop --indep-pairwise 75'kb' 5 0.2 --out 3pop_75_5_0.2
+#112982 of 351820 variants removed (238298 loci)
+
+#2. Increase the window size
+plink --file 3pop --indep-pairwise 200'kb' 5 0.2 --out 3pop_200_5_0.2
+# 116171 of 351820 variants removed (235649 loci)
+
+#2. Max pruning
+plink --file 3pop --indep-pairwise 200'kb' 1 0.1 --out 3pop_200_1_0.1
+# 170697 of 351820 variants removed (181123 loci)
+
+```
+
+
+* Reformat the prune.in file
+```{r eval=FALSE, message=FALSE, warning=FALSE}
+#Reformat prun.in file with running the reformat_prunin.R
+source("reformat_prunin.R")
+reformat_prunin("~/Projects/PacHerring/plink/3pop_75_5_0.2.prune.in")
+reformat_prunin("~/Projects/PacHerring/plink/3pop_200_5_0.2.prune.in")
+reformat_prunin("~/Projects/PacHerring/plink/3pop_200_5_0.2.prune.in")
+```
+
+### Using bcftools to subset the VCF file using prune.in file
+
+### Convert VCF to the beagle format and run PCAnsgd
+
+```{bash eval=FALSE, echo=TRUE}
+### Using bcftools to subset the VCF file using prune.in file
+bcftools index 3pops.MD2000_new.maf05.vcf.gz
+
+bcftools view -R 3pop_75_5_0.2.prune.in.sites.txt 3pops.MD2000_new.maf05.vcf.gz > 3pops_pruned_75_5_0.2.vcf
+bgzip 3pops_pruned_75_5_0.2.vcf
+
+
+bcftools view -R 3pop_200_5_0.2.prune.in.sites.txt 3pops.MD2000_new.maf05.vcf.gz > 3pops_pruned_200_5_0.2.vcf
+bgzip 3pops_pruned_200_5_0.2.vcf
+
+
+bcftools view -R 3pop_200_1_0.1.prune.in.sites.txt 3pops.MD2000_new.maf05.vcf.gz > 3pops_pruned_200_1_0.1.vcf
+bgzip 3pops_pruned_200_1_0.1.vcf
+
+```
+
+### Craete a slurm script file to create beagle files  
+```{r eval=FALSE, message=FALSE, warning=FALSE}
+
+sink(paste0("../Scripts/create_beagle.sh"))
+cat("#!/bin/bash -l\n")
+cat(paste0("#SBATCH --job-name=beagle \n"))
+cat(paste0("#SBATCH --mem=16G \n")) 
+cat(paste0("#SBATCH --ntasks=8 \n"))
+cat(paste0("#SBATCH --nodes=4 \n"))
+cat(paste0("#SBATCH -e =beagle.err  \n"))
+cat(paste0("#SBATCH --time=72:00:00  \n"))
+cat(paste0("#SBATCH -p high  \n"))
+cat("\n\n")
+cat("module load vcftools")     
+cat("\n\n")
+    
+for (i in 1:26){
+    cat(paste0("vcftools --gzvcf /home/ktist/ph/3pops_pruned_200_1_0.1.vcf.gz  --chr chr",i))
+    cat(paste0(" --out /home/ktist/ph/beagle/3pops_pruned_200_1_0.1_c",i," --BEAGLE-PL \n"))
+}
+
+cat("\n")
+
+#remove the head line and cat beagle files
+for (i in 2:26){
+    cat(paste0("sed -e '1, 1d' < /home/ktist/ph/beagle/3pops_pruned_200_1_0.1_c",i,".BEAGLE.PL > /home/ktist/ph/beagle/3pops_pruned_200_1_0.1_c",i,".2.BEAGLE.PL \n"))
+}
+cat("\n")
+
+cat("cat /home/ktist/ph/beagle/3pops_pruned_200_1_0.1_c1.BEAGLE.PL ") 
+for (i in 2:26){
+    cat(paste0("/home/ktist/ph/beagle/3pops_pruned_200_1_0.1_c",i,".2.BEAGLE.PL "))
+}
+cat(paste0(" > /home/ktist/ph/beagle/3pops_pruned_200_1_0.1_BEAGLE.PL \n"))
+cat("gzip /home/ktist/ph/beagle/3pops_pruned_200_1_0.1_BEAGLE.PL \n\n")
+
+sink(NULL)
+
+
+# For 200.5.0.2 file
+sink(paste0("../Scripts/create_beagle2.sh"))
+cat("#!/bin/bash -l\n")
+cat(paste0("#SBATCH --job-name=beagle2 \n"))
+cat(paste0("#SBATCH --mem=24G \n")) 
+cat(paste0("#SBATCH --time=24:00:00  \n"))
+cat(paste0("#SBATCH -p low  \n"))
+cat("\n\n")
+cat("module load vcftools")     
+cat("\n\n")
+    
+for (i in 1:26){
+    cat(paste0("vcftools --gzvcf /home/ktist/ph/3pops_pruned_200_5_0.2.vcf.gz  --chr chr",i))
+    cat(paste0(" --out /home/ktist/ph/beagle/3pops_pruned_200_5_0.2_c",i," --BEAGLE-PL \n"))
+}
+
+cat("\n")
+
+#remove the head line and cat beagle files
+for (i in 2:26){
+    cat(paste0("sed -e '1, 1d' < /home/ktist/ph/beagle/3pops_pruned_200_5_0.2_c",i,".BEAGLE.PL > /home/ktist/ph/beagle/3pops_pruned_200_5_0.2_c",i,".2.BEAGLE.PL \n"))
+}
+cat("\n")
+
+cat("cat /home/ktist/ph/beagle/3pops_pruned_200_5_0.2_c1.BEAGLE.PL ") 
+for (i in 2:26){
+    cat(paste0("/home/ktist/ph/beagle/3pops_pruned_200_5_0.2_c",i,".2.BEAGLE.PL "))
+}
+cat(paste0(" > /home/ktist/ph/beagle/3pops_pruned_200_5_0.2_BEAGLE.PL \n"))
+cat("gzip /home/ktist/ph/beagle/3pops_pruned_200_5_0.2_BEAGLE.PL \n\n")
+
+sink(NULL)
+
+
+
+
+# For 75.5.0.2 file
+sink(paste0("../Scripts/create_beagle3.sh"))
+cat("#!/bin/bash -l\n")
+cat(paste0("#SBATCH --job-name=beagle3 \n"))
+cat(paste0("#SBATCH --mem=24G \n")) 
+cat(paste0("#SBATCH --time=24:00:00  \n"))
+cat(paste0("#SBATCH -p low  \n"))
+cat("\n\n")
+cat("module load vcftools")     
+cat("\n\n")
+    
+for (i in 1:26){
+    cat(paste0("vcftools --gzvcf /home/ktist/ph/3pops_pruned_75_5_0.2.vcf.gz  --chr chr",i))
+    cat(paste0(" --out /home/ktist/ph/beagle/3pops_pruned_75_5_0.2_c",i," --BEAGLE-PL \n"))
+}
+
+cat("\n")
+
+#remove the head line and cat beagle files
+for (i in 2:26){
+    cat(paste0("sed -e '1, 1d' < /home/ktist/ph/beagle/3pops_pruned_75_5_0.2_c",i,".BEAGLE.PL > /home/ktist/ph/beagle/3pops_pruned_75_5_0.2_c",i,".2.BEAGLE.PL \n"))
+}
+cat("\n")
+
+cat("cat /home/ktist/ph/beagle/3pops_pruned_75_5_0.2_c1.BEAGLE.PL ") 
+for (i in 2:26){
+    cat(paste0("/home/ktist/ph/beagle/3pops_pruned_75_5_0.2_c",i,".2.BEAGLE.PL "))
+}
+cat(paste0(" > /home/ktist/ph/beagle/3pops_pruned_75_5_0.2_BEAGLE.PL \n"))
+cat("gzip /home/ktist/ph/beagle/3pops_pruned_75_5_0.2_BEAGLE.PL \n\n")
+
+sink(NULL)
+
+
+```
+
+
+# PCAnsgd Selection scan
+## File preps and running PCAngsd  
+```{r eval=FALSE, message=FALSE, warning=FALSE}
+#Divide the BEAGLE.PL file into each population
+
+# BEAGLE.PL.gz files available upon request
+bea<-fread("~/Projects/PacHerring/plink/3pops_pruned_200_1_0.1_BEAGLE.PL") 
+pop_info<-read.csv("../Data/Sample_metadata_892pops.csv")
+pop_info<-pop_info[,c("Sample","Population.Year","pop","Year.Collected")]
+colnames(pop_info)[4]<-"year"
+pops<-unique(pop_info$Population.Year[grep("PWS|SS|TB",pop_info$Population.Year)])
+
+
+# for each populations
+pops3<-c("PWS","TB","SS")
+for (i in 1:length(pops3)){
+    colums<-grep(pops3[i], colnames(bea))
+    vec<-c(1:3, colums)
+    df<-bea[,..vec]
+    write.table(df, file=gzfile(paste0("~/Projects/PacHerring/plink/", pops3[i],"_pruned_200_1_0.1.BEAGLE.PL.gz")), sep="\t", quote = F, row.names = FALSE )
+}
+
+
+y1<-c("PWS07","PWS17","PWS91","PWS96")
+comb1<-t(combn(y1, 2))
+y2<-c("TB06","TB17","TB91","TB96")
+comb2<-t(combn(y2, 2))
+y3<-c("SS06","SS17","SS96")
+comb3<-t(combn(y3, 2))
+comb4<-data.frame(V1=c("PWS07","PWS17","PWS91","PWS96","PWS07","PWS17","PWS96","SS06","SS17","SS96"), V2=c("TB06","TB17","TB91","TB96","SS06","SS17","SS96","TB06","TB17","TB96"))
+comb<-rbind(comb1,comb2,comb3, comb4)
+
+for (i in 1:nrow(comb)){
+    pop1<-comb[i,1]
+    pop2<-comb[i,2]
+    col1<-grep(pop1, colnames(bea))
+    col2<-grep(pop2, colnames(bea))
+    vec<-c(1:3, col1, col2)
+    df<-bea[,..vec]
+    write.table(df, file=gzfile(paste0("~/Projects/PacHerring/plink/", pop1,"_",pop2,"_pruned_200_1_0.1.BEAGLE.PL.gz")), sep="\t", quote = F, row.names = FALSE )
+}
+
+# Create slurm scripts
+bfiles<-list.files("~/Projects/PacHerring/plink/", pattern="BEAGLE.PL.gz")
+# only select 1,2,4,11,15,16,17,22,23,25,28
+sink("../Scripts/pcangsd_selection1.sh")
+cat("#!/bin/bash -l")
+cat("\n")
+cat(paste0("#SBATCH --job-name=selection \n"))
+cat(paste0("#SBATCH --mem=24G \n")) 
+cat(paste0("#SBATCH --time=24:00:00  \n"))
+cat(paste0("#SBATCH -p low  \n"))
+cat("\n\n")
+cat('export PATH="$HOME/.local/bin:$PATH"')
+cat("\n\n")
+for (i in c(1,2,4,11,15,16,17,22,23,25,28)){
+  fname<-gsub("_pruned_200_1_0.1.BEAGLE.PL.gz",'', bfiles[i])
+  cat(paste0("pcangsd --beagle  /home/ktist/ph/beagle/",bfiles[i], " --out /home/ktist/ph/",fname," --eig 2 --threads 64 --selection --sites-save \n"))
+}
+
+sink(NULL)
+
+#(ran pcansgd_selection1.sh)
+
+
+# Using 200.5.02 file
+bea<-fread("~/Projects/PacHerring/plink/3pops_pruned_200_5_0.2_BEAGLE.PL") 
+pops3<-c("PWS","TB","SS")
+for (i in 1:length(pops3)){
+    colums<-grep(pops3[i], colnames(bea))
+    vec<-c(1:3, colums)
+    df<-bea[,..vec]
+    write.table(df, file=gzfile(paste0("~/Projects/PacHerring/plink/2/", pops3[i],"_pruned_200_5_0.2.BEAGLE.PL.gz")), sep="\t", quote = F, row.names = FALSE )
+}
+y1<-c("PWS07","PWS17","PWS91","PWS96")
+comb1<-t(combn(y1, 2))
+y2<-c("TB06","TB17","TB91","TB96")
+comb2<-t(combn(y2, 2))
+y3<-c("SS06","SS17","SS96")
+comb3<-t(combn(y3, 2))
+comb4<-data.frame(V1=c("PWS07","PWS17","PWS91","PWS96","PWS07","PWS17","PWS96","SS06","SS17","SS96"), V2=c("TB06","TB17","TB91","TB96","SS06","SS17","SS96","TB06","TB17","TB96"))
+comb<-rbind(comb1,comb2,comb3, comb4)
+comb2<-comb[c(1,3,6,7,9,12,13,14),]
+for (i in 1:nrow(comb2)){
+    pop1<-comb2[i,1]
+    pop2<-comb2[i,2]
+    col1<-grep(pop1, colnames(bea))
+    col2<-grep(pop2, colnames(bea))
+    vec<-c(1:3, col1, col2)
+    df<-bea[,..vec]
+    write.table(df, file=gzfile(paste0("~/Projects/PacHerring/plink/2/", pop1,"_",pop2,"_pruned_200_5_0.2.BEAGLE.PL.gz")), sep="\t", quote = F, row.names = FALSE )
+}
+
+# Create slurm scripts
+bfiles<-list.files("~/Projects/PacHerring/plink/2/", pattern="BEAGLE.PL.gz")
+sink("../Scripts/pcangsd_selection2.sh")
+cat("#!/bin/bash -l")
+cat("\n")
+cat(paste0("#SBATCH --job-name=selection2 \n"))
+cat(paste0("#SBATCH --mem=24G \n")) 
+cat(paste0("#SBATCH --time=24:00:00  \n"))
+cat(paste0("#SBATCH -p low  \n"))
+cat("\n\n")
+cat('export PATH="$HOME/.local/bin:$PATH"')
+cat("\n\n")
+for (i in 1:length(bfiles)){
+  fname<-gsub(".BEAGLE.PL.gz",'', bfiles[i])
+  cat(paste0("pcangsd --beagle  /home/ktist/ph/beagle/",bfiles[i], " --out /home/ktist/ph/",fname," --eig 2 --threads 64 --selection --sites-save \n"))
+}
+
+sink(NULL)
+
+#(ran pcansgd_selection2.sh)
+
+# Using 75.5.02 file
+bea<-fread("~/Projects/PacHerring/plink/3pops_pruned_75_5_0.2_BEAGLE.PL") 
+pops3<-c("PWS","TB","SS")
+for (i in 1:length(pops3)){
+    colums<-grep(pops3[i], colnames(bea))
+    vec<-c(1:3, colums)
+    df<-bea[,..vec]
+    write.table(df, file=gzfile(paste0("~/Projects/PacHerring/plink/3/", pops3[i],"_pruned_75_5_0.2.BEAGLE.PL.gz")), sep="\t", quote = F, row.names = FALSE )
+}
+
+comb2<-comb[c(1,3,6,7,9,12,13,14),]
+for (i in 1:nrow(comb2)){
+    pop1<-comb2[i,1]
+    pop2<-comb2[i,2]
+    col1<-grep(pop1, colnames(bea))
+    col2<-grep(pop2, colnames(bea))
+    vec<-c(1:3, col1, col2)
+    df<-bea[,..vec]
+    write.table(df, file=gzfile(paste0("~/Projects/PacHerring/plink/3/", pop1,"_",pop2,"_pruned_75_5_0.2.BEAGLE.PL.gz")), sep="\t", quote = F, row.names = FALSE )
+}
+
+# Create slurm scripts
+bfiles<-list.files("~/Projects/PacHerring/plink/3/", pattern="BEAGLE.PL.gz")
+sink("../Scripts/pcangsd_selection3.sh")
+cat("#!/bin/bash -l")
+cat("\n")
+cat(paste0("#SBATCH --job-name=selection3 \n"))
+cat(paste0("#SBATCH --mem=24G \n")) 
+cat(paste0("#SBATCH --time=24:00:00  \n"))
+cat(paste0("#SBATCH -p low  \n"))
+cat("\n\n")
+cat('export PATH="$HOME/.local/bin:$PATH"')
+cat("\n\n")
+for (i in 1:length(bfiles)){
+  fname<-gsub(".BEAGLE.PL.gz",'', bfiles[i])
+  cat(paste0("pcangsd --beagle  /home/ktist/ph/beagle/",bfiles[i], " --out /home/ktist/ph/",fname," --eig 2 --threads 64 --selection --sites-save \n"))
+}
+
+sink(NULL)
+
+```
+
+
+## Plot the results of each population 
+### pruned at 200.1.01
+```{r eval=FALSE, message=FALSE, warning=FALSE}
+# Selection scan results are available at: OSF Storage: https://osf.io/wrca4 Data/PCAngsd/selection/
+# function for QQplot
+qqchi<-function(x,...){
+    lambda<-round(median(x)/qchisq(0.5,1),2)
+    qqplot(qchisq((1:length(x)-0.5)/(length(x)),1),x,ylab="Observed",xlab="Expected",...);abline(0,1,col=2,lwd=2)
+    legend("topleft",paste("lambda=",lambda))
+}
+
+
+pop_info<-read.csv("../Data/Sample_metadata_892pops.csv")
+pop_info<-pop_info[,c("Sample","pop","Year.Collected")]
+colnames(pop_info)[3]<-"year"
+
+## make Manhattan plots
+
+filenames<-list.files("../Data/PCAangsd/selection_highPruned_200.1.0.1/", pattern=".selection")
+evens<-paste0("chr",seq(2,26, by=2))
+
+pos<-read.table("~/Projects/PacHerring/plink/3pop_200_1_0.1.prune.in.sites.txt")
+names(pos)<-c("chr","pos")
+
+# Check QQ plot and lambda also
+qqchi2<-function(x,...){
+    lambda<-round(median(x)/qchisq(0.5,1),2)
+    qqplot(qchisq((1:length(x)-0.5)/(length(x)),1),x,ylab="Observed",xlab="Expected", main=filen,...);abline(0,1,col=2,lwd=2)
+    legend("topleft",paste("lambda=",lambda))
+}
+
+for (i in 1:length(filenames)){
+    D1 <- as.matrix(read.table(paste0("../Data/PCAangsd/selection_highPruned_200.1.0.1/",filenames[i]))) 
+    # Covert to p=values
+    p <- pchisq(D1, 1, lower.tail=FALSE)
+    pval<-data.frame(p[,1])
+    names(pval)<-"pval"
+    pval$loc<-1:nrow(pval)
+    pval$pval.log<--log10(pval$pval)
+    
+    # loci used in the analysis 
+    filen<-gsub(".selection",'',filenames[i])
+    sites<-read.table(paste0("../Data/PCAangsd/selection_highPruned_200.1.0.1/",filen,".sites"))
+    
+    {png(paste0("../Output/PCA/selection_highlypruned/QQplot_200.1.01_",filen,".png"), width=5, height=5,units="in", res=300)
+    qqchi2(D1[,1])
+    dev.off()}
+    
+    # filter down to used loci only
+    used.sites<-cbind(pos, sites)
+    used.sites<-used.sites[used.sites$V1==1,]
+    
+    # Combine the locations and pvalues
+    pval<-cbind(used.sites,pval)
+    
+    #calculate FDR
+    pval$q <- p.adjust(pval$pval, method="BH")     # Benjamini–Hochberg FDR
+    #count the number of sites per chromosomes
+    poss<-data.frame(chr=paste0("chr",1:26))
+    k=1
+    for (j in 1:26){
+        df<-pval[pval$chr==paste0("chr",j),]
+        poss$start[j]<-k
+        poss$end[j]<-k+nrow(df)-1
+        k=k+nrow(df)
+    }
+    poss$x<-poss$start+(poss$end-poss$start)/2
+
+    pval$color<-"steelblue"
+    pval$color[pval$chr %in% evens]<-"lightblue"
+    
+    ggplot(data=pval, aes(x=loc, y=pval.log, color=color))+
+        geom_point(size=0.1)+
+        scale_color_manual(values=c("lightblue","steelblue"), guide='none')+
+        scale_x_continuous(name="Chromosome position", breaks=poss$x, labels=1:26)+
+        theme_classic()+ylab("-log10(p-value)")+
+        geom_hline(yintercept =-log10(10^-5), color="red")+ #approximate pval cutoff
+        ggtitle(paste0(filen,"_pruned_200_1_0.1"))
+    ggsave(paste0("../Output/PCA/selection_highlypruned/",filen,"_pruned_200_1_0.1_selection_scan.png"), width=8, height=4,dpi=300)
+           
+    highloci<-pval[pval$pval<=0.00001,]
+    write.csv(highloci, paste0("../Output/PCA/selection_highlypruned/",filen,"_pruned_200_1_0.1_selection.scan.sig.loci.csv"))
+}
+
+```
+
+
+
+
+### pruned_200_5_0.2
+```{r eval=FALSE, message=FALSE, warning=FALSE}
+
+qqchi2<-function(x,...){
+    lambda<-round(median(x)/qchisq(0.5,1),2)
+    qqplot(qchisq((1:length(x)-0.5)/(length(x)),1),x,ylab="Observed",xlab="Expected", main=filen,...);abline(0,1,col=2,lwd=2)
+    legend("topleft",paste("lambda=",lambda))
+}
+
+## read positions 
+sites<-read.table("../Data/PCAangsd/selection_highPruned_200.5.0.2/PWS_pruned_200_5_0.2.sites")
+pos<-read.table("~/Projects/PacHerring/plink/3pop_200_5_0.2.prune.in.sites.txt")
+names(pos)<-c("chr","pos")
+
+## make Manhattan plots
+filenames<-list.files("../Data/PCAangsd/selection_highPruned_200.5.0.2/", pattern=".selection")
+evens<-paste0("chr",seq(2,26, by=2))
+
+pos<-read.table("~/Projects/PacHerring/plink/3pop_200_5_0.2.prune.in.sites.txt")
+names(pos)<-c("chr","pos")
+
+for (i in 1:length(filenames)){
+    D1 <- as.matrix(read.table(paste0("../Data/PCAangsd/selection_highPruned_200.5.0.2/",filenames[i]))) 
+    # Covert to p=values
+    p <- pchisq(D1, 1, lower.tail=FALSE)
+    pval<-data.frame(p[,1])
+    names(pval)<-"pval"
+    pval$loc<-1:nrow(pval)
+    pval$pval.log<--log10(pval$pval)
+    
+    
+    # loci used in the analysis 
+    filen<-gsub(".selection",'',filenames[i])
+    sites<-read.table(paste0("../Data/PCAangsd/selection_highPruned_200.5.0.2/",filen,".sites"))
+    
+    {png(paste0("../Output/PCA/selection_highlypruned/QQplot_",filen,".png"), width=5, height=5,units="in", res=300)
+    qqchi2(D1[,1])
+    dev.off()}
+    
+    # filter down to used loci only
+    used.sites<-cbind(pos, sites)
+    used.sites<-used.sites[used.sites$V1==1,]
+    
+    # Combine the locations and pvalues
+    pval<-cbind(used.sites,pval)
+    
+    #calculate FDR
+    pval$q <- p.adjust(pval$pval, method="BH")     # Benjamini–Hochberg FDR
+    #count the number of sites per chromosomes
+    poss<-data.frame(chr=paste0("chr",1:26))
+    k=1
+    for (j in 1:26){
+        df<-pval[pval$chr==paste0("chr",j),]
+        poss$start[j]<-k
+        poss$end[j]<-k+nrow(df)-1
+        k=k+nrow(df)
+    }
+    poss$x<-poss$start+(poss$end-poss$start)/2
+
+    pval$color<-"steelblue"
+    pval$color[pval$chr %in% evens]<-"lightblue"
+    
+    ggplot(data=pval, aes(x=loc, y=pval.log, color=color))+
+        geom_point(size=0.1)+
+        scale_color_manual(values=c("lightblue","steelblue"), guide='none')+
+        scale_x_continuous(name="Chromosome position", breaks=poss$x, labels=1:26)+
+        theme_classic()+ylab("-log10(p-value)")+
+        geom_hline(yintercept =-log10(10^-5), color="red")+ #approximate pval cutoff
+        ggtitle(filen)
+    ggsave(paste0("../Output/PCA/selection_highlypruned/",filen,"_selection_scan.png"), width=8, height=4,dpi=300)
+           
+    
+    ggplot(data=pval, aes(x=loc, y=q, color=color))+
+        geom_point(size=0.1)+
+        scale_color_manual(values=c("lightblue","steelblue"), guide='none')+
+        scale_x_continuous(name="Chromosome position", breaks=poss$x, labels=1:26)+
+        theme_classic()+ylab("FDR")+
+        ggtitle(filen)
+    
+    highloci<-pval[pval$pval<=0.00001,]
+    write.csv(highloci, paste0("../Output/PCA/selection_highlypruned/",filen,"_selection_scan.sig.loci.csv"))
+}
+
+
+# -log10(0.05/232644) #6.667722
+###  Significant p-value for 232,644 loci is 6.67  ###
+#-log10(0.05/nrow(pval)) = 6.585718
+
+
+
+
+
+
+
+```
+
+
+![](../Output/PCA/selection_highlypruned/PWS_pruned_200_5_0.2_selection_scan.png)
+
+![](../Output/PCA/selection_highlypruned/TB_pruned_200_5_0.2_selection_scan.png)
+
+![](../Output/PCA/selection_highlypruned/SS_pruned_200_5_0.2_selection_scan.png)
+
+* NO sites above 6.7
+
+
+![](../Output/PCA/selection_highlypruned/PWS91_PWS96_pruned_200_5_0.2_selection_scan.png)
+
+
+![](../Output/PCA/selection_highlypruned/PWS07_PWS96_pruned_200_5_0.2_selection_scan.png)
+![](../Output/PCA/selection_highlypruned/PWS07_PWS17_pruned_200_5_0.2_selection_scan.png)
+
+
+### pruned_75_5_0.2
+```{r eval=FALSE, message=FALSE, warning=FALSE}
+
+qqchi2<-function(x,...){
+    lambda<-round(median(x)/qchisq(0.5,1),2)
+    qqplot(qchisq((1:length(x)-0.5)/(length(x)),1),x,ylab="Observed",xlab="Expected", main=filen,...);abline(0,1,col=2,lwd=2)
+    legend("topleft",paste("lambda=",lambda))}
+
+## make Manhattan plots
+filenames<-list.files("../Data/PCAangsd/selection_highPruned_75.5.0.2/", pattern=".selection")
+evens<-paste0("chr",seq(2,26, by=2))
+
+pos<-read.table("~/Projects/PacHerring/plink/3pop_75_5_0.2.prune.in.sites.txt")
+names(pos)<-c("chr","pos")
+
+for (i in 1:length(filenames)){
+    D1 <- as.matrix(read.table(paste0("../Data/PCAangsd/selection_highPruned_75.5.0.2/",filenames[i]))) 
+    # Covert to p=values
+    p <- pchisq(D1, 1, lower.tail=FALSE)
+    pval<-data.frame(p[,1])
+    names(pval)<-"pval"
+    pval$loc<-1:nrow(pval)
+    pval$pval.log<--log10(pval$pval)
+    
+    # loci used in the analysis 
+    filen<-gsub(".selection",'',filenames[i])
+    sites<-read.table(paste0("../Data/PCAangsd/selection_highPruned_75.5.0.2/",filen,".sites"))
+    
+    {png(paste0("../Output/PCA/selection_highlypruned/QQplot_",filen,".png"), width=5, height=5,units="in", res=300)
+    qqchi2(D1[,1])
+    dev.off()}
+    
+    # filter down to used loci only
+    used.sites<-cbind(pos, sites)
+    used.sites<-used.sites[used.sites$V1==1,]
+    
+    # Combine the locations and pvalues
+    pval<-cbind(used.sites,pval)
+    
+    #calculate FDR
+    pval$q <- p.adjust(pval$pval, method="BH")     # Benjamini–Hochberg FDR
+    #count the number of sites per chromosomes
+    poss<-data.frame(chr=paste0("chr",1:26))
+    k=1
+    for (j in 1:26){
+        df<-pval[pval$chr==paste0("chr",j),]
+        poss$start[j]<-k
+        poss$end[j]<-k+nrow(df)-1
+        k=k+nrow(df)
+    }
+    poss$x<-poss$start+(poss$end-poss$start)/2
+
+    pval$color<-"steelblue"
+    pval$color[pval$chr %in% evens]<-"lightblue"
+    
+    ggplot(data=pval, aes(x=loc, y=pval.log, color=color))+
+        geom_point(size=0.1)+
+        scale_color_manual(values=c("lightblue","steelblue"), guide='none')+
+        scale_x_continuous(name="Chromosome position", breaks=poss$x, labels=1:26)+
+        theme_classic()+ylab("-log10(p-value)")+
+        geom_hline(yintercept =-log10(10^-5), color="red")+ #approximate pval cutoff
+        ggtitle(filen)
+    ggsave(paste0("../Output/PCA/selection_highlypruned/",filen,"_selection_scan.png"), width=8, height=4,dpi=300)
+           
+    highloci<-pval[pval$pval<=0.00001,]
+    write.csv(highloci, paste0("../Output/PCA/selection_highlypruned/",filen,"_selection_scan.sig.loci.csv"))
+}
+
+```
+
+
+
+### pruned_75_5_0.5 (Original with the new pcangsd selection)
+```{r eval=FALSE, message=FALSE, warning=FALSE}
+
+qqchi2<-function(x,...){
+    lambda<-round(median(x)/qchisq(0.5,1),2)
+    qqplot(qchisq((1:length(x)-0.5)/(length(x)),1),x,ylab="Observed",xlab="Expected", main=filen,...);abline(0,1,col=2,lwd=2)
+    legend("topleft",paste("lambda=",lambda))}
+
+## make Manhattan plots
+filenames<-list.files("../Data/PCAangsd/selection/", pattern="\\.selection$")
+evens<-paste0("chr",seq(2,26, by=2))
+
+pos<-read.table( "/Users/kahotisthammer/Projects/PacHerring_Temporal/Data/vcf/3pops_newMD2000_maf05_75_5_0.5_pruned.prune.in.sites.txt")
+names(pos)<-c("chr","pos")
+
+for (i in 1:length(filenames)){
+    D1 <- as.matrix(read.table(paste0("../Data/PCAangsd/selection/",filenames[i]))) 
+    # Covert to p=values
+    p <- pchisq(D1, 1, lower.tail=FALSE)
+    pval<-data.frame(p[,1])
+    names(pval)<-"pval"
+    pval$loc<-1:nrow(pval)
+    pval$pval.log<--log10(pval$pval)
+    
+    # loci used in the analysis 
+    filen<-gsub(".selection",'',filenames[i])
+    sites<-read.table(paste0("../Data/PCAangsd/selection/",filen,".sites"))
+    
+    {png(paste0("../Output/PCA/QQplot_",filen,".png"), width=5, height=5,units="in", res=300)
+    qqchi2(D1[,1])
+    dev.off()}
+    
+    # filter down to used loci only
+    used.sites<-cbind(pos, sites)
+    used.sites<-used.sites[used.sites$V1==1,]
+    
+    # Combine the locations and pvalues
+    pval<-cbind(used.sites,pval)
+    
+    #calculate FDR
+    pval$q <- p.adjust(pval$pval, method="BH")     # Benjamini–Hochberg FDR
+    #count the number of sites per chromosomes
+    poss<-data.frame(chr=paste0("chr",1:26))
+    k=1
+    for (j in 1:26){
+        df<-pval[pval$chr==paste0("chr",j),]
+        poss$start[j]<-k
+        poss$end[j]<-k+nrow(df)-1
+        k=k+nrow(df)
+    }
+    poss$x<-poss$start+(poss$end-poss$start)/2
+
+    pval$color<-"steelblue"
+    pval$color[pval$chr %in% evens]<-"lightblue"
+    
+    ggplot(data=pval, aes(x=loc, y=pval.log, color=color))+
+        geom_point(size=0.1)+
+        scale_color_manual(values=c("lightblue","steelblue"), guide='none')+
+        scale_x_continuous(name="Chromosome position", breaks=poss$x, labels=1:26)+
+        theme_classic()+ylab("-log10(p-value)")+
+        geom_hline(yintercept =-log10(10^-5), color="red")+ #approximate pval cutoff
+        ggtitle(filen)
+    ggsave(paste0("../Output/PCA/selection_highlypruned/",filen,"_selection_scan.png"), width=8, height=4,dpi=300)
+           
+    highloci<-pval[pval$pval<=0.00001,]
+    write.csv(highloci, paste0("../Output/PCA/selection_highlypruned/",filen,"_selection_scan.sig.loci.csv"))
+}
+
+```
+
+
+
+
+
+## Compare 200.1.0.1 and 200.5.0.2 for any overlaps ->reveal reliability of loci () 
+```{r eval=FALSE, message=FALSE, warning=FALSE}
+
+files<-list.files("../Output/PCA/selection_highlypruned/", pattern="200_5_0.2_selection.scan.sig.loci.csv")
+
+for (i in 1:length(files)){
+    
+    id<-gsub("_pruned_200_5_0.2_selection.scan.sig.loci.csv",'',files[i])
+    df1<-read.csv(paste0("../Output/PCA/selection_highlypruned/", files[i]), row.names = 1)
+    df2<-read.csv(paste0("../Output/PCA/selection_highlypruned/", id,"_pruned_200_1_0.1_selection.scan.sig.loci.csv"), row.names = 1)
+    df1$prune<-"200_5_0.2"
+    df2$prune<-"200_1_0.1"
+    
+    #any overlapping regions?
+    df<-rbind(df2,df1)
+    write.csv(df,paste0("../Output/PCA/selection_highlypruned/",id,"_selection_loci_comparison.csv"))
+    
+    print(id)
+    print("Overlapping chromosome(s)")
+    chr<-df1$chr %in% df2$chr
+    print(chr)
+    if (TRUE %in% chr){
+        site<-df1$pos %in% df2$pos
+        print("Overlapping position(s)")
+        print(site)
+    }
+}
+
+
+```
+### * none of the overlapping chromosomes had close loci, except for SS06-SS96 comparison
+
+
+```{r eval=FALSE, message=FALSE, warning=FALSE}
+
+
+
+```
+
+
+```{r eval=FALSE, message=FALSE, warning=FALSE}
+```

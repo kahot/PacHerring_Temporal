@@ -22,6 +22,7 @@ library(knitr)
 library(kableExtra)
 library(data.table)
 library(ggpubr)
+library(RcppCNPy)
 gcols<-c('#ffffb3','#8dd3c7','#bebada')
 ```
 
@@ -332,25 +333,16 @@ ggsave("../Output/PCA/3pops_MD2000_PCA_byChromosome_byYear_legend.png",width = 1
 ## File preps and running PCAngsd  
 ```{r eval=FALSE, message=FALSE, warning=FALSE}
 #Divide the BEAGLE.PL file into each population
-
-# BEAGLE.PL.gz files available upon request
-bea<-fread("../Data/vcf/MD2000/3pops_MD2000_pruned_BEAGLE.PL.gz") 
-pop_info<-read.csv("../Data/Sample_metadata_892pops.csv")
-pop_info<-pop_info[,c("Sample","Population.Year","pop","Year.Collected")]
-colnames(pop_info)[4]<-"year"
-pops<-unique(pop_info$Population.Year[grep("PWS|SS|TB",pop_info$Population.Year)])
-
-
-# for each populations
+#BEAGLE file available upon request (409.3Mb)
+bea<-fread("/Users/kahotisthammer/Projects/PacHerring/plink/3pops.BEAGLE.PL.gz") 
 pops3<-c("PWS","TB","SS")
 for (i in 1:length(pops3)){
     colums<-grep(pops3[i], colnames(bea))
     vec<-c(1:3, colums)
     df<-bea[,..vec]
-    write.table(df, file=gzfile(paste0("../Data/vcf/MD2000/", pops3[i],"_MD2000_pruned.BEAGLE.PL.gz")), sep="\t", quote = F, row.names = FALSE )
-}
-
-
+    write.table(df, file=gzfile(paste0("../Data/vcf/beagle/", pops3[i],"_unpruned.BEAGLE.PL.gz")), sep="\t", quote = F, row.names = FALSE )
+    print(i)
+    }
 
 y1<-c("PWS07","PWS17","PWS91","PWS96")
 comb1<-t(combn(y1, 2))
@@ -360,216 +352,224 @@ y3<-c("SS06","SS17","SS96")
 comb3<-t(combn(y3, 2))
 comb4<-data.frame(V1=c("PWS07","PWS17","PWS91","PWS96","PWS07","PWS17","PWS96","SS06","SS17","SS96"), V2=c("TB06","TB17","TB91","TB96","SS06","SS17","SS96","TB06","TB17","TB96"))
 comb<-rbind(comb1,comb2,comb3, comb4)
+comb<-comb[1:15,]
+comb<-comb[16:25,]
 
-for (i in 3:nrow(comb)){
+for (i in 1:nrow(comb)){
     pop1<-comb[i,1]
     pop2<-comb[i,2]
     col1<-grep(pop1, colnames(bea))
     col2<-grep(pop2, colnames(bea))
     vec<-c(1:3, col1, col2)
     df<-bea[,..vec]
-    write.table(df, file=gzfile(paste0("../Data/vcf/MD2000/", pop1,"_",pop2,"_MD2000_pruned.BEAGLE.PL.gz")), sep="\t", quote = F, row.names = FALSE )
+    write.table(df, file=gzfile(paste0("../Data/vcf/beagle/", pop1,"_",pop2,"_unpruned.BEAGLE.PL.gz")), sep="\t", quote = F, row.names = FALSE )
+    print(i)
 }
 
 
-# Create slurm scripts
-bfiles<-list.files("../Data/new_vcf/MD2000/", pattern="BEAGLE.PL.gz")
+# Create bash scripts to run pcangsd v.0.99
+bfiles<-list.files("../Data/vcf/beagle/", pattern="BEAGLE.PL.gz")
 
-sink("../Data/Slurmscripts/pcansgd_selection_md2000.sh")
+sink("../Data/Slurmscripts/pcangsdv99_selection_unpruned.sh")
 cat("#!/bin/bash -l")
 cat("\n")
-cat(paste0("#SBATCH --job-name=selection \n"))
-cat(paste0("#SBATCH --mem=24G \n")) 
-cat(paste0("#SBATCH --ntasks=8 \n")) 
-cat(paste0("#SBATCH --nodes=4  \n")) 
-cat(paste0("#SBATCH -e selection.err  \n"))
-cat(paste0("#SBATCH --time=144:00:00  \n"))
-#cat(paste0("#SBATCH --mail-user=ktist@ucdavis.edu ##email you when job starts,ends,etc \n"))
-#cat(paste0("#SBATCH --mail-type=ALL \n"))
-cat(paste0("#SBATCH -p high  \n"))
-cat("\n")
-cat("module load angsd
-module load deprecated/python
-module load deprecated/pcangsd")
-cat("\n\n")
-
 for (i in 1:length(bfiles)){
-  fname<-gsub("_MD2000_pruned.BEAGLE.PL.gz",'', bfiles[i])
-  cat(paste0("python /home/jamcgirr/apps/pcangsd/pcangsd.py -beagle /home/ktist/ph/data/new_vcf/MD3000/beagle/",bfiles[i]," -o /home/ktist/ph/data/angsd/selection/",fname,"_selection -selection -sites_save \n"))
+  fname<-gsub(".BEAGLE.PL.gz",'', bfiles[i])
+  cat(paste0("python pcangsd.py -beagle /home/ktist/ph/beagle/",bfiles[i], " -o /home/ktist/ph/selection/",fname," -threads 64 -selection -sites_save -e 3\n"))
 }
-
 sink(NULL)
 
-#(ran pcansgd_selection_md2000.sh, pcansgd_selection_md2000_1.sh, pcansgd_selection_md2000_2.sh at Farm on 6/28/23)
+# v.0.99 uses Python 2.7.
+
 ```
 
 
-## Plot the results of each population 
+
+## Plot the results of each population -unpruned
 ```{r eval=FALSE, message=FALSE, warning=FALSE}
-# Selection scan results are available at: OSF Storage: https://osf.io/wrca4 Data/PCAngsd/selection/
+# Selection scan results are available at: OSF Storage: https://osf.io/wrca4 in  /Data/PCAngsd/selection.v.0.99/
 
-pop_info<-read.csv("../Data/Sample_metadata_892pops.csv")
-pop_info<-pop_info[,c("Sample","pop","Year.Collected")]
-colnames(pop_info)[3]<-"year"
-
-
-#######
-### Selection ###
-library(RcppCNPy) # Numpy library for R
-
-## function for QQplot
+# function for QQplot
 qqchi<-function(x,...){
     lambda<-round(median(x)/qchisq(0.5,1),2)
     qqplot(qchisq((1:length(x)-0.5)/(length(x)),1),x,ylab="Observed",xlab="Expected",...);abline(0,1,col=2,lwd=2)
     legend("topleft",paste("lambda=",lambda))
 }
 
-### read in seleciton statistics (chi2 distributed)
-# Each column reflect the selection statistics along a tested PC (they are χ²-distributed with 1 degree of freedom.)
-s<-npyLoad("../Data/PCAangsd/selection/PWS_selection.selection.npy")
-
-## make QQ plot to QC the test statistics
-qqchi(s)
-ncol(s)
-
-## read positions 
-p<-read.table("../Data/PCAangsd/selection/PWS_selection.sites",colC=c("factor","integer"),sep=":")
-names(p)<-c("chr","pos")
-
-
-# 1. 1 axis:
-#convert test statistic to p-value
-p$pval<-1-pchisq(s,1)
-p$loc<-1:nrow(p)
-p$pval.log<--log10(p$pval)
-
-## make manhatten plot
-plot(-log10(p$pval),col=p$chr,xlab="Chromosomes",main="Manhattan plot", pch=".")
-
-# 2. if more than 1 axis (ncol(s)>1)
-# p$pval1<-pval[,1]
-# p$pval2<-pval[,2]
-# p$loc<-1:nrow(p)
-# p$pval1.log<--log10(p$pval1)
-# p$pval2.log<--log10(p$pval2)
 
 ## make Manhattan plots
-pops1<-c("PWS","SS","TB")
+
+filenames<-list.files("../Data/PCAangsd/selection0.99/", pattern=".selection.npy$")
 evens<-paste0("chr",seq(2,26, by=2))
 
-for (i in 1:length(pops1)){
-    s<-npyLoad(paste0("../Data/PCAangsd/selection/",pops1[i],"_selection.selection.npy"))
-    p<-read.table(paste0("../Data/PCAangsd/selection/",pops1[i],"_selection.sites"),colC=c("factor","integer"),sep=":")
-    names(p)<-c("chr","pos")
-
-    n<-ncol(s)
-    if (n==1){
-        p$pval<-1-pchisq(s,1)
-        p$loc<-1:nrow(p)
-        p$pval.log<--log10(p$pval)
-    }
+for (i in c(5,6,7,8,10,11,12,16,18,19,23)){
+#for (i in 3:length(filenames)){
+    s<-npyLoad(paste0("../Data/PCAangsd/selection0.99/",filenames[i]))
+    
+    # Covert to p=values
+    pval<-1-pchisq(s,1)
+    pval<-data.frame(pval)
+    names(pval)<-c("PC1","PC2","PC3")
+    pval$loc<-1:nrow(pval)
+    pval$PC1.log<--log10(pval$PC1)
+    pval$PC2.log<--log10(pval$PC2)
+    pval$PC3.log<--log10(pval$PC3)
+        
+    # loci used in the analysis 
+    filen<-gsub(".selection.npy",'',filenames[i])
+    sites<-read.table(paste0("../Data/PCAangsd/selection0.99/",filen,".sites"),colC=c("factor","integer"),sep=":")
+    names(sites)<-c("chr","pos")
+    
+    {png(paste0("../Output/PCA/selection0.99/QQplot_",filen,".png"), width=5, height=5,units="in", res=300)
+    qqchi(s[,1])
+    dev.off()}
+    
+   
+    pval<-cbind(sites,pval)
+    
+    #calculate FDR
+    pval$PC1.q <- p.adjust(pval$PC1, method="BH")     # Benjamini–Hochberg FDR
+    
     #count the number of sites per chromosomes
     poss<-data.frame(chr=paste0("chr",1:26))
     k=1
     for (j in 1:26){
-        df<-p[p$chr==paste0("chr",j),]
+        df<-pval[pval$chr==paste0("chr",j),]
         poss$start[j]<-k
         poss$end[j]<-k+nrow(df)-1
         k=k+nrow(df)
     }
     poss$x<-poss$start+(poss$end-poss$start)/2
 
-    p$color<-"steelblue"
-    p$color[p$chr %in% evens]<-"lightblue"
-    ggplot(data=p, aes(x=loc, y=pval.log, color=color))+
-        geom_point(size=0.1)+
-        scale_color_manual(values=c("lightblue","steelblue"), guide='none')+
+    pval$color<-"b"
+    pval$color[pval$chr %in% evens]<-"a"
+    pval$color[pval$PC1.log>5]<-"c"
+    
+    filen2<-gsub("_unpruned", "", filen)
+    ggplot(data=pval, aes(x=loc, y=PC1.log, color=color))+
+        geom_point(aes(size=color))+
+        scale_color_manual(values=c("lightblue","steelblue","red"), guide='none')+
+        scale_size_manual(values=c(0.1,0.1,0.7), guide='none')+
         scale_x_continuous(name="Chromosome position", breaks=poss$x, labels=1:26)+
         theme_classic()+ylab("-log10(p-value)")+
-        ggtitle(pops1[i])
-    ggsave(paste0("../Output/PCA/selection_MD2000/",pops1[i],"_selection_scan.png"), width=8, height=4,dpi=300)
+        geom_hline(yintercept =-log10(10^-5), color="red")+ #approximate pval cutoff
+        ggtitle(paste0(filen2))
+    ggsave(paste0("../Output/PCA/selection0.99/Selection_scan_",filen,".png"), width=8, height=4,dpi=300)
            
+    highloci<-pval[pval$PC1<=0.00001,]
+    if (nrow(highloci)>1){
+    write.csv(highloci, paste0("../Output/PCA/selection0.99/",filen,"_selection.scan.sig.loci.csv"))}
 }
-
-# -log10(0.05) = 1.30103
-# -log10(0.05/232644) #6.667722
-###  Significant p-value for 232,644 loci is 6.67  ###
-
 
 
 ```
 
-![](../Output/PCA/selection_MD2000/PWS_selection_scan.png)
-![](../Output/PCA/selection_MD2000/TB_selection_scan.png)
 
-![](../Output/PCA/selection_MD2000/SS_selection_scan.png)
+![](../Output/PCA/selection0.99/selection_scan_PWS_unpruned.png){width=49%} 
+![](../Output/PCA/selection0.99/Selection_scan_PWS91_PWS96_unpruned.png){width=49%}
 
-* NO sites above 6.7
+![](../Output/PCA/selection0.99/Selection_scan_PWS07_PWS96_unpruned.png){width=49%} 
+![](../Output/PCA/selection0.99/Selection_scan_PWS07_PWS17_unpruned.png){width=49%} 
+![](../Output/PCA/selection0.99/Selection_scan_SS_unpruned.png){width=49%} 
+![](../Output/PCA/selection0.99/Selection_scan_SS06_SS17_unpruned.png){width=49%} 
+![](../Output/PCA/selection0.99/Selection_scan_SS06_SS96_unpruned.png){width=49%} 
 
-## Plot results of pariwise comparison
+![](../Output/PCA/selection0.99/Selection_scan_TB_unpruned.png){width=49%} 
+
+![](../Output/PCA/selection0.99/Selection_scan_TB91_TB96_unpruned.png){width=49%}
+
+![](../Output/PCA/selection0.99/Selection_scan_TB06_TB96_unpruned.png){width=49%} ![](../Output/PCA/selection0.99/Selection_scan_TB06_TB17_unpruned.png){width=49%}
+
+
+## Check if selected loci in TB06 vs. TB17 are artifacts or persist across different PCs
+
 ```{r eval=FALSE, message=FALSE, warning=FALSE}
-y1<-c("PWS07","PWS17","PWS91","PWS96")
-comb1<-t(combn(y1, 2))
-y2<-c("TB06","TB17","TB91","TB96")
-comb2<-t(combn(y2, 2))
-y3<-c("SS06","SS17","SS96")
-comb3<-t(combn(y3, 2))
-comb<-rbind(comb1, comb2, comb3)
 
-evens<-paste0("chr",seq(2,26, by=2))
+s<-npyLoad("../Data/PCAangsd/selection0.99/TB06_TB17_unpruned.selection.npy")
+    
+# Covert to p=values
+pval<-1-pchisq(s,1)
+pval<-data.frame(pval)
+names(pval)<-c("PC1","PC2","PC3")
+pval$loc<-1:nrow(pval)
+pval$PC1.log<--log10(pval$PC1)
+pval$PC2.log<--log10(pval$PC2)
+pval$PC3.log<--log10(pval$PC3)
+        
+# loci used in the analysis 
+    
+sites<-read.table("../Data/PCAangsd/selection0.99/TB06_TB17_unpruned.sites",colC=c("factor","integer"),sep=":")
+names(sites)<-c("chr","pos")
 
-for (i in 1:nrow(comb)){
-    pop1<-comb[i,1]
-    pop2<-comb[i,2]
-    s<-npyLoad(paste0("../Data/PCAangsd/selection/",pop1, "_",pop2,"_selection.selection.npy"))
-    p<-read.table(paste0("../Data/PCAangsd/selection/",pop1, "_",pop2,"_selection.sites"),colC=c("factor","integer"),sep=":")
-    names(p)<-c("chr","pos")
-
-    n<-ncol(s)
-    if (n==1){
-        p$pval<-1-pchisq(s,1)
-        p$loc<-1:nrow(p)
-        p$pval.log<--log10(p$pval)
-    }
-    if (n>1){
-        p$pval<-pval[,1]
-        p$loc<-1:nrow(p)
-        p$pval.log<--log10(p$pval)
-    }
-    #count the number of sites per chromosomes
-    poss<-data.frame(chr=paste0("chr",1:26))
-    k=1
-    for (j in 1:26){
-        df<-p[p$chr==paste0("chr",j),]
+pval<-cbind(sites,pval)
+    
+#calculate FDR
+pval$PC1.q <- p.adjust(pval$PC1, method="BH")     # Benjamini–Hochberg FDR
+pval$PC2.q <- p.adjust(pval$PC2, method="BH")     # Benjamini–Hochberg FDR
+pval$PC3.q <- p.adjust(pval$PC3, method="BH")     # Benjamini–Hochberg FDR
+    
+#count the number of sites per chromosomes
+poss<-data.frame(chr=paste0("chr",1:26))
+k=1
+for (j in 1:26){
+        df<-pval[pval$chr==paste0("chr",j),]
         poss$start[j]<-k
         poss$end[j]<-k+nrow(df)-1
         k=k+nrow(df)
     }
-    poss$x<-poss$start+(poss$end-poss$start)/2
+poss$x<-poss$start+(poss$end-poss$start)/2
 
-    p$color<-"steelblue"
-    p$color[p$chr %in% evens]<-"lightblue"
-    ggplot(data=p, aes(x=loc, y=pval.log, color=color))+
-        geom_point(size=0.1)+
-        scale_color_manual(values=c("lightblue","steelblue"), guide='none')+
+pval$color<-"b"
+pval$color[pval$chr %in% evens]<-"a"
+pval$color[pval$PC1.log>5]<-"c"
+pval$color2<-"b"
+pval$color2[pval$chr %in% evens]<-"a"
+pval$color2[pval$PC2.log>5]<-"c"
+pval$color3<-"b"
+pval$color3[pval$chr %in% evens]<-"a"
+pval$color3[pval$PC3.log>5]<-"c"
+
+plots<-list()
+
+plots[[1]]<-ggplot(data=pval, aes(x=loc, y=PC1.log, color=color))+
+        geom_point(aes(size=color))+
+        scale_color_manual(values=c("lightblue","steelblue","red"), guide='none')+
+        scale_size_manual(values=c(0.1,0.1,0.7), guide='none')+
         scale_x_continuous(name="Chromosome position", breaks=poss$x, labels=1:26)+
         theme_classic()+ylab("-log10(p-value)")+
-        ggtitle(paste0(pop1, " - ", pop2))
-    ggsave(paste0("../Output/PCA/selection_MD2000/",pop1, "_",pop2,"_selection_scan.png"), width=8, height=4,dpi=300)
-}
+        geom_hline(yintercept =-log10(10^-5), color="red")+
+        ggtitle("PC1")
+
+plots[[2]]<-ggplot(data=pval, aes(x=loc, y=PC2.log, color=color2))+
+        geom_point(aes(size=color2))+
+        scale_color_manual(values=c("lightblue","steelblue","red"), guide='none')+
+        scale_size_manual(values=c(0.1,0.1,0.7), guide='none')+
+        scale_x_continuous(name="Chromosome position", breaks=poss$x, labels=1:26)+
+        theme_classic()+ylab("-log10(p-value)")+
+        geom_hline(yintercept =-log10(10^-5), color="red")+
+    ggtitle("PC2")
+ggsave(paste0("../Output/PCA/selection0.99/Selection_scan_TB06-TB17.PC2.png"), width=8, height=4,dpi=300)
+
+plots[[3]]<-ggplot(data=pval, aes(x=loc, y=PC3.log, color=color3))+
+        geom_point(aes(size=color3))+
+        scale_color_manual(values=c("lightblue","steelblue","red"), guide='none')+
+        scale_size_manual(values=c(0.1,0.1,0.7), guide='none')+
+        scale_x_continuous(name="Chromosome position", breaks=poss$x, labels=1:26)+
+        theme_classic()+ylab("-log10(p-value)")+
+        geom_hline(yintercept =-log10(10^-5), color="red")+
+        ggtitle("PC3")
+
+{png("../Output/PCA/selection0.99/Selection_scan_results_TB06-TB17.png", width=8.5, height=11, units="in", res=200)
+do.call("grid.arrange", c(plots, nrow = 3, ncol = 1))
+dev.off()}
+           
+highloci2<-pval[pval$PC2<=0.00001,]
+highloci3<-pval[pval$PC3<=0.00001,]
+
+#Only loci overlapping on the same chromosomte is PC1 chr24:18971364 & PC3 chr24: 16580291 (>2.3Mbp apart)
+
 ```
-![](../Output/PCA/selection_MD2000/PWS91_PWS96_selection_scan.png)
 
-
-![](../Output/PCA/selection_MD2000/PWS07_PWS96_selection_scan.png)
-![](../Output/PCA/selection_MD2000/PWS07_PWS17_selection_scan.png)
-![](../Output/PCA/selection_MD2000/TB91_TB96_selection_scan.png)
-
-![](../Output/PCA/selection_MD2000/TB06_TB96_selection_scan.png)
-![](../Output/PCA/selection_MD2000/TB06_TB17_selection_scan.png)
-
-![](../Output/PCA/selection_MD2000/SS06_SS96_selection_scan.png)
-![](../Output/PCA/selection_MD2000/SS06_SS17_selection_scan.png)
 
 <br>
 <br>
